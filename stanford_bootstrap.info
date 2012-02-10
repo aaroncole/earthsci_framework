@@ -1,0 +1,45 @@
+name = Stanford Bootstrap
+description = Base theme provided by <a href="http://webservices.stanford.edu">Stanford Web Services</a>.
+core = 6.x
+version = 6.x-1.0
+engine = phptemplate
+
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/bootstrap-responsive.css
+stylesheets[all][] = css/prettify.css
+stylesheets[all][] = css/stanford_bootstrap.css
+
+scripts[] = js/jquery-1.7.1.min.js
+scripts[] = js/bootstrap.min.js
+scripts[] = js/stanford_bootstrap.js
+
+regions[header] = Header
+regions[nav] = Navigation
+regions[top] = Top content
+regions[upper] = Upper content
+regions[feature] = Feature content
+regions[content] = Content
+regions[left] = Left sidebar
+regions[right] = Right sidebar
+regions[bottom] = Bottom content
+regions[footer] = Footer
+
+regions[front1] = Front Page Row 1
+regions[front2] = Front Page Row 2
+regions[front3] = Front Page Row 3
+regions[frontside] = Front Page Sidebar
+
+regions[landingimage] = Landing Page Image
+regions[landing1] = Landing Page Row 1
+regions[landing2] = Landing Page Row 2
+regions[landing3] = Landing Page Row 3
+
+features[] = logo
+features[] = name
+features[] = slogan
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = search
+features[] = favicon
+features[] = primary_links
+features[] = secondary_links

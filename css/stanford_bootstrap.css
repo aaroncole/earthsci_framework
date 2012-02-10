@@ -1,0 +1,104 @@
+/* Stanford Bootstrap Customizations */
+body {color: #2e2d29; font: 0.78em Arial, Helvetica, sans-serif; margin: 0px; padding: 0px;}
+a {color: #565347;}
+a:hover {color: #565347;}
+label input, label textarea, label select {display: inline-block;}
+input, textarea, select {display: inline-block;}
+.nav-pills .active > a, .nav-pills .active > a:hover {background-color: #eee; color: #565347;}
+.nav-list .active > a, .nav-list .active > a:hover {background-color: #eee; color: #565347;}
+
+/* Stanford Specific CSS */
+#skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
+img {max-width: 100%;}
+
+
+#global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #ffffff; padding: 10px 0 5px 0; width: 100%;}
+#top-logo {width: 198px; float: left;}
+#top-menu {float: right;}
+#top-menu a {color: #ffffff;}
+#top-menu ul {margin: 0; padding: 0; line-height: 1em;}
+#top-menu ul li {float: left; list-style: none; margin: 0 0 0 1em; padding: 0 0 0 1em;}
+#top-menu ul li.last {border: none;}
+#top-menu h3 {display: none;}
+
+#wrapper {position: relative;}
+
+#header {padding: 1em 0px;}
+#header #logo {float: left; margin-right: 10px;}
+#header #site {float: left; margin: 1em 0;}
+#header #site h1 a {color: #3f3c30; text-decoration: none;}
+#header #site h1 a:hover {text-decoration: none;}
+#header #slogan {font-size: 1.5em;}
+#header #search {float: right;}
+#header #search .form-text {height: 1em; margin: 0; padding: 5px;}
+#header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
+#header #search .form-item, #header #search .form-submit {display: inline-block; margin: 0px;}
+
+#navigation {margin: 0 0 1em 0; padding: 0px;}
+#navigation ul li a {font-size: 1.166em;}
+
+#mission {margin: 0 0 1em 0;}
+#sidebar-left h1, #sidebar-right h1 {font-size: 1.5em; margin: 0;}
+#sidebar-left h2, #sidebar-right h2 {font-size: 1.3em; margin: 0;}
+#sidebar-left h3, #sidebar-right h3 {font-size: 1.1em; margin: 0;}
+#sidebar-left h4, #sidebar-right h4 {font-size: 1em; margin: 0;}
+#sidebar-left h5, #sidebar-right h5 {font-size: 1em; margin: 0;}
+#sidebar-left h6, #sidebar-right h6 {font-size: 1em; margin: 0;}
+#sidebar-left .item-list, #sidebar-right .item-list {margin: 1em 0;}
+
+#navigation-secondary {margin: 1em 0 0 0;}
+#navigation-secondary ul {margin: 0; list-style: none;}
+#navigation-secondary ul li {border-top: 1px solid #bbb; float: left; margin: 0; list-style: none; padding-top: 3px;}
+#navigation-secondary ul li.last {margin: 0;} 
+#navigation-secondary ul li.expanded {padding-right: 0;}
+#navigation-secondary ul li.leaf {padding-right: 0;}
+#navigation-secondary ul li a {font-size: 1em; font-weight: bold; line-height: 2em; text-transform: uppercase;}
+#navigation-secondary ul li ul li {border: none; clear: both;}
+#navigation-secondary ul li ul li.leaf {padding-top: 0;}
+#navigation-secondary ul li ul li a {font-size: 0.9em; font-weight: normal; line-height: 1em; text-transform: none;}
+#navigation-secondary.across-1 ul li {width: 100%; margin: 0;}
+#navigation-secondary.across-1 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-2 ul li {width: 49%; margin: 0 2% 0 0;}
+#navigation-secondary.across-2 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-2 ul li:last-child {margin: 0;}
+#navigation-secondary.across-3 ul li {width: 32%; margin: 0 2% 0 0;}
+#navigation-secondary.across-3 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-3 ul li:last-child {margin: 0;}
+#navigation-secondary.across-4 ul li {width: 23.5%; margin: 0 2% 0 0;}
+#navigation-secondary.across-4 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-4 ul li:last-child {margin: 0;}
+#navigation-secondary.across-5 ul li {width: 18.4%; margin: 0 2% 0 0;}
+#navigation-secondary.across-5 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-5 ul li:last-child {margin: 0;}
+#navigation-secondary.across-6 ul li {width: 15%; margin: 0 2% 0 0;}
+#navigation-secondary.across-6 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-6 ul li:last-child {margin: 0;}
+
+#footer {margin: 40px 0px;}
+
+#global-footer {background-color: #8c1515; background-image: url(../images/footer-bg.png); background-position: top center; background-repeat: no-repeat; color: #e3dfd5; font-size: 0.9em; line-height: 1em; padding: 30px 0 60px 0; width: 100%;}
+#global-footer .vcard {font-size: 1em}
+#bottom-logo {float: left; padding: 0 2em 1em 0px; width: 119px;}
+#bottom-text {float: left;}
+#bottom-menu {margin: 0 0 0.4em 0;}
+#bottom-menu a {color: #e3dfd5;}
+#bottom-menu ul {margin: 0; padding: 0; line-height: 1em;}
+#bottom-menu ul li {float: left; list-style: none; margin: 0 1em 0 0; padding: 0 1em 0 0;}
+
+@media (max-width: 980px) {
+#header #search {position:absolute; bottom: 0px; padding: 0 0 1em 0; float:none; clear:both; width: 100%;}
+}
+
+@media (max-width: 768px) {
+#header #logo {display: none;}
+}
+
+@media (max-width: 640px) {
+#navigation-secondary ul li {clear: both; padding-bottom: 0.25em;}
+#navigation-secondary.across-1 ul li,
+#navigation-secondary.across-2 ul li,
+#navigation-secondary.across-3 ul li,
+#navigation-secondary.across-4 ul li,
+#navigation-secondary.across-5 ul li,
+#navigation-secondary.across-6 ul li {width:100%; margin: 0px;}
+}
