@@ -24,10 +24,10 @@ regions[right] = Right sidebar
 regions[bottom] = Bottom content
 regions[footer] = Footer
 
-regions[topsection] = Top content section
-regions[uppersection] = Upper content section
-regions[lowersection] = Lower content section
-regions[bottomsection] = Bottom content section
+regions[topsection] = Top section content
+regions[uppersection] = Upper section content
+regions[lowersection] = Lower section content
+regions[bottomsection] = Bottom section content
 
 features[] = logo
 features[] = name
