@@ -57,43 +57,71 @@
     <?php if ($top): ?>
     <div id="top"><?php print $top ?></div>
     <?php endif; ?>
-    <div id="content" class="row">
-      <div class="span12">
-        <?php if ($title): print '<h1 class="title'. ($tabs ? ' with-tabs' : '') .'">'. $title .'</h1>'; endif; ?>
-        <?php if ($mission): print '<div id="mission">'. $mission .'</div>'; endif; ?>
-        <?php if ($show_messages && $messages): print $messages; endif; ?>
-        <?php if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif; ?>
-        <?php if ($tabs): print $tabs; endif; ?>
-        <?php if ($tabs2): print $tabs2; endif; ?>
-        <?php if ($tabs): print '</div>'; endif; ?>
-        <?php if ($upper): ?>
-        <div id="upper"><?php print $upper ?></div>
+    <div id="content">
+      <div class="row">
+        <div class="span12">
+          <?php if ($title): print '<h1 class="title'. ($tabs ? ' with-tabs' : '') .'">'. $title .'</h1>'; endif; ?>
+          <?php if ($mission): print '<div id="mission">'. $mission .'</div>'; endif; ?>
+          <?php if ($show_messages && $messages): print $messages; endif; ?>
+          <?php if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif; ?>
+          <?php if ($tabs): print $tabs; endif; ?>
+          <?php if ($tabs2): print $tabs2; endif; ?>
+          <?php if ($tabs): print '</div>'; endif; ?>
+          <?php if ($upper): ?>
+          <div id="upper"><?php print $upper ?></div>
+          <?php endif; ?>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <?php if ($feature): ?>
+          <div id="feature"><?php print $feature ?></div>
+          <?php endif; ?>
+          <?php print $help; ?> </div>
+      </div>
+      <div id="main" role="main" class="row">
+        <?php if ($left): ?>
+        <div id="sidebar-left" class="span3">
+          <div class="well sidebar-nav"> <?php print $left; ?> </div>
+        </div>
+        <?php endif; ?>
+        <!-- /sidebar-left -->
+        
+        <div id="center" class="<?php if ($left && $right): print 'span6'; elseif ($left || $right): print 'span9'; else: print 'span12';	endif; ?>">
+          <?php if ($feature): ?>
+          <div id="feature"><?php print $feature ?></div>
+          <?php endif; ?>
+          <?php print $help; ?>
+          <?php if ($topsection): ?>
+          <div id="topsection" class="row"> <?php print $topsection; ?> </div>
+          <?php endif; ?>
+          <?php if ($uppersection): ?>
+          <div id="uppersection" class="row"> <?php print $uppersection; ?> </div>
+          <?php endif; ?>
+
+          
+          <?php print $content; ?>
+          <?php if ($lowersection): ?>
+          <div id="lowersection" class="row"> <?php print $lowersection; ?> </div>
+          <?php endif; ?>
+          <?php if ($bottomsection): ?>
+          <div id="bottomsection" class="row"> <?php print $bottomsection; ?> </div>
+          <?php endif; ?>
+        </div>
+        <!-- /center -->
+        
+        <?php if ($right): ?>
+        <div id="sidebar-right" class="span3">
+          <div class="well sidebar-nav"> <?php print $right; ?> </div>
+        </div>
+        <?php endif; ?>
+        <!-- /sidebar-right --> 
+      </div>
+      <div class="row">
+        <?php if ($bottom): ?>
+        <div id="bottom" class="span12"><?php print $bottom ?></div>
         <?php endif; ?>
       </div>
-      <?php if ($left): ?>
-      <div id="sidebar-left" class="span3">
-        <div class="well sidebar-nav"> <?php print $left; ?> </div>
-      </div>
-      <?php endif; ?>
-      <!-- /sidebar-left -->
-      
-      <div id="main" role="main" class="<?php if ($left && $right): print 'span6'; elseif ($left || $right): print 'span9'; else: print 'span12';	endif; ?>">
-        <?php if ($feature): ?>
-        <div id="feature"><?php print $feature ?></div>
-        <?php endif; ?>
-        <?php print $help; ?> <?php print $content; ?> </div>
-      <!-- /main -->
-      
-      <?php if ($right): ?>
-      <div id="sidebar-right" class="span3">
-        <div class="well sidebar-nav"> <?php print $right; ?> </div>
-      </div>
-      <?php endif; ?>
-      <!-- /sidebar-right -->
-      
-      <?php if ($bottom): ?>
-      <div id="bottom" class="span12"><?php print $bottom ?></div>
-      <?php endif; ?>
     </div>
     <!--/content-->
     

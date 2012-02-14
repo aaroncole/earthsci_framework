@@ -24,15 +24,10 @@ regions[right] = Right sidebar
 regions[bottom] = Bottom content
 regions[footer] = Footer
 
-regions[front1] = Front Page Row 1
-regions[front2] = Front Page Row 2
-regions[front3] = Front Page Row 3
-regions[frontside] = Front Page Sidebar
-
-regions[landingimage] = Landing Page Image
-regions[landing1] = Landing Page Row 1
-regions[landing2] = Landing Page Row 2
-regions[landing3] = Landing Page Row 3
+regions[topsection] = Top content section
+regions[uppersection] = Upper content section
+regions[lowersection] = Lower content section
+regions[bottomsection] = Bottom content section
 
 features[] = logo
 features[] = name

@@ -6,6 +6,7 @@ label input, label textarea, label select {display: inline-block;}
 input, textarea, select {display: inline-block;}
 .nav-pills .active > a, .nav-pills .active > a:hover {background-color: #eee; color: #565347;}
 .nav-list .active > a, .nav-list .active > a:hover {background-color: #eee; color: #565347;}
+.label a {color: #fff;}
 
 /* Stanford Specific CSS */
 #skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
