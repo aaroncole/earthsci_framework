@@ -14,11 +14,11 @@ img {max-width: 100%;}
 
 
 #global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #ffffff; padding: 10px 0 5px 0; width: 100%;}
-#top-logo {width: 198px; float: left;}
-#top-menu {float: right;}
+#top-logo {}
+#top-menu {}
 #top-menu a {color: #ffffff;}
 #top-menu ul {margin: 0; padding: 0; line-height: 1em;}
-#top-menu ul li {float: left; list-style: none; margin: 0 0 0 1em; padding: 0 0 0 1em;}
+#top-menu ul li {float: right; list-style: none; margin: 0 0 0 1em; padding: 0 0 0 1em;}
 #top-menu ul li.last {border: none;}
 #top-menu h3 {display: none;}
 

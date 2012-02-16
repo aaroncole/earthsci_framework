@@ -9,7 +9,6 @@ stylesheets[all][] = css/bootstrap-responsive.css
 stylesheets[all][] = css/prettify.css
 stylesheets[all][] = css/stanford_bootstrap.css
 
-scripts[] = js/jquery-1.7.1.min.js
 scripts[] = js/bootstrap.min.js
 scripts[] = js/stanford_bootstrap.js
 
