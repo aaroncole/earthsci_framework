@@ -52,13 +52,18 @@
     </div>
     <!-- /#header -->
     
-    <div id="navigation" class="clear-block">
-      <?php if (isset($primary_links)): ?>
-      <?php $linknum_primary = count($primary_links); print '<div id="navigation-primary" role="navigation" class="across-' . $linknum_primary . '">'; $menu_primary = variable_get('menu_primary_links_source', 'primary-links'); print menu_tree($menu_primary); print '</div>'; ?>
+    <?php if ($primary_links): ?>
+    <div id="nav" role="navigation" class="clear-block">
+      <?php if (isset($primary_links) && empty($nav)): ?>
+      <?php print theme('links', $primary_links, array('class' => 'links primary-links nav nav-tabs')) ?>
+      <?php endif; ?>
+      <?php if ($nav): ?>
+      <?php print $nav ?>
       <?php endif; ?>
     </div>
-    <!--/#primary-navigation -->
-    
+    <?php endif; ?>
+    <!-- End #nav --> 
+        
     <?php if ($top): ?>
     <div id="top"><?php print $top ?></div>
     <?php endif; ?>
@@ -145,18 +150,20 @@
   <!--/#container-->
   <div id="global-footer">
     <div class="container">
-      <div id="bottom-logo"> <a href="http://www.stanford.edu"><img src="<?php print base_path() . path_to_theme(); ?>/images/footer-stanford-logo.png" alt="Stanford University" /></a> </div>
-      <div id="bottom-text">
-        <div id="bottom-menu" class="clear-block">
-          <ul>
-            <li><a href="http://www.stanford.edu">Stanford University Home</a></li>
-            <li><a href="http://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
-            <li><a href="http://www.stanford.edu/search/">Search Stanford</a></li>
-            <li><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
-            <li><a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></li>
-          </ul>
+      <div class="row">
+        <div id="bottom-logo" class="span2"> <a href="http://www.stanford.edu"><img src="<?php print base_path() . path_to_theme(); ?>/images/footer-stanford-logo.png" alt="Stanford University" /></a> </div>
+        <div id="bottom-text" class="span10">
+          <div id="bottom-menu" class="clear-block">
+            <ul>
+              <li><a href="http://www.stanford.edu">Stanford University Home</a></li>
+              <li><a href="http://visit.stanford.edu/plan/maps.html">Maps &amp; Directions</a></li>
+              <li><a href="http://www.stanford.edu/search/">Search Stanford</a></li>
+              <li><a href="http://www.stanford.edu/site/terms.html">Terms of Use</a></li>
+              <li><a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></li>
+            </ul>
+          </div>
+          <p class="vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span>. <span class="tel">(650) 723-2300</span></span></p>
         </div>
-        <p class="vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span>. <span class="tel">(650) 723-2300</span></span></p>
       </div>
     </div>
   </div>

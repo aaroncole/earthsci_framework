@@ -11,7 +11,7 @@ input, textarea, select {display: inline-block;}
 /* Stanford Specific CSS */
 #skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
 img {max-width: 100%;}
-
+h1.title {padding: 1em 0 0.5em 0;}
 
 #global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #ffffff; padding: 10px 0 5px 0; width: 100%;}
 #top-logo {}
@@ -79,8 +79,8 @@ img {max-width: 100%;}
 
 #global-footer {background-color: #8c1515; background-image: url(../images/footer-bg.png); background-position: top center; background-repeat: no-repeat; color: #e3dfd5; font-size: 0.9em; line-height: 1em; padding: 30px 0 60px 0; width: 100%;}
 #global-footer .vcard {font-size: 1em}
-#bottom-logo {float: left; padding: 0 2em 1em 0px; width: 119px;}
-#bottom-text {float: left;}
+#bottom-logo {padding: 0 0 1em 0;}
+#bottom-text {}
 #bottom-menu {margin: 0 0 0.4em 0;}
 #bottom-menu a {color: #e3dfd5;}
 #bottom-menu ul {margin: 0; padding: 0; line-height: 1em;}
