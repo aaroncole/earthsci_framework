@@ -21,6 +21,8 @@ h1.title {padding: 1em 0 0.5em 0;}
 #top-menu ul li {float: right; list-style: none; margin: 0 0 0 1em; padding: 0 0 0 1em;}
 #top-menu ul li.last {border: none;}
 #top-menu h2, #top-menu h3 {display: none;}
+#top-menu form {margin: 0;}
+#user-login-form {text-align: right;}
 
 #wrapper {position: relative;}
 
