@@ -50,7 +50,7 @@
       <div id="search" role="search"> <?php print $search_box; ?> </div>
       <?php endif; ?>
     </div>
-    <!-- /#header -->    
+    <!-- /#header -->
     
     <?php if ($primary_links): ?>
     <div id="nav" role="navigation" class="clear-block">
@@ -62,10 +62,10 @@
       <?php endif; ?>
     </div>
     <?php endif; ?>
-    <!-- End #nav --> 
-        
+    <!-- End #nav -->
+    
     <?php if ($top): ?>
-    <div id="top"><?php print $top ?></div>
+    <div id="top" class="row"><?php print $top ?></div>
     <?php endif; ?>
     <!-- /#top -->
     
@@ -79,7 +79,7 @@
           <?php if ($tabs2): print $tabs2; endif; ?>
           <?php if ($tabs): print '</div>'; endif; ?>
           <?php if ($upper): ?>
-          <div id="upper"><?php print $upper ?></div>
+          <div id="upper" class="row"><?php print $upper ?></div>
           <?php endif; ?>
           <?php if ($help): ?>
           <div id="help"><?php print $help; ?></div>
@@ -91,53 +91,48 @@
       <div id="main" role="main" class="row">
         <?php if ($left): ?>
         <div id="sidebar-left" class="span3">
-          <div class="well sidebar-nav"> <?php print $left; ?> </div>
+          <div class="well"> <?php print $left; ?> </div>
         </div>
         <?php endif; ?>
         <!-- /#sidebar-left -->
         
         <div id="center" class="<?php if ($left && $right): print 'span6'; elseif ($left || $right): print 'span9'; else: print 'span12';	endif; ?>">
           <?php if ($feature): ?>
-          <div id="feature"><?php print $feature ?></div>
+          <div id="feature" class="row"><?php print $feature ?></div>
           <?php endif; ?>
-          <?php if ($topsection): ?>
-          <div id="topsection" class="row"> <?php print $topsection; ?> </div>
+          <?php if ($content_top): ?>
+          <div id="content-top" class="row"> <?php print $content_top; ?> </div>
           <?php endif; ?>
-          <?php if ($uppersection): ?>
-          <div id="uppersection" class="row"> <?php print $uppersection; ?> </div>
+          <?php if ($content_upper): ?>
+          <div id="content-upper" class="row"> <?php print $content_upper; ?> </div>
           <?php endif; ?>
           <?php print $content; ?>
-          <?php if ($lowersection): ?>
-          <div id="lowersection" class="row"> <?php print $lowersection; ?> </div>
+          <?php if ($content_lower): ?>
+          <div id="content-lower" class="row"> <?php print $content_lower; ?> </div>
           <?php endif; ?>
-          <?php if ($bottomsection): ?>
-          <div id="bottomsection" class="row"> <?php print $bottomsection; ?> </div>
+          <?php if ($content_bottom): ?>
+          <div id="content-bottom" class="row"> <?php print $content_bottom; ?> </div>
           <?php endif; ?>
         </div>
         <!-- /#center -->
         
         <?php if ($right): ?>
         <div id="sidebar-right" class="span3">
-          <div class="well sidebar-nav"> <?php print $right; ?> </div>
+          <div class="well"> <?php print $right; ?> </div>
         </div>
         <?php endif; ?>
         <!-- /#sidebar-right --> 
       </div>
       <!-- /#main -->
       
-      <?php if ($bottom): ?>
-      <div id="bottom" class="row">
-        <div class="span12"><?php print $bottom ?></div>
-      </div>
+      <?php if ($lower): ?>
+      <div id="lower" class="row"><?php print $lower ?></div>
       <?php endif; ?>
-      <!-- /#bottom --> 
+      <!-- /#lower --> 
     </div>
     <!--/#content-->
     
     <div id="footer" role="contentinfo" class="clear-block">
-      <?php if ($footer): ?>
-      <?php print $footer ?>
-      <?php endif; ?>
       <?php if (!empty($footer_message)): ?>
       <?php print $footer_message; ?>
       <?php endif; ?>
@@ -146,10 +141,18 @@
       <?php endif; ?>
     </div>
     <!--/#footer-->
+    
+    <?php if ($bottom): ?>
+    <div id="bottom" class="row"><?php print $bottom ?></div>
+    <?php endif; ?>
+    <!-- /#bottom --> 
   </div>
   <!--/#container-->
   <div id="global-footer">
     <div class="container">
+      <?php if ($footer): ?>
+      <div class="row"><?php print $footer ?></div>
+      <?php endif; ?>
       <div class="row">
         <div id="bottom-logo" class="span2"> <a href="http://www.stanford.edu"><img src="<?php print base_path() . path_to_theme(); ?>/images/footer-stanford-logo.png" alt="Stanford University" /></a> </div>
         <div id="bottom-text" class="span10">

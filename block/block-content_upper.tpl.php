@@ -29,11 +29,6 @@ endif;
   <?php endif;?>
   <div class="content"><?php print $block->content ?></div>
   <?php if (user_access('administer blocks')) :?>
-  <span class="label label-important"><?php print $edit_links; ?>
-  <?php if ($block_id == 1) print '1 of ' . $block_count; ?>
-  <?php if ($block_id == 2) print '2 of ' . $block_count; ?>
-  <?php if ($block_id == 3) print '3 of ' . $block_count; ?>
-  <?php if ($block_id == 4) print '4 of ' . $block_count; ?>
-  </span>
+  <button class="btn"><i class="icon-edit"></i> <?php print $edit_links; ?></button>
   <?php endif; ?>
 </div>
