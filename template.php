@@ -37,4 +37,4 @@ function region_has_block($test_region) {
   }
   return $test_empty;
 }
-	
+

@@ -50,7 +50,7 @@
       <div id="search" role="search"> <?php print $search_box; ?> </div>
       <?php endif; ?>
     </div>
-    <!-- /#header -->
+    <!-- /#header -->    
     
     <?php if ($primary_links): ?>
     <div id="nav" role="navigation" class="clear-block">
