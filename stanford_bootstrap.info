@@ -12,24 +12,23 @@ stylesheets[all][] = css/stanford_bootstrap.css
 scripts[] = js/bootstrap.min.js
 scripts[] = js/stanford_bootstrap.js
 
-regions[header] = Site Header
-regions[nav] = Site Navigation
-regions[footer] = Site Footer
-
+regions[header] = Header
+regions[nav] = Navigation
 regions[left] = Left sidebar
 regions[right] = Right sidebar
+regions[footer] = Footer
 
-regions[content_top] = Content: Top section
-regions[content_upper] = Content: Upper section
-regions[content] = Content
-regions[content_lower] = Content: Lower section
-regions[content_bottom] = Content: Bottom section
+regions[top] = Page: Top
+regions[upper] = Page: Upper
+regions[lower] = Page: Lower
+regions[bottom] = Page: Bottom
 
-regions[top] = Page: Top section
-regions[upper] = Page: Upper section
-regions[feature] = Page: Feature section
-regions[lower] = Page: Lower section
-regions[bottom] = Page: Bottom section
+regions[feature] = Content: Feature
+regions[content_top] = Content: Top
+regions[content_upper] = Content: Upper
+regions[content] = Content: Main
+regions[content_lower] = Content: Lower
+regions[content_bottom] = Content: Bottom
 
 features[] = logo
 features[] = name
