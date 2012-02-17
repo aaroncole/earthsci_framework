@@ -20,7 +20,7 @@ h1.title {padding: 1em 0 0.5em 0;}
 #top-menu ul {margin: 0; padding: 0; line-height: 1em;}
 #top-menu ul li {float: right; list-style: none; margin: 0 0 0 1em; padding: 0 0 0 1em;}
 #top-menu ul li.last {border: none;}
-#top-menu h3 {display: none;}
+#top-menu h2, #top-menu h3 {display: none;}
 
 #wrapper {position: relative;}
 
