@@ -38,3 +38,50 @@ function region_has_block($test_region) {
   return $test_empty;
 }
 
+/**
+* Generate the HTML output for a menu tree
+*/
+function phptemplate_menu_tree($tree) {
+  return '<ul class="nav nav-tabs">'. $tree .'</ul>';
+}
+
+/**
+ * Returns a rendered menu tree.
+ *
+ * @param $tree
+ *   A data structure representing the tree as returned from menu_tree_data.
+ * @return
+ *   The rendered HTML of that data structure.
+ */
+function phptemplate_menu_tree_output($tree) {
+  $output = '';
+  $items = array();
+
+  // Pull out just the menu items we are going to render so that we
+  // get an accurate count for the first/last classes.
+  foreach ($tree as $data) {
+    if (!$data['link']['hidden']) {
+      $items[] = $data;
+    }
+  }
+
+  $num_items = count($items);
+  foreach ($items as $i => $data) {
+    $extra_class = array();
+    if ($i == 0) {
+      $extra_class[] = 'first';
+    }
+    if ($i == $num_items - 1) {
+      $extra_class[] = 'last';
+    }
+    $extra_class = implode(' ', $extra_class);
+    $link = theme('menu_item_link', $data['link']);
+    if ($data['below']) {
+      $output .= theme('menu_item', $link, $data['link']['has_children'], menu_tree_output($data['below']), $data['link']['in_active_trail'], $extra_class);
+    }
+    else {
+      $output .= theme('menu_item', $link, $data['link']['has_children'], '', $data['link']['in_active_trail'], $extra_class);
+    }
+  }
+  return $output ? theme('menu_tree', $output) : '';
+}
