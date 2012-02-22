@@ -116,6 +116,8 @@ h1.title {padding: 1em 0 0.5em 0;}
 /* Admin Menu */
 body.admin-menu {margin-top: 60px !important;}
 #admin-menu ul a {border: none !important;}
+/* Top Menu */
+#top-menu ul li {float: left; margin: 0 1em 0 0; padding: 0.5em 1em 0 0;}
 
 /* Secondary Navigation */
 #navigation-secondary ul li {clear: both; padding-bottom: 0.25em;}
