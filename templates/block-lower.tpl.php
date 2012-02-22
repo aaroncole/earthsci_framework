@@ -14,6 +14,6 @@ endif;
   <?php endif;?>
   <div class="content"><?php print $block->content ?></div>
   <?php if (user_access('administer blocks')) :?>
-  <span class="label"><i class="icon-edit icon-white"></i> <?php print $edit_links; ?></span>
+  <p><span class="label"><i class="icon-edit icon-white"></i> <?php print $edit_links; ?></span></p>
   <?php endif; ?>
 </div>

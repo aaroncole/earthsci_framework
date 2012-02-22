@@ -55,7 +55,7 @@
     <!-- /#header -->
     
     <?php if (isset($primary_links)): ?>
-    <div id="navigation-primary" role="navigation">
+    <div id="navigation-primary" role="navigation" class="clear-block">
       <?php $menu_primary = variable_get('menu_primary_links_source', 'primary-links'); print menu_tree($menu_primary); ?>
     </div>
     <?php endif; ?>
@@ -134,7 +134,7 @@
       <?php print $footer_message; ?>
       <?php endif; ?>
       <?php if (isset($secondary_links)): ?>
-      <?php $linknum_secondary = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="across-' . $linknum_secondary . '">'; $menu_secondary = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_secondary); print '</div>'; ?>
+      <?php $linknum_secondary = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="clear-block across-' . $linknum_secondary . '">'; $menu_secondary = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_secondary); print '</div>'; ?>
       <?php endif; ?>
     </div>
     <!--/#footer-->
