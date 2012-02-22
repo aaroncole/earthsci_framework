@@ -10,7 +10,6 @@ stylesheets[all][] = css/prettify.css
 stylesheets[all][] = css/stanford_bootstrap.css
 
 scripts[] = js/bootstrap.min.js
-scripts[] = js/stanford_bootstrap.js
 
 regions[header] = Header
 regions[nav] = Navigation

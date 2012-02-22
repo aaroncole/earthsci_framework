@@ -1,12 +1,32 @@
 <?php
+function stanford_bootstrap_preprocess_page(&$vars) {
+  // Add page template suggestions based on the aliased path.
+  // For instance, if the current page has an alias of about/history/early,
+  // we'll have templates of:
+  // page-about-history-early.tpl.php
+  // page-about-history.tpl.php
+  // page-about.tpl.php
+  // Whichever is found first is the one that will be used.
+  if (module_exists('path')) {
+    $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
+    if ($alias != $_GET['q']) {
+      $template_filename = 'page';
+      foreach (explode('/', $alias) as $path_part) {
+        $template_filename = $template_filename . '-' . $path_part;
+        $vars['template_files'][] = $template_filename;
+      }
+    }
+  }
+}
+
 function stanford_bootstrap_preprocess_block(&$vars) {
+  // Count number of blocks in a given theme region
 	$vars['block_count'] = count(block_list($vars['block']->region));
 }
 
 function region_has_block($test_region) {
-  /* Check to see if a region is occupied
-   * returns 1 if it's full
-   */
+  // Check to see if a region is occupied
+  // returns 1 if it's full
 
   $test_empty = 0;
 
@@ -36,52 +56,4 @@ function region_has_block($test_region) {
     }
   }
   return $test_empty;
-}
-
-/**
-* Generate the HTML output for a menu tree
-*/
-function phptemplate_menu_tree($tree) {
-  return '<ul class="nav nav-tabs">'. $tree .'</ul>';
-}
-
-/**
- * Returns a rendered menu tree.
- *
- * @param $tree
- *   A data structure representing the tree as returned from menu_tree_data.
- * @return
- *   The rendered HTML of that data structure.
- */
-function phptemplate_menu_tree_output($tree) {
-  $output = '';
-  $items = array();
-
-  // Pull out just the menu items we are going to render so that we
-  // get an accurate count for the first/last classes.
-  foreach ($tree as $data) {
-    if (!$data['link']['hidden']) {
-      $items[] = $data;
-    }
-  }
-
-  $num_items = count($items);
-  foreach ($items as $i => $data) {
-    $extra_class = array();
-    if ($i == 0) {
-      $extra_class[] = 'first';
-    }
-    if ($i == $num_items - 1) {
-      $extra_class[] = 'last';
-    }
-    $extra_class = implode(' ', $extra_class);
-    $link = theme('menu_item_link', $data['link']);
-    if ($data['below']) {
-      $output .= theme('menu_item', $link, $data['link']['has_children'], menu_tree_output($data['below']), $data['link']['in_active_trail'], $extra_class);
-    }
-    else {
-      $output .= theme('menu_item', $link, $data['link']['has_children'], '', $data['link']['in_active_trail'], $extra_class);
-    }
-  }
-  return $output ? theme('menu_tree', $output) : '';
 }
