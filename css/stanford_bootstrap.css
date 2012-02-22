@@ -102,14 +102,21 @@ h1.title {padding: 1em 0 0.5em 0;}
 #bottom-menu ul li {float: left; list-style: none; margin: 0 1em 0 0; padding: 0 1em 0 0;}
 
 @media (max-width: 980px) {
+/* Search */
 #header #search {position:absolute; bottom: 0px; padding: 0 0 1em 0; float:none; clear:both; width: 100%;}
 }
 
 @media (max-width: 768px) {
+/* Header */
 #header #logo {display: none;}
 }
 
 @media (max-width: 640px) {
+/* Admin Menu */
+body.admin-menu {margin-top: 60px !important;}
+#admin-menu ul a {border: none !important;}
+
+/* Secondary Navigation */
 #navigation-secondary ul li {clear: both; padding-bottom: 0.25em;}
 #navigation-secondary.across-1 ul li,
 #navigation-secondary.across-2 ul li,
