@@ -210,6 +210,6 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
         'data' => $li_last,
       );
     }
-    return theme('item_list', $items, NULL, 'ul', array('class' => 'pagination pagination-centered'));
+    return theme('pagination pagination-centered', $items, NULL, 'ul', array('class' => ''));
   }
 }
