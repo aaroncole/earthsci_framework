@@ -1,11 +1,7 @@
 <?php
 function stanford_bootstrap_preprocess_page(&$vars) {
-  // Add page template suggestions based on the aliased path.
-  // For instance, if the current page has an alias of about/history/early,
-  // we'll have templates of:
-  // page-about-history-early.tpl.php
-  // page-about-history.tpl.php
-  // page-about.tpl.php
+  // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:
+  // page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
   // Whichever is found first is the one that will be used.
   if (module_exists('path')) {
     $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
@@ -25,32 +21,24 @@ function stanford_bootstrap_preprocess_block(&$vars) {
 }
 
 function region_has_block($test_region) {
-  // Check to see if a region is occupied
-  // returns 1 if it's full
-
+  // Check to see if a region is occupied and returns 1 if it's full
   $test_empty = 0;
-
   $result = db_query_range('SELECT n.pages, n.visibility FROM {blocks} n WHERE n.region="%s" AND n.theme="%s"', $test_region, $GLOBALS['theme'], 0, 10);
   if (count($result) > 0) {
     while ($node = db_fetch_object($result))
     {
-
       if ($node->visibility < 2) {
         $path = drupal_get_path_alias($_GET['q']);
-
         // Compare with the internal and path alias (if any).
         $page_match = drupal_match_path($path, $node->pages);
         if ($path != $_GET['q']) {
           $page_match = $page_match || drupal_match_path($_GET['q'], $node->pages);
         }
-        // When $block->visibility has a value of 0, the block is displayed on
-        // all pages except those listed in $block->pages. When set to 1, it
-        // is displayed only on those pages listed in $block->pages.
+        // When $block->visibility has a value of 0, the block is displayed on all pages except those listed in $block->pages. When set to 1, it is displayed only on those pages listed in $block->pages.
         $page_match = !($node->visibility xor $page_match);
       } else {
         $page_match = drupal_eval($block->pages);
       }
-
       if ($page_match)
         $test_empty = 1;
     }
@@ -58,16 +46,7 @@ function region_has_block($test_region) {
   return $test_empty;
 }
 
-/**
- * Return a themed set of status and/or error messages. The messages are grouped
- * by type.
- *
- * @param $display
- *   (optional) Set to 'status' or 'error' to display only messages of that type.
- *
- * @return
- *   A string containing the messages.
- */
+/* Status Messages (Error, Status, Alert) */
 function stanford_bootstrap_status_messages($display = NULL) {
   $output = '';
   foreach (drupal_get_messages($display) as $type => $messages) {
@@ -90,31 +69,9 @@ function stanford_bootstrap_status_messages($display = NULL) {
   return $output;
 }
 
-/**
- * Returns HTML for a query pager.
- *
- * Menu callbacks that display paged query results should call theme('pager') to
- * retrieve a pager control so that users can view other results.
- * Format a list of nearby pages with additional query results.
- *
- * @param $tags
- *   An array of labels for the controls in the pager.
- * @param $limit
- *   The number of query results to display per page.
- * @param $element
- *   An optional integer to distinguish between multiple pagers on one page.
- * @param $parameters
- *   An associative array of query string parameters to append to the pager links.
- * @param $quantity
- *   The number of pages in the list.
- * @return
- *   An HTML string that generates the query pager.
- *
- * @ingroup themeable
- */
+/* Pager and Pagination */
 function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 9) {
   global $pager_page_array, $pager_total;
-
   // Calculate various markers within this pager piece:
   // Middle is used to "center" pages around the current page.
   $pager_middle = ceil($quantity / 2);
@@ -127,7 +84,6 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
   // max is the maximum page number
   $pager_max = $pager_total[$element];
   // End of marker calculations.
-
   // Prepare for generation loop.
   $i = $pager_first;
   if ($pager_last > $pager_max) {
@@ -141,12 +97,10 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
     $i = 1;
   }
   // End of generation loop preparation.
-
   $li_first = theme('pager_first', (isset($tags[0]) ? $tags[0] : t('« first')), $limit, $element, $parameters);
   $li_previous = theme('pager_previous', (isset($tags[1]) ? $tags[1] : t('‹ previous')), $limit, $element, 1, $parameters);
   $li_next = theme('pager_next', (isset($tags[3]) ? $tags[3] : t('next ›')), $limit, $element, 1, $parameters);
   $li_last = theme('pager_last', (isset($tags[4]) ? $tags[4] : t('last »')), $limit, $element, $parameters);
-
   if ($pager_total[$element] > 1) {
     if ($li_first) {
       $items[] = array(
@@ -160,7 +114,6 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
         'data' => $li_previous,
       );
     }
-
     // When there is more than one page, create the pager list.
     if ($i != $pager_max) {
       if ($i > 1) {
@@ -219,7 +172,6 @@ function stanford_bootstrap_item_list($items = array(), $title = NULL, $type = '
   if (isset($title)) {
     $output .= '<h3>' . $title . '</h3>';
   }
-
   if (!empty($items)) {
     $output .= "<$type" . drupal_attributes($attributes) . '>';
     $num_items = count($items);
@@ -259,20 +211,14 @@ function stanford_bootstrap_item_list($items = array(), $title = NULL, $type = '
   return $output;
 }
 
-/**
- * Returns the rendered local tasks. The default implementation renders them as tabs.
- *
- * @ingroup themeable
- */
+/* Primary and Secondary Tabs */
 function stanford_bootstrap_menu_local_tasks() {
   $output = '';
-
   if ($primary = menu_primary_local_tasks()) {
     $output .= "<ul class=\"tabs primary nav-tabs\">\n". $primary ."</ul>\n";
   }
   if ($secondary = menu_secondary_local_tasks()) {
     $output .= "<ul class=\"tabs secondary\">\n". $secondary ."</ul>\n";
   }
-
   return $output;
 }
