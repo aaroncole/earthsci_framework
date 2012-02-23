@@ -146,18 +146,17 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
   $li_previous = theme('pager_previous', (isset($tags[1]) ? $tags[1] : t('‹ previous')), $limit, $element, 1, $parameters);
   $li_next = theme('pager_next', (isset($tags[3]) ? $tags[3] : t('next ›')), $limit, $element, 1, $parameters);
   $li_last = theme('pager_last', (isset($tags[4]) ? $tags[4] : t('last »')), $limit, $element, $parameters);
-  $li_current = theme('current', (isset($tags[5]) ? $tags[5] : $i), $limit, $element, $parameters);
-  
+
   if ($pager_total[$element] > 1) {
     if ($li_first) {
       $items[] = array(
-        'class' => 'pager-first',
+        'class' => '',
         'data' => $li_first,
       );
     }
     if ($li_previous) {
       $items[] = array(
-        'class' => 'pager-previous',
+        'class' => '',
         'data' => $li_previous,
       );
     }
@@ -166,7 +165,7 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
     if ($i != $pager_max) {
       if ($i > 1) {
         $items[] = array(
-          'class' => '',
+          'class' => 'pager-ellipsis',
           'data' => '…',
         );
       }
@@ -180,8 +179,8 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
         }
         if ($i == $pager_current) {
           $items[] = array(
-            'class' => 'current',
-            'data' => $li_current,
+            'class' => 'active',
+            'data' => '<a href="#">' . $i . '</a>',
           );
         }
         if ($i > $pager_current) {
@@ -201,16 +200,61 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
     // End generation.
     if ($li_next) {
       $items[] = array(
-        'class' => '',
+        'class' => 'pager-next',
         'data' => $li_next,
       );
     }
     if ($li_last) {
       $items[] = array(
-        'class' => '',
+        'class' => 'pager-last',
         'data' => $li_last,
       );
     }
-    return theme('pagination', $items, NULL, 'ul', array('class' => ''));
+    return theme('item_list', $items, NULL, 'ul', array('class' => ''));
   }
+}
+
+function stanford_bootstrap_item_list($items = array(), $title = NULL, $type = 'ul', $attributes = NULL) {
+  $output = '<div class="pagination pagination-centered">';
+  if (isset($title)) {
+    $output .= '<h3>' . $title . '</h3>';
+  }
+
+  if (!empty($items)) {
+    $output .= "<$type" . drupal_attributes($attributes) . '>';
+    $num_items = count($items);
+    foreach ($items as $i => $item) {
+      $attributes = array();
+      $children = array();
+      if (is_array($item)) {
+        foreach ($item as $key => $value) {
+          if ($key == 'data') {
+            $data = $value;
+          }
+          elseif ($key == 'children') {
+            $children = $value;
+          }
+          else {
+            $attributes[$key] = $value;
+          }
+        }
+      }
+      else {
+        $data = $item;
+      }
+      if (count($children) > 0) {
+        $data .= theme_item_list($children, NULL, $type, $attributes); // Render nested list
+      }
+      if ($i == 0) {
+        $attributes['class'] = empty($attributes['class']) ? 'first' : ($attributes['class'] . ' first');
+      }
+      if ($i == $num_items - 1) {
+        $attributes['class'] = empty($attributes['class']) ? 'last' : ($attributes['class'] . ' last');
+      }
+      $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>\n";
+    }
+    $output .= "</$type>";
+  }
+  $output .= '</div>';
+  return $output;
 }
