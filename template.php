@@ -165,7 +165,7 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
     if ($i != $pager_max) {
       if ($i > 1) {
         $items[] = array(
-          'class' => 'pager-ellipsis',
+          'class' => '',
           'data' => '…',
         );
       }
@@ -173,26 +173,26 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
       for (; $i <= $pager_last && $i <= $pager_max; $i++) {
         if ($i < $pager_current) {
           $items[] = array(
-            'class' => 'pager-item',
+            'class' => '',
             'data' => theme('pager_previous', $i, $limit, $element, ($pager_current - $i), $parameters),
           );
         }
         if ($i == $pager_current) {
           $items[] = array(
-            'class' => 'pager-current',
+            'class' => 'current',
             'data' => $i,
           );
         }
         if ($i > $pager_current) {
           $items[] = array(
-            'class' => 'pager-item',
+            'class' => '',
             'data' => theme('pager_next', $i, $limit, $element, ($i - $pager_current), $parameters),
           );
         }
       }
       if ($i < $pager_max) {
         $items[] = array(
-          'class' => 'pager-ellipsis',
+          'class' => '',
           'data' => '…',
         );
       }
@@ -200,16 +200,16 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
     // End generation.
     if ($li_next) {
       $items[] = array(
-        'class' => 'pager-next',
+        'class' => '',
         'data' => $li_next,
       );
     }
     if ($li_last) {
       $items[] = array(
-        'class' => 'pager-last',
+        'class' => '',
         'data' => $li_last,
       );
     }
-    return theme('item_list', $items, NULL, 'ul', array('class' => 'pagination'));
+    return theme('item_list', $items, NULL, 'ul', array('class' => 'pagination pagination-centered'));
   }
 }
