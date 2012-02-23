@@ -165,8 +165,8 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
     if ($i != $pager_max) {
       if ($i > 1) {
         $items[] = array(
-          'class' => '',
-          'data' => '',
+          'class' => 'disabled',
+          'data' => '<a href="#">…</a>',
         );
       }
       // Now generate the actual pager piece.
@@ -192,8 +192,8 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
       }
       if ($i < $pager_max) {
         $items[] = array(
-          'class' => '',
-          'data' => '',
+          'class' => 'disabled',
+          'data' => '<a href="#">…</a>',
         );
       }
     }
