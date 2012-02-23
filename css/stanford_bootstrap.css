@@ -17,7 +17,7 @@ ul.secondary {margin: 0;}
 /* Stanford Specific */
 #skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
 img {max-width: 100%;}
-h1.title {padding: 1em 0 0.5em 0;}
+h1.title {margin: 0 0 0.5em 0; padding: 0px;}
 
 #global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #fff; padding: 10px 0 5px 0; width: 100%;}
 #top-logo {}
