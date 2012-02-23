@@ -9,6 +9,7 @@ stylesheets[all][] = css/bootstrap-responsive.css
 stylesheets[all][] = css/prettify.css
 stylesheets[all][] = css/stanford_bootstrap.css
 
+scripts[] = js/prettify.js
 scripts[] = js/bootstrap.min.js
 
 regions[header] = Header
