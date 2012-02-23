@@ -146,7 +146,8 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
   $li_previous = theme('pager_previous', (isset($tags[1]) ? $tags[1] : t('‹ previous')), $limit, $element, 1, $parameters);
   $li_next = theme('pager_next', (isset($tags[3]) ? $tags[3] : t('next ›')), $limit, $element, 1, $parameters);
   $li_last = theme('pager_last', (isset($tags[4]) ? $tags[4] : t('last »')), $limit, $element, $parameters);
-
+  $li_current = theme('current', (isset($tags[5]) ? $tags[5] : $i), $limit, $element, $parameters);
+  
   if ($pager_total[$element] > 1) {
     if ($li_first) {
       $items[] = array(
@@ -180,7 +181,7 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
         if ($i == $pager_current) {
           $items[] = array(
             'class' => 'current',
-            'data' => $i,
+            'data' => $li_current,
           );
         }
         if ($i > $pager_current) {
@@ -210,6 +211,6 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
         'data' => $li_last,
       );
     }
-    return theme('pagination pagination-centered', $items, NULL, 'ul', array('class' => ''));
+    return theme('pagination', $items, NULL, 'ul', array('class' => ''));
   }
 }
