@@ -24,7 +24,7 @@ elseif ($block_count == 2) : print 'span6';
 else: print 'span12'; 
 endif; 
 ?> block block-<?php print $block->module ?>">
-  <div class="well">
+  <div class="">
   <?php if ($block->subject): ?>
   <h2><?php print $block->subject ?></h2>
   <?php endif;?>
