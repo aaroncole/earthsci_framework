@@ -103,7 +103,6 @@ h1.title {padding: 1em 0 0.5em 0;}
 #bottom-menu ul li {float: left; list-style: none; margin: 0 1em 0 0; padding: 0 1em 0 0;}
 
 /* Stanford Events Importer */
-
 .view-stanford-events-list label {display: inline-block; width: 15%; margin: 0 2% 0 0; vertical-align: top; text-align: right; font-weight: bold; color: #666;}
 .view-stanford-events-list .field-content {display: inline-block; width: 80%; vertical-align: top; }
 .view-stanford-events-list .views-row {margin: 0 0 1em 0; padding: 1em;}
@@ -138,4 +137,12 @@ body.admin-menu {margin-top: 60px !important;}
 #navigation-secondary.across-4 ul li,
 #navigation-secondary.across-5 ul li,
 #navigation-secondary.across-6 ul li {width:100%; margin: 0px;}
+
+/* Stanford Events Importer */
+.view-stanford-events-list label {display: inline-block; width: 30%; margin: 0 2% 0 0; vertical-align: top; text-align: right; font-weight: bold; color: #666;}
+.view-stanford-events-list .field-content {display: inline-block; width: 65%; vertical-align: top; }
+.view-stanford-events-list .views-row {margin: 0 0 1em 0; padding: 1em;}
+.view-stanford-events-list .views-row .views-field-title {margin: 0 0 1em 0;}
+.view-stanford-events-list .views-row .views-field-title a {font-size: 1.5em; font-weight: bold;}
+.view-stanford-events-list .views-row-odd {border-top: 1px solid #bbb; border-bottom: 1px solid #bbb; background: #eee;}
 }
