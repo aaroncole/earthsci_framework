@@ -3,7 +3,9 @@
 <head>
 <title><?php print $head_title; ?></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<?php print $head; ?><?php print $styles; ?><?php print $scripts; ?>
+<?php print $head; ?><?php print $styles; ?>
+<link type="text/css" rel="stylesheet" media="all" href="<?php print base_path() . path_to_theme(); ?>/css/bootstrap_docs.css" />
+<?php print $scripts; ?>
 <script type="text/javascript" src="<?php print base_path() . path_to_theme(); ?>/js/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="<?php print base_path() . path_to_theme(); ?>/js/bootstrap.min.js"></script>
 <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
