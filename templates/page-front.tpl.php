@@ -1,7 +1,7 @@
 <?php
-$body_bg_type = theme_get_setting('body_bg_type'); 
-$body_bg_classes = theme_get_setting('body_bg_classes'); 
-$body_bg_image_path = theme_get_setting('body_bg_image_path'); 
+$body_bg_type = theme_get_setting('page_front_body_bg_type'); 
+$body_bg_classes = theme_get_setting('page_front_body_bg_classes'); 
+$body_bg_image_path = theme_get_setting('page_front_body_bg_image_path'); 
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">

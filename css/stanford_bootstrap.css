@@ -8,7 +8,13 @@ input, textarea, select {display: inline-block;}
 .nav-list .active > a, .nav-list .active > a:hover {background-color: #eee; color: #565347;}
 .label a {color: #fff;}
 
-/* Stanford Specific CSS */
+/* Stanford Drupal Customizations */
+ul.primary {margin: 0;}
+ul.primary li {padding: 5px 0px;}
+ul.primary li a {padding: 5px 1em;}
+ul.secondary {margin: 0;}
+
+/* Stanford Specific */
 #skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
 img {max-width: 100%;}
 h1.title {padding: 1em 0 0.5em 0;}
@@ -105,7 +111,7 @@ h1.title {padding: 1em 0 0.5em 0;}
 /* Theme Options */
 
 /* Body Background Type */
-body.photobg {background-attachment: fixed !important; background-size: cover !important; background-position:center !important; }
+body.page_front_photobg {background-attachment: fixed !important; background-size: cover !important; background-position:center !important; }
 
 /* Stanford Events Importer */
 .view-stanford-events-list label {display: inline-block; width: 15%; margin: 0 2% 0 0; vertical-align: top; text-align: right; font-weight: bold; color: #666;}

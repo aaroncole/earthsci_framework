@@ -13,9 +13,9 @@ function phptemplate_settings($saved_settings) {
    * matches the $defaults in the template.php file.
    */
   $defaults = array(
-	'body_bg_type' => '',
-	'body_bg_classes' => '',
-	'body_bg_image_path' => '',
+	'page_front_body_bg_type' => '',
+	'page_front_body_bg_classes' => '',
+	'page_front_body_bg_image_path' => '',
   );
 
   // Merge the saved variables and their default values
@@ -33,23 +33,23 @@ function phptemplate_settings($saved_settings) {
   );
   
   // Body Background Image
-  $form['background_container']['body_bg_type'] = array(
+  $form['background_container']['page_front_body_bg_type'] = array(
     '#type'          => 'radios',
-    '#title'         => t('Body background image type'),
-    '#default_value' => $settings['body_bg_type'],
+    '#title'         => t('Front page body background image type'),
+    '#default_value' => $settings['page_front_body_bg_type'],
     '#options'       => array(
       '' => t('Wallpaper pattern - <strong><em>Default</em></strong>'),
-	  'photobg ' => t('Photo image'),
+	  'page_front_photobg ' => t('Photo image'),
     ),
   );
  
- $form['background_container']['body_bg_classes'] = array(
+ $form['background_container']['page_front_body_bg_classes'] = array(
     '#type'          => 'radios',
-    '#title'         => t('Body background image'),
-    '#default_value' => $settings['body_bg_classes'],
+    '#title'         => t('Front page body background image'),
+    '#default_value' => $settings['page_front_body_bg_classes'],
     '#options'       => array(
       '' => t('None - <strong><em>Default</em></strong>'),
-	  'bodybg ' => t('Use my image (upload below):'),
+	  'page_front_bodybg ' => t('Use my image (upload below):'),
     ),
   );
   
@@ -60,31 +60,31 @@ function phptemplate_settings($saved_settings) {
 
   // Check for a freshly uploaded header image, save it to the
   // filesystem, and grab its full path for later use.
-  if ($file = file_save_upload('body_bg_image',
+  if ($file = file_save_upload('page_front_body_bg_image',
       array('file_validate_is_image' => array()))) {
     $parts = pathinfo($file->filename);
-    $filename = 'body_bg.'. $parts['extension'];
+    $filename = 'page_front_body_bg.'. $parts['extension'];
     if (file_copy($file, $filename, FILE_EXISTS_REPLACE)) {
-      $settings['body_bg_image_path'] = $file->filepath;
+      $settings['page_front_body_bg_image_path'] = $file->filepath;
     }
   }
 
   // Define the settings-related FormAPI elements.
-  $form['background_container']['body_bg_image'] = array(
+  $form['background_container']['page_front_body_bg_image'] = array(
     '#type' => 'file',
-    '#title' => t('Upload body background image in .jpg, .gif, or .png format'),
+    '#title' => t('Upload front page body background image in .jpg, .gif, or .png format'),
     '#maxlength' => 40,
   );
-  $form['background_container']['body_bg_image_path'] = array(
+  $form['background_container']['page_front_body_bg_image_path'] = array(
     '#type' => 'value',
-    '#value' => !empty($settings['body_bg_image_path']) ?
-      $settings['body_bg_image_path'] : '',
+    '#value' => !empty($settings['page_front_body_bg_image_path']) ?
+      $settings['page_front_body_bg_image_path'] : '',
   );
-  if (!empty($settings['body_bg_image_path'])) {
-    $form['background_container']['body_bg_image_preview'] = array(
+  if (!empty($settings['page_front_body_bg_image_path'])) {
+    $form['background_container']['page_front_body_bg_image_preview'] = array(
       '#type' => 'markup',
-      '#value' => !empty($settings['body_bg_image_path']) ? 
-          theme('image', $settings['body_bg_image_path']) : '',
+      '#value' => !empty($settings['page_front_body_bg_image_path']) ? 
+          theme('image', $settings['page_front_body_bg_image_path']) : '',
     );
   }
 
