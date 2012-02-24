@@ -12,23 +12,23 @@ stylesheets[all][] = css/stanford_bootstrap.css
 scripts[] = js/prettify.js
 scripts[] = js/bootstrap.min.js
 
-regions[header] = Header
-regions[nav] = Navigation
-regions[sidebar_first] = First sidebar
-regions[sidebar_second] = Second sidebar
-regions[footer] = Footer
+regions[header] = Site: Header
+regions[nav] = Site: Navigation
+regions[sidebar_first] = Site: First sidebar
+regions[sidebar_second] = Site: Second sidebar
+regions[footer] = Site: Footer
 
-regions[top] = Site: Top
-regions[upper] = Site: Upper
-regions[lower] = Site: Lower
-regions[bottom] = Site: Bottom
+regions[top] = Page: Top section
+regions[upper] = Page: Upper section
+regions[feature] = Page: Feature section
+regions[lower] = Page: Lower section
+regions[bottom] = Page: Bottom section
 
-regions[feature] = Content: Feature
-regions[content_top] = Content: Top
-regions[content_upper] = Content: Upper
-regions[content] = Content: Main
-regions[content_lower] = Content: Lower
-regions[content_bottom] = Content: Bottom
+regions[content_top] = Content: Top section
+regions[content_upper] = Content: Upper section
+regions[content] = Content: Main section
+regions[content_lower] = Content: Lower section
+regions[content_bottom] = Content: Bottom section
 
 features[] = logo
 features[] = name

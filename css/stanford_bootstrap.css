@@ -31,7 +31,7 @@ h1.title {margin: 0 0 0.5em 0; padding: 0px;}
 #top-menu form {margin: 0;}
 #user-login-form {text-align: right;}
 
-#wrapper {position: relative;}
+#site-content {position: relative;}
 
 #header {padding: 1em 0px;}
 #header #logo {float: left; margin-right: 10px;}
