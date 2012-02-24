@@ -19,7 +19,7 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body class="<?php print $body_classes; ?> <?php print $body_bg_type; ?> <?php print $body_bg_classes; ?>" <?php if ($body_bg_classes): ?>style="background: url('<?php print $body_bg_image_path; ?>') repeat top left;" <?php endif; ?>>
+<body class="<?php print $body_classes; ?> <?php print $body_bg_type; ?> <?php print $body_bg_classes; ?>" <?php if ($body_bg_classes): ?>style="background: url('<?php print check_url($front_page) . $body_bg_image_path; ?>') repeat top left;" <?php endif; ?>>
 <div id="site-content">
   <div id="skipnav">
     <p>Skip to:</p>
