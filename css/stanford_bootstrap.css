@@ -29,7 +29,7 @@ h1.title {margin: 0 0 0.5em 0; padding: 0px;}
 #top-menu ul li.last {border: none;}
 #top-menu h2, #top-menu h3 {display: none;}
 #top-menu form {margin: 0;}
-#user-login-form {text-align: right;}
+#top-menu #user-login-form {text-align: right;}
 
 #site-content {position: relative;}
 
