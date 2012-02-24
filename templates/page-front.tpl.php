@@ -56,20 +56,17 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
         <?php endif; ?>
       </div>
       <!-- /#header -->
-      <?php if ($nav): ?>
-      <div id="nav" role="navigation" class="clear-block"> <?php print $nav ?> </div>
-      <?php endif; ?>
-      <!-- /#nav -->
-      <?php if (isset($primary_links)): ?>
+      <?php if ((isset($primary_links)) || ($nav)): ?>
       <div id="navigation-primary" role="navigation" class="clear-block">
-        <?php $menu_primary = variable_get('menu_primary_links_source', 'primary-links'); print menu_tree($menu_primary); ?>
+        <?php if (($primary_links) && (isset($primary_links))): $menu_primary = variable_get('menu_primary_links_source', 'primary-links'); print menu_tree($menu_primary); endif; ?>
+        <?php if ($nav): print $nav; endif; ?>
       </div>
       <?php endif; ?>
       <!-- /#navigation-primary -->
       <?php if ($top): ?>
       <div id="top" class="row"><?php print $top ?></div>
       <?php endif; ?>
-      <!-- /#top -->      
+      <!-- /#top -->
       <div id="content">
         <div id="content-header" class="row">
           <div class="span12">
@@ -87,14 +84,14 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
             <?php endif; ?>
           </div>
         </div>
-        <!-- /#content-header -->        
+        <!-- /#content-header -->
         <div id="main" role="main" class="row">
           <?php if ($left): ?>
           <div id="sidebar-left" class="span3">
             <div class="well"><?php print $left; ?></div>
           </div>
           <?php endif; ?>
-          <!-- /#sidebar-left -->          
+          <!-- /#sidebar-left -->
           <div id="center" class="<?php if ($left && $right): print 'span6'; elseif ($left || $right): print 'span9'; else: print 'span12';	endif; ?>">
             <?php if ($feature): ?>
             <div id="feature" class="row"><?php print $feature ?></div>
@@ -113,7 +110,7 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
             <div id="content-bottom" class="row"><?php print $content_bottom; ?></div>
             <?php endif; ?>
           </div>
-          <!-- /#center -->          
+          <!-- /#center -->
           <?php if ($right): ?>
           <div id="sidebar-right" class="span3">
             <div class="well"><?php print $right; ?></div>
@@ -121,23 +118,23 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
           <?php endif; ?>
           <!-- /#sidebar-right --> 
         </div>
-        <!-- /#main -->        
+        <!-- /#main -->
         <?php if ($lower): ?>
         <div id="lower" class="row"><?php print $lower ?></div>
         <?php endif; ?>
         <!-- /#lower --> 
       </div>
-      <!--/#content-->      
+      <!--/#content-->
       <div id="footer" role="contentinfo" class="clear-block">
         <?php if (!empty($footer_message)): ?>
         <?php print $footer_message; ?>
         <?php endif; ?>
-        <?php if (isset($secondary_links)): ?>
+        <?php if (($secondary_links) && (isset($secondary_links))): ?>
         <?php $linknum_secondary = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="clear-block across-' . $linknum_secondary . '">'; $menu_secondary = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_secondary); print '</div>'; ?>
         <?php endif; ?>
         <!-- /#navigation-secondary --> 
       </div>
-      <!--/#footer-->      
+      <!--/#footer-->
       <?php if ($bottom): ?>
       <div id="bottom" class="row"><?php print $bottom ?></div>
       <?php endif; ?>

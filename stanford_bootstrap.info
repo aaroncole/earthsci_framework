@@ -18,10 +18,10 @@ regions[left] = Left sidebar
 regions[right] = Right sidebar
 regions[footer] = Footer
 
-regions[top] = Page: Top
-regions[upper] = Page: Upper
-regions[lower] = Page: Lower
-regions[bottom] = Page: Bottom
+regions[top] = Site: Top
+regions[upper] = Site: Upper
+regions[lower] = Site: Lower
+regions[bottom] = Site: Bottom
 
 regions[feature] = Content: Feature
 regions[content_top] = Content: Top
