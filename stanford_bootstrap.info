@@ -14,8 +14,8 @@ scripts[] = js/bootstrap.min.js
 
 regions[header] = Header
 regions[nav] = Navigation
-regions[left] = Left sidebar
-regions[right] = Right sidebar
+regions[sidebar_first] = First sidebar
+regions[sidebar_second] = Second sidebar
 regions[footer] = Footer
 
 regions[top] = Site: Top

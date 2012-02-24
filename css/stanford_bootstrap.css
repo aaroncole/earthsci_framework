@@ -45,13 +45,13 @@ h1.title {margin: 0 0 0.5em 0; padding: 0px;}
 #header #search .form-item, #header #search .form-submit {display: inline-block; margin: 0px;}
 
 #mission {margin: 0 0 1em 0;}
-#sidebar-left h1, #sidebar-right h1 {font-size: 1.5em; margin: 0;}
-#sidebar-left h2, #sidebar-right h2 {font-size: 1.3em; margin: 0;}
-#sidebar-left h3, #sidebar-right h3 {font-size: 1.1em; margin: 0;}
-#sidebar-left h4, #sidebar-right h4 {font-size: 1em; margin: 0;}
-#sidebar-left h5, #sidebar-right h5 {font-size: 1em; margin: 0;}
-#sidebar-left h6, #sidebar-right h6 {font-size: 1em; margin: 0;}
-#sidebar-left .item-list, #sidebar-right .item-list {margin: 1em 0;}
+#sidebar-first h1, #sidebar-second h1 {font-size: 1.5em; margin: 0;}
+#sidebar-first h2, #sidebar-second h2 {font-size: 1.3em; margin: 0;}
+#sidebar-first h3, #sidebar-second h3 {font-size: 1.1em; margin: 0;}
+#sidebar-first h4, #sidebar-second h4 {font-size: 1em; margin: 0;}
+#sidebar-first h5, #sidebar-second h5 {font-size: 1em; margin: 0;}
+#sidebar-first h6, #sidebar-second h6 {font-size: 1em; margin: 0;}
+#sidebar-first .item-list, #sidebar-second .item-list {margin: 1em 0;}
 #tabs-wrapper {margin: 1em 0;}
 
 /* Primary Navigation */

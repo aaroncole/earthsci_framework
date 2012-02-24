@@ -67,7 +67,7 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
       <div id="top" class="row"><?php print $top ?></div>
       <?php endif; ?>
       <!-- /#top -->
-      <div id="content">
+      <div id="main-content">
         <div id="content-header" class="row">
           <div class="span12">
             <?php if ($mission): print '<div id="mission">'. $mission .'</div>'; endif; ?>
@@ -86,13 +86,13 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
         </div>
         <!-- /#content-header -->
         <div id="main" role="main" class="row">
-          <?php if ($left): ?>
-          <div id="sidebar-left" class="span3">
-            <div class="well"><?php print $left; ?></div>
+          <?php if ($sidebar_first): ?>
+          <div id="sidebar-first" class="span3">
+            <div class="well"><?php print $sidebar_first; ?></div>
           </div>
           <?php endif; ?>
           <!-- /#sidebar-left -->
-          <div id="center" class="<?php if ($left && $right): print 'span6'; elseif ($left || $right): print 'span9'; else: print 'span12';	endif; ?>">
+          <div id="content" class="<?php if ($sidebar_first && $sidebar_second): print 'span6'; elseif ($sidebar_first || $sidebar_second): print 'span9'; else: print 'span12';	endif; ?>">
             <?php if ($feature): ?>
             <div id="feature" class="row"><?php print $feature ?></div>
             <?php endif; ?>
@@ -111,9 +111,9 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
             <?php endif; ?>
           </div>
           <!-- /#center -->
-          <?php if ($right): ?>
-          <div id="sidebar-right" class="span3">
-            <div class="well"><?php print $right; ?></div>
+          <?php if ($sidebar_second): ?>
+          <div id="sidebar-second" class="span3">
+            <div class="well"><?php print $sidebar_second; ?></div>
           </div>
           <?php endif; ?>
           <!-- /#sidebar-right --> 
