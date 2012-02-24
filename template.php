@@ -163,12 +163,11 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
         'data' => $li_last,
       );
     }
-    return theme('item_list', $items, NULL, 'ul', array('class' => ''));
+    return '<div class="pagination pagination-centered">' . theme('item_list', $items, NULL, 'ul', array('class' => '')) . '</div>';
   }
 }
 
 function stanford_bootstrap_item_list($items = array(), $title = NULL, $type = 'ul', $attributes = NULL) {
-  $output = '<div class="pagination pagination-centered">';
   if (isset($title)) {
     $output .= '<h3>' . $title . '</h3>';
   }
@@ -207,7 +206,6 @@ function stanford_bootstrap_item_list($items = array(), $title = NULL, $type = '
     }
     $output .= "</$type>";
   }
-  $output .= '</div>';
   return $output;
 }
 
