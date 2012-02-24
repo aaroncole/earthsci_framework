@@ -23,7 +23,7 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 img {max-width: 100%;}
 h1.title {margin: 0 0 0.5em 0; padding: 0px;}
 
-#global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #fff; padding: 10px 0 5px 0; width: 100%;}
+#global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #fff; padding: 10px 0; width: 100%;}
 #top-menu a {color: #fff;}
 #top-menu ul {float: right; margin: 0; padding: 0; line-height: 1em;}
 #top-menu ul li {display: inline; list-style: none; margin: 0 0 0 1em; padding: 0 0 0 1em;}
@@ -137,10 +137,10 @@ body.photobg {background-attachment: fixed !important; background-size: cover !i
 
 @media (max-width: 640px) {
 /* Admin Menu */
-body.admin-menu {margin-top: 60px !important;}
 #admin-menu ul a {border: none !important;}
 
 /* Top Menu */
+#top-logo {clear: both;}
 #top-menu ul {float: none; margin: 1em 0 0 0;}
 #top-menu ul li {margin: 0 1em 0 0; padding: 0.5em 1em 0 0;}
 
