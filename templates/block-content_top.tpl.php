@@ -24,7 +24,6 @@ elseif ($block_count == 2) : print 'span6';
 else: print 'span12'; 
 endif; 
 ?> block block-<?php print $block->module ?>">
-  <div class="">
   <?php if ($block->subject): ?>
   <h2><?php print $block->subject ?></h2>
   <?php endif;?>
@@ -32,5 +31,4 @@ endif;
   <?php if (user_access('administer blocks')) :?>
   <p><span class="label"><i class="icon-edit icon-white"></i> <?php print $edit_links; ?></span></p>
   <?php endif; ?>
-  </div>
 </div>

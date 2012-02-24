@@ -111,7 +111,7 @@ h1.title {margin: 0 0 0.5em 0; padding: 0px;}
 /* Theme Options */
 
 /* Body Background Type */
-body.page_front_photobg {background-attachment: fixed !important; background-size: cover !important; background-position:center !important; }
+body.photobg {background-attachment: fixed !important; background-size: cover !important;}
 
 /* Stanford Events Importer */
 .view-stanford-events-list label {display: inline-block; width: 15%; margin: 0 2% 0 0; vertical-align: top; text-align: right; font-weight: bold; color: #666;}

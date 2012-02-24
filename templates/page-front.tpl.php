@@ -1,7 +1,7 @@
 <?php
-$body_bg_type = theme_get_setting('page_front_body_bg_type'); 
-$body_bg_classes = theme_get_setting('page_front_body_bg_classes'); 
-$body_bg_image_path = theme_get_setting('page_front_body_bg_image_path'); 
+$body_bg_type = theme_get_setting('body_bg_type'); 
+$body_bg_classes = theme_get_setting('body_bg_classes'); 
+$body_bg_image_path = theme_get_setting('body_bg_image_path'); 
 ?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
@@ -15,7 +15,7 @@ $body_bg_image_path = theme_get_setting('page_front_body_bg_image_path');
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body class="<?php print $body_classes; ?> <?php print $body_bg_type; ?> <?php print $body_bg_classes; ?>" <?php if ($body_bg_classes): ?>style="background: url('<?php print check_url($front_page) . $body_bg_image_path; ?>') repeat top left;" <?php endif; ?>>
+<body class="<?php print $body_classes; ?> <?php print $body_bg_type; ?> <?php print $body_bg_classes; ?>" <?php if ($body_bg_classes): ?>style="background: url('<?php print $body_bg_image_path; ?>') repeat top left;" <?php endif; ?>>
 <div id="wrapper">
   <div id="skipnav">
     <p>Skip to:</p>
@@ -24,7 +24,6 @@ $body_bg_image_path = theme_get_setting('page_front_body_bg_image_path');
     </ul>
   </div>
   <!--/#skipnav -->
-  
   <div id="global-header">
     <div class="container">
       <div class="row">
@@ -36,125 +35,116 @@ $body_bg_image_path = theme_get_setting('page_front_body_bg_image_path');
     </div>
   </div>
   <!-- /#global-header -->
-  
-  <div id="container" class="container">
-    <div id="header" role="banner" class="clear-block">
-      <?php if ($logo): ?>
-      <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /></a> </div>
-      <?php endif; ?>
-      <div id="site">
-        <?php if ($site_name): ?>
-        <div id="name">
-          <h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><?php print $site_name; ?></a></h1>
-        </div>
+  <div id="site-content">
+    <div class="container">
+      <div id="header" role="banner" class="clear-block">
+        <?php if ($logo): ?>
+        <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /></a> </div>
         <?php endif; ?>
-        <?php if ($site_slogan): ?>
-        <div id="slogan"><?php print $site_slogan; ?></div>
+        <div id="site">
+          <?php if ($site_name): ?>
+          <div id="name">
+            <h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><?php print $site_name; ?></a></h1>
+          </div>
+          <?php endif; ?>
+          <?php if ($site_slogan): ?>
+          <div id="slogan"><?php print $site_slogan; ?></div>
+          <?php endif; ?>
+        </div>
+        <?php if($search_box): ?>
+        <div id="search" role="search"><?php print $search_box; ?></div>
         <?php endif; ?>
       </div>
-      <?php if($search_box): ?>
-      <div id="search" role="search"><?php print $search_box; ?></div>
+      <!-- /#header -->
+      <?php if ($nav): ?>
+      <div id="nav" role="navigation" class="clear-block"> <?php print $nav ?> </div>
       <?php endif; ?>
-    </div>
-    <!-- /#header -->
-    
-    <?php if ($nav): ?>
-    <div id="nav" role="navigation" class="clear-block"> <?php print $nav ?> </div>
-    <?php endif; ?>
-    <!-- /#nav -->
-    
-    <?php if (isset($primary_links)): ?>
-    <div id="navigation-primary" role="navigation" class="clear-block">
-      <?php $menu_primary = variable_get('menu_primary_links_source', 'primary-links'); print menu_tree($menu_primary); ?>
-    </div>
-    <?php endif; ?>
-    <!-- /#navigation-primary -->
-    
-    <?php if ($top): ?>
-    <div id="top" class="row"><?php print $top ?></div>
-    <?php endif; ?>
-    <!-- /#top -->
-    
-    <div id="content">
-      <div id="content-header" class="row">
-        <div class="span12">
-          <?php if ($mission): print '<div id="mission">'. $mission .'</div>'; endif; ?>
-          <?php if ($show_messages && $messages): print $messages; endif; ?>
-          <?php if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif; ?>
-          <?php if ($tabs): print $tabs; endif; ?>
-          <?php if ($tabs2): print $tabs2; endif; ?>
-          <?php if ($tabs): print '</div>'; endif; ?>
-          <?php if ($upper): ?>
-          <div id="upper" class="row"><?php print $upper ?></div>
-          <?php endif; ?>
-          <?php if ($help): ?>
-          <div id="help"><?php print $help; ?></div>
-          <?php endif; ?>
-        </div>
+      <!-- /#nav -->
+      <?php if (isset($primary_links)): ?>
+      <div id="navigation-primary" role="navigation" class="clear-block">
+        <?php $menu_primary = variable_get('menu_primary_links_source', 'primary-links'); print menu_tree($menu_primary); ?>
       </div>
-      <!-- /#content-header -->
-      
-      <div id="main" role="main" class="row">
-        <?php if ($left): ?>
-        <div id="sidebar-left" class="span3">
-          <div class="well"><?php print $left; ?></div>
+      <?php endif; ?>
+      <!-- /#navigation-primary -->
+      <?php if ($top): ?>
+      <div id="top" class="row"><?php print $top ?></div>
+      <?php endif; ?>
+      <!-- /#top -->      
+      <div id="content">
+        <div id="content-header" class="row">
+          <div class="span12">
+            <?php if ($mission): print '<div id="mission">'. $mission .'</div>'; endif; ?>
+            <?php if ($show_messages && $messages): print $messages; endif; ?>
+            <?php if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif; ?>
+            <?php if ($tabs): print $tabs; endif; ?>
+            <?php if ($tabs2): print $tabs2; endif; ?>
+            <?php if ($tabs): print '</div>'; endif; ?>
+            <?php if ($upper): ?>
+            <div id="upper" class="row"><?php print $upper ?></div>
+            <?php endif; ?>
+            <?php if ($help): ?>
+            <div id="help"><?php print $help; ?></div>
+            <?php endif; ?>
+          </div>
         </div>
+        <!-- /#content-header -->        
+        <div id="main" role="main" class="row">
+          <?php if ($left): ?>
+          <div id="sidebar-left" class="span3">
+            <div class="well"><?php print $left; ?></div>
+          </div>
+          <?php endif; ?>
+          <!-- /#sidebar-left -->          
+          <div id="center" class="<?php if ($left && $right): print 'span6'; elseif ($left || $right): print 'span9'; else: print 'span12';	endif; ?>">
+            <?php if ($feature): ?>
+            <div id="feature" class="row"><?php print $feature ?></div>
+            <?php endif; ?>
+            <?php if ($content_top): ?>
+            <div id="content-top" class="row"><?php print $content_top; ?></div>
+            <?php endif; ?>
+            <?php if ($content_upper): ?>
+            <div id="content-upper" class="row"><?php print $content_upper; ?></div>
+            <?php endif; ?>
+            <?php print $content; ?>
+            <?php if ($content_lower): ?>
+            <div id="content-lower" class="row"><?php print $content_lower; ?></div>
+            <?php endif; ?>
+            <?php if ($content_bottom): ?>
+            <div id="content-bottom" class="row"><?php print $content_bottom; ?></div>
+            <?php endif; ?>
+          </div>
+          <!-- /#center -->          
+          <?php if ($right): ?>
+          <div id="sidebar-right" class="span3">
+            <div class="well"><?php print $right; ?></div>
+          </div>
+          <?php endif; ?>
+          <!-- /#sidebar-right --> 
+        </div>
+        <!-- /#main -->        
+        <?php if ($lower): ?>
+        <div id="lower" class="row"><?php print $lower ?></div>
         <?php endif; ?>
-        <!-- /#sidebar-left -->
-        
-        <div id="center" class="<?php if ($left && $right): print 'span6'; elseif ($left || $right): print 'span9'; else: print 'span12';	endif; ?>">
-          <?php if ($feature): ?>
-          <div id="feature" class="row"><?php print $feature ?></div>
-          <?php endif; ?>
-          <?php if ($content_top): ?>
-          <div id="content-top" class="row"><?php print $content_top; ?></div>
-          <?php endif; ?>
-          <?php if ($content_upper): ?>
-          <div id="content-upper" class="row"><?php print $content_upper; ?></div>
-          <?php endif; ?>
-          <?php print $content; ?>
-          <?php if ($content_lower): ?>
-          <div id="content-lower" class="row"><?php print $content_lower; ?></div>
-          <?php endif; ?>
-          <?php if ($content_bottom): ?>
-          <div id="content-bottom" class="row"><?php print $content_bottom; ?></div>
-          <?php endif; ?>
-        </div>
-        <!-- /#center -->
-        
-        <?php if ($right): ?>
-        <div id="sidebar-right" class="span3">
-          <div class="well"><?php print $right; ?></div>
-        </div>
-        <?php endif; ?>
-        <!-- /#sidebar-right --> 
+        <!-- /#lower --> 
       </div>
-      <!-- /#main -->
-      
-      <?php if ($lower): ?>
-      <div id="lower" class="row"><?php print $lower ?></div>
+      <!--/#content-->      
+      <div id="footer" role="contentinfo" class="clear-block">
+        <?php if (!empty($footer_message)): ?>
+        <?php print $footer_message; ?>
+        <?php endif; ?>
+        <?php if (isset($secondary_links)): ?>
+        <?php $linknum_secondary = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="clear-block across-' . $linknum_secondary . '">'; $menu_secondary = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_secondary); print '</div>'; ?>
+        <?php endif; ?>
+        <!-- /#navigation-secondary --> 
+      </div>
+      <!--/#footer-->      
+      <?php if ($bottom): ?>
+      <div id="bottom" class="row"><?php print $bottom ?></div>
       <?php endif; ?>
-      <!-- /#lower --> 
+      <!-- /#bottom --> 
     </div>
-    <!--/#content-->
-    
-    <div id="footer" role="contentinfo" class="clear-block">
-      <?php if (!empty($footer_message)): ?>
-      <?php print $footer_message; ?>
-      <?php endif; ?>
-      <?php if (isset($secondary_links)): ?>
-      <?php $linknum_secondary = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="clear-block across-' . $linknum_secondary . '">'; $menu_secondary = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_secondary); print '</div>'; ?>
-      <?php endif; ?>
-      <!-- /#navigation-secondary -->
-    </div>
-    <!--/#footer-->
-    
-    <?php if ($bottom): ?>
-    <div id="bottom" class="row"><?php print $bottom ?></div>
-    <?php endif; ?>
-    <!-- /#bottom --> 
   </div>
-  <!--/#container-->
+  <!--/#site-content-->
   <div id="global-footer">
     <div class="container">
       <?php if ($footer): ?>
