@@ -88,13 +88,13 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
         </div>
         <!-- /#content-header -->
         <div id="content" class="row">
-          <?php if ($sidebar_first): ?>
+          <?php if ($left): ?>
           <div id="sidebar-first" class="span3">
-            <div class="well"><?php print $sidebar_first; ?></div>
+            <div class="well"><?php print $left; ?></div>
           </div>
           <?php endif; ?>
           <!-- /#sidebar-first -->
-          <div id="main" role="main" class="<?php if ($sidebar_first && $sidebar_second): print 'span6'; elseif ($sidebar_first || $sidebar_second): print 'span9'; else: print 'span12';	endif; ?>">
+          <div id="main" role="main" class="<?php if ($left && $right): print 'span6'; elseif ($left || $right): print 'span9'; else: print 'span12';	endif; ?>">
             <?php if ($content_top): ?>
             <div id="content-top" class="row"><?php print $content_top; ?></div>
             <?php endif; ?>
@@ -110,9 +110,9 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
             <?php endif; ?>
           </div>
           <!-- /#main -->
-          <?php if ($sidebar_second): ?>
+          <?php if ($right): ?>
           <div id="sidebar-second" class="span3">
-            <div class="well"><?php print $sidebar_second; ?></div>
+            <div class="well"><?php print $right; ?></div>
           </div>
           <?php endif; ?>
           <!-- /#sidebar-second --> 
