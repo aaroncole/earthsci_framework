@@ -141,7 +141,7 @@ body.photobg {background-attachment: fixed !important; background-size: cover !i
 
 /* Top Menu */
 #top-logo {clear: both;}
-#top-menu ul {float: none; margin: 1em 0 0 0;}
+#top-menu ul {float: none; padding: 1em 0 0 0;}
 #top-menu ul li {margin: 0 1em 0 0; padding: 0.5em 1em 0 0;}
 
 /* Secondary Navigation */
