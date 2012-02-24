@@ -56,9 +56,9 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
         <?php endif; ?>
       </div>
       <!-- /#header -->
-      <?php if ((isset($primary_links)) || ($nav)): ?>
+      <?php if (($primary_links && (isset($primary_links))) || $nav): ?>
       <div id="navigation-primary" role="navigation" class="clear-block">
-        <?php if (($primary_links) && (isset($primary_links))): $menu_primary = variable_get('menu_primary_links_source', 'primary-links'); print menu_tree($menu_primary); endif; ?>
+        <?php if ($primary_links && (isset($primary_links))): $menu_primary = variable_get('menu_primary_links_source', 'primary-links'); print menu_tree($menu_primary); endif; ?>
         <?php if ($nav): print $nav; endif; ?>
       </div>
       <?php endif; ?>
@@ -130,7 +130,7 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
         <?php if (!empty($footer_message)): ?>
         <?php print $footer_message; ?>
         <?php endif; ?>
-        <?php if (($secondary_links) && (isset($secondary_links))): ?>
+        <?php if ($secondary_links && (isset($secondary_links))): ?>
         <?php $linknum_secondary = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="clear-block across-' . $linknum_secondary . '">'; $menu_secondary = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_secondary); print '</div>'; ?>
         <?php endif; ?>
         <!-- /#navigation-secondary --> 
