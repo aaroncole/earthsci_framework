@@ -1,0 +1,151 @@
+/* Stanford Bootstrap Customizations */
+body {color: #2e2d29; font: 0.78em Arial, Helvetica, sans-serif; margin: 0px; padding: 0px;}
+a {color: #565347;}
+a:hover {color: #565347;}
+.nav-pills .active > a {color: #565347;}
+.nav-pills .active > a:hover {color: #565347;}
+.nav-list .active > a {background-color: #ddd; color: #565347;}
+.nav-list .active > a:hover {color: #565347;}
+.label a {color: #fff;}
+
+/* Stanford Drupal Customizations */
+ul.primary {margin: 0;}
+ul.primary li {padding: 5px 0px;}
+ul.primary li a {padding: 5px 1em;}
+ul.secondary {margin: 0;}
+input[type="button"], input[type="reset"], input[type="submit"] {-moz-border-bottom-colors: none; -moz-border-image: none; -moz-border-left-colors: none; -moz-border-right-colors: none; -moz-border-top-colors: none; background-color: #F5F5F5; background-image: -moz-linear-gradient(center top , #FFFFFF, #E6E6E6); background-repeat: repeat-x; border-color: #CCCCCC #CCCCCC #BBBBBB; border-radius: 4px 4px 4px 4px; border-style: solid; border-width: 1px; box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); color: #333333; cursor: pointer; display: inline-block; font-size: 13px; line-height: 18px; margin-bottom: 0; padding: 4px 10px; text-align: center; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle;}
+input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {color: #333333; text-decoration: none; background-color: #e6e6e6; background-position: 0 -15px; -webkit-transition: background-position 0.1s linear; -moz-transition: background-position 0.1s linear; -ms-transition: background-position 0.1s linear; -o-transition: background-position 0.1s linear; transition: background-position 0.1s linear;}
+input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {background-image: none; -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.05); background-color: #e6e6e6; background-color: #d9d9d9 \9; outline: 0;}
+
+/* Stanford Specific */
+#skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
+img {max-width: 100%;}
+h1.title {margin: 0 0 0.5em 0; padding: 0px;}
+
+#global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #fff; padding: 10px 0; width: 100%;}
+#top-menu a {color: #fff;}
+#top-menu ul {float: right; margin: 0; padding: 0; line-height: 1em;}
+#top-menu ul li {display: inline; list-style: none; margin: 0 0 0 1em; padding: 0 0 0 1em;}
+#top-menu ul li.last {border: none;}
+#top-menu h2, #top-menu h3 {display: none;}
+#top-menu form {margin: 0;}
+#top-menu #user-login-form {text-align: right;}
+
+#site-content {position: relative;}
+
+#header {padding: 1em 0px;}
+#header #logo {float: left; margin-right: 10px;}
+#header #site {float: left; margin: 1em 0;}
+#header #site h1 a {color: #3f3c30; text-decoration: none;}
+#header #site h1 a:hover {text-decoration: none;}
+#header #slogan {font-size: 1.5em;}
+#header #search {float: right;}
+#header #search .form-text {height: 1em; margin: 0; padding: 5px;}
+#header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
+#header #search .form-item, #header #search .form-submit {display: inline-block; margin: 0px;}
+
+#mission {margin: 0 0 1em 0;}
+#tabs-wrapper {margin: 1em 0;}
+
+/* Primary Navigation */
+#navigation-primary {clear: both; margin: 1em 0; padding: 0; position: relative; font-size: 1.1em;}
+#navigation-primary ul {margin: 0px; padding: 0px; list-style: none;}
+#navigation-primary ul li {float: left; background: none; list-style: none; margin: 0 2px 0 0 ; padding: 0;}
+#navigation-primary ul li a {display: block; border: 0; outline: none; margin: 2px 0px; padding: 5px 10px; border-radius: 5px;}
+#navigation-primary ul li a.active {background-color: #ddd;}
+#navigation-primary ul li a:hover {text-decoration: none; background-color: #eee;}
+#navigation-primary ul li ul {margin: 0px; padding: 0px;}
+#navigation-primary ul li ul li {float: none; list-style-type: none; margin: 0px; padding: 0px;}
+#navigation-primary h2 {display: none;}
+#navigation-primary ul li ul .leaf {display: none; float: none;}
+#navigation-primary ul li:hover ul {display: block; position: absolute; z-index: 9999; margin: 0; padding: 4px 0; background-clip: padding-box; background-color: #FFF; border-color: rgba(0, 0, 0, 0.2); border-radius: 0 0 5px 5px; border-style: solid; border-width: 1px; box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); list-style: none outside none; min-width: 160px;}
+#navigation-primary ul li:hover .leaf {display: block;}
+#navigation-primary ul li:hover .leaf a {display: block; font-size: 0.9em; border: none; padding: 2px 10px; border-radius: 0;}
+
+/* Secondary Navigation */
+#navigation-secondary {margin: 1em 0 0 0;}
+#navigation-secondary ul {margin: 0; list-style: none;}
+#navigation-secondary ul li {border-top: 1px solid #bbb; float: left; margin: 0; list-style: none; padding-top: 3px;}
+#navigation-secondary ul li.last {margin: 0;} 
+#navigation-secondary ul li.expanded {padding-right: 0;}
+#navigation-secondary ul li.leaf {padding-right: 0;}
+#navigation-secondary ul li a {font-size: 1em; font-weight: bold; line-height: 2em; text-transform: uppercase;}
+#navigation-secondary ul li ul li {border: none; clear: both;}
+#navigation-secondary ul li ul li.leaf {padding-top: 0;}
+#navigation-secondary ul li ul li a {font-size: 0.9em; font-weight: normal; line-height: 1em; text-transform: none;}
+#navigation-secondary.across-1 ul li {width: 100%; margin: 0;}
+#navigation-secondary.across-1 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-2 ul li {width: 49%; margin: 0 2% 0 0;}
+#navigation-secondary.across-2 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-2 ul li:last-child {margin: 0;}
+#navigation-secondary.across-3 ul li {width: 32%; margin: 0 2% 0 0;}
+#navigation-secondary.across-3 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-3 ul li:last-child {margin: 0;}
+#navigation-secondary.across-4 ul li {width: 23.5%; margin: 0 2% 0 0;}
+#navigation-secondary.across-4 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-4 ul li:last-child {margin: 0;}
+#navigation-secondary.across-5 ul li {width: 18.4%; margin: 0 2% 0 0;}
+#navigation-secondary.across-5 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-5 ul li:last-child {margin: 0;}
+#navigation-secondary.across-6 ul li {width: 15%; margin: 0 2% 0 0;}
+#navigation-secondary.across-6 ul li ul li {width: auto; margin: 0;}
+#navigation-secondary.across-6 ul li:last-child {margin: 0;}
+
+#footer {margin: 40px 0px;}
+
+#global-footer {background-color: #8c1515; background-image: url(../images/footer-bg.png); background-position: top center; background-repeat: no-repeat; color: #e3dfd5; font-size: 0.9em; line-height: 1em; padding: 30px 0 60px 0; width: 100%;}
+#global-footer .vcard {font-size: 1em}
+#bottom-logo {padding: 0 0 1em 0;}
+#bottom-text a, #bottom-text .tel {color: #e3dfd5;}
+#bottom-menu {margin: 0 0 0.4em 0;}
+#bottom-menu a {color: #e3dfd5;}
+#bottom-menu ul {margin: 0; padding: 0; line-height: 1em;}
+#bottom-menu ul li {float: left; list-style: none; margin: 0 1em 0 0; padding: 0 1em 0 0;}
+
+/* Theme Options */
+
+/* Body Background Type */
+body.photobg {background-attachment: fixed !important; background-size: cover !important;}
+
+/* Stanford Events Importer */
+.view-stanford-events-list label {display: inline-block; width: 15%; margin: 0 2% 0 0; vertical-align: top; text-align: right; font-weight: bold; color: #666;}
+.view-stanford-events-list .field-content {display: inline-block; width: 80%; vertical-align: top;}
+.view-stanford-events-list .views-field-title .field-content {width: auto;}
+.view-stanford-events-list .views-row {margin: 0 0 1em 0; padding: 1em;}
+.view-stanford-events-list .views-row .views-field-title {margin: 0 0 1em 0;}
+.view-stanford-events-list .views-row .views-field-title a {font-size: 1.5em; font-weight: bold;}
+.view-stanford-events-list .views-row-odd {border-top: 1px solid #bbb; border-bottom: 1px solid #bbb; background: #eee;}
+
+/* Mobile Styles */
+@media (max-width: 980px) {
+/* Search */
+#header #search {position:absolute; bottom: 0px; padding: 0 0 1em 0; float:none; clear:both; width: 100%;}
+}
+
+@media (max-width: 768px) {
+/* Header */
+#header #logo {display: none;}
+}
+
+@media (max-width: 640px) {
+/* Admin Menu */
+#admin-menu ul a {border: none !important;}
+
+/* Top Menu */
+#top-logo {clear: both;}
+#top-menu ul {float: none; display: block; margin: 1em 0 0 0;}
+#top-menu ul li {display: inline-blocks; margin: 0 1em 0 0; padding: 0 1em 0 0;}
+
+/* Secondary Navigation */
+#navigation-secondary ul li {clear: both; padding-bottom: 0.25em;}
+#navigation-secondary.across-1 ul li,
+#navigation-secondary.across-2 ul li,
+#navigation-secondary.across-3 ul li,
+#navigation-secondary.across-4 ul li,
+#navigation-secondary.across-5 ul li,
+#navigation-secondary.across-6 ul li {width:100%; margin: 0px;}
+
+/* Stanford Events Importer */
+.view-stanford-events-list label {width: 30%;}
+.view-stanford-events-list .field-content {width: 65%;}
+}

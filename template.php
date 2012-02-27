@@ -1,5 +1,5 @@
 <?php
-function stanford_bootstrap_preprocess_page(&$vars) {
+function stanford_framework_preprocess_page(&$vars) {
   // Add page template suggestions based on the aliased path. For instance, if the current page has an alias of about/history/early, we'll have templates of:
   // page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
   // Whichever is found first is the one that will be used.
@@ -15,7 +15,7 @@ function stanford_bootstrap_preprocess_page(&$vars) {
   }
 }
 
-function stanford_bootstrap_preprocess_block(&$vars) {
+function stanford_framework_preprocess_block(&$vars) {
   // Count number of blocks in a given theme region
 	$vars['block_count'] = count(block_list($vars['block']->region));
 }
@@ -47,7 +47,7 @@ function region_has_block($test_region) {
 }
 
 /* Status Messages (Error, Status, Alert) */
-function stanford_bootstrap_status_messages($display = NULL) {
+function stanford_framework_status_messages($display = NULL) {
   $output = '';
   foreach (drupal_get_messages($display) as $type => $messages) {
 	if ($type == "error") {$alert = 'alert alert-error';}
@@ -70,7 +70,7 @@ function stanford_bootstrap_status_messages($display = NULL) {
 }
 
 /* Pager and Pagination */
-function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 9) {
+function stanford_framework_pager($tags = array(), $limit = 10, $element = 0, $parameters = array(), $quantity = 9) {
   global $pager_page_array, $pager_total;
   // Calculate various markers within this pager piece:
   // Middle is used to "center" pages around the current page.
@@ -167,7 +167,7 @@ function stanford_bootstrap_pager($tags = array(), $limit = 10, $element = 0, $p
   }
 }
 
-function stanford_bootstrap_item_list($items = array(), $title = NULL, $type = 'ul', $attributes = NULL) {
+function stanford_framework_item_list($items = array(), $title = NULL, $type = 'ul', $attributes = NULL) {
   if (isset($title)) {
     $output .= '<h3>' . $title . '</h3>';
   }
@@ -210,7 +210,7 @@ function stanford_bootstrap_item_list($items = array(), $title = NULL, $type = '
 }
 
 /* Primary and Secondary Tabs */
-function stanford_bootstrap_menu_local_tasks() {
+function stanford_framework_menu_local_tasks() {
   $output = '';
   if ($primary = menu_primary_local_tasks()) {
     $output .= "<ul class=\"tabs primary nav-tabs\">\n". $primary ."</ul>\n";
