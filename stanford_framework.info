@@ -9,9 +9,9 @@ stylesheets[all][] = css/bootstrap-responsive.min.css
 stylesheets[all][] = css/prettify.css
 stylesheets[all][] = css/stanford_framework.css
 
+scripts[] = js/stanford_framework.js
 scripts[] = js/prettify.js
 scripts[] = js/bootstrap.min.js
-scripts[] = js/stanford_framework.js
 
 regions[header] = Site: Header
 regions[nav] = Site: Navigation
