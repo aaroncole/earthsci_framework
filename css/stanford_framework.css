@@ -38,7 +38,7 @@ h1.title {margin: 0 0 0.5em 0; padding: 0px;}
 #header #site {float: left; margin: 1em 0;}
 #header #site h1 a {color: #3f3c30; text-decoration: none;}
 #header #site h1 a:hover {text-decoration: none;}
-#header #slogan {font-size: 1.5em;}
+#header #slogan {margin: 0.25em 0; font-size: 1.5em;}
 #header #search {float: right; margin: 1em 0;}
 #header #search .form-text {height: 1em; margin: 0; padding: 5px;}
 #header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
