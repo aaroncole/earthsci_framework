@@ -22,6 +22,9 @@ input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:ac
 img {max-width: 100%;}
 h1.title {margin: 0 0 0.5em 0; padding: 0px;}
 
+/* Last Modified */
+.last-modified {clear: both; font-size: 0.9em; padding-top: 2em;}
+
 #global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #fff; padding: 10px 0; width: 100%;}
 #top-menu a {color: #fff;}
 #top-menu ul {float: right; margin: 0; padding: 0; line-height: 1em;}
