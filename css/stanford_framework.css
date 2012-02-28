@@ -39,7 +39,7 @@ h1.title {margin: 0 0 0.5em 0; padding: 0px;}
 #header #site h1 a {color: #3f3c30; text-decoration: none;}
 #header #site h1 a:hover {text-decoration: none;}
 #header #slogan {font-size: 1.5em;}
-#header #search {float: right;}
+#header #search {float: right; margin: 1em 0;}
 #header #search .form-text {height: 1em; margin: 0; padding: 5px;}
 #header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
 #header #search .form-item, #header #search .form-submit {display: inline-block; margin: 0px;}
@@ -119,7 +119,7 @@ body.photobg {background-attachment: fixed !important; background-size: cover !i
 /* Mobile Styles */
 @media (max-width: 980px) {
 /* Search */
-#header #search {position:absolute; bottom: 0px; padding: 0 0 1em 0; float:none; clear:both; width: 100%;}
+#header #search {position:absolute; bottom: 0; padding: 0; float: none; clear: both; width: auto;}
 }
 
 @media (max-width: 768px) {

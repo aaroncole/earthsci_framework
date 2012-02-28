@@ -3,21 +3,18 @@ $edit_links = l(t('edit block'), 'admin/build/block/configure/'. $block->module 
 ?>
 
 <div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="<?php
-
 if (((region_has_block('left')) && (region_has_block('right'))) && (($block_count == 4) && ($block_id == 1))): print 'span2';
 elseif (((region_has_block('left')) && (region_has_block('right'))) && (($block_count == 4) && ($block_id == 2))): print 'span2';
 elseif (((region_has_block('left')) && (region_has_block('right'))) && ($block_count == 4)) : print 'span1'; 
 elseif (((region_has_block('left')) && (region_has_block('right'))) && ($block_count == 3)) : print 'span2'; 
 elseif (((region_has_block('left')) && (region_has_block('right'))) && ($block_count == 2)) : print 'span3';
 elseif (((region_has_block('left')) && (region_has_block('right'))) && ($block_count == 1)) : print 'span6'; 
-
 elseif (((region_has_block('left')) || (region_has_block('right'))) && (($block_count == 4) && ($block_id == 1))): print 'span3';
 elseif (((region_has_block('left')) || (region_has_block('right'))) && ($block_count == 4)) : print 'span2'; 
 elseif (((region_has_block('left')) || (region_has_block('right'))) && ($block_count == 3)) : print 'span3'; 
 elseif (((region_has_block('left')) || (region_has_block('right'))) && (($block_count == 2) && ($block_id == 1))): print 'span3';
 elseif (((region_has_block('left')) || (region_has_block('right'))) && (($block_count == 2) && ($block_id == 2))): print 'span6'; 
 elseif (((region_has_block('left')) || (region_has_block('right'))) && ($block_count == 1)) : print 'span9'; 
-
 elseif ($block_count == 4) : print 'span3';
 elseif ($block_count == 3) : print 'span4';
 elseif ($block_count == 2) : print 'span6';
