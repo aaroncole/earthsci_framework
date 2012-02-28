@@ -11,6 +11,7 @@ stylesheets[all][] = css/stanford_framework.css
 
 scripts[] = js/prettify.js
 scripts[] = js/bootstrap.min.js
+scripts[] = js/stanford_framework.js
 
 regions[header] = Site: Header
 regions[nav] = Site: Navigation
