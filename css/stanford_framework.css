@@ -1,7 +1,4 @@
 /* Content Specific Formatting --------------------------------- */
-a {text-decoration: none; border-bottom: 1px dotted #81785a; color: #565347;}
-a:focus {outline:1px #8a887d dotted; border: 0px;}
-a:hover {color: #820000;}
 p {font-size: 1em; line-height: 1.5em; margin: 0 0 1em 0;}
 blockquote {margin: 1.25em; padding: 1.25em 1.25em 0 1.25em;}
 em {padding: 0 3px 0 0;}
@@ -26,21 +23,10 @@ fieldset { background: #fff; border: 1px solid #eee3c1; margin: 1em 0; padding: 
 fieldset legend a {border: 0px;}
 fieldset legend {color: #333;}
 iframe {border: 0px;}
-#main h1 {color: #820000; font-size: 2.2em; letter-spacing: 0.08em;}
-#main #onthispage h1 {font-size: 0.85em; padding: 0px 0px 5px 0px; margin: 0px; color: #565245;}
-#skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
 
 /* Base Formatting --------------------------------- */
 pre {font-size: 1.2em; font-weight: bold;}
 code {font-size: 1.2em; font-weight: bold;}
-
-/* Hide from IE5-mac. Only IE-win sees this. \*/
-* html pre {font-size: 1em; font-weight: bold;}
-*:first-child+html pre {font-size: 1em; font-weight: bold;}
-* html code {font-size: 1em; font-weight: bold;}
-*:first-child+html code {font-size: 1em; font-weight: bold;}
-
-/* End hide from IE5-mac */
 form {margin: 0px;}
 map {margin: 0px;}
 .inline {display: inline;}
