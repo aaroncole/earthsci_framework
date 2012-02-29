@@ -207,6 +207,8 @@ a:hover {color: #565347;}
 .label a {color: #fff;}
 
 /* Stanford Drupal Customizations */
+.block ul {margin: 0; padding: 0 0 1em 1em;}
+.block ol {margin: 0; padding: 0 0 1em 1em;}
 ul.primary {margin: 0;}
 ul.primary li {padding: 5px 0px;}
 ul.primary li a {padding: 5px 1em;}
