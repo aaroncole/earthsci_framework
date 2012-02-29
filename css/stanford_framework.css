@@ -1,3 +1,215 @@
+/* Content Specific Formatting --------------------------------- */
+a {text-decoration: none; border-bottom: 1px dotted #81785a; color: #565347;}
+a:focus {outline:1px #8a887d dotted; border: 0px;}
+a:hover {color: #820000;}
+p {font-size: 1em; line-height: 1.5em; margin: 0 0 1em 0;}
+blockquote {margin: 1.25em; padding: 1.25em 1.25em 0 1.25em;}
+em {padding: 0 3px 0 0;}
+hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; padding: 0;}
+img, a img {border: none; outline: none;}
+dl { margin: .5em 0 1em; padding: 0; line-height: 1.5em;}
+dl dt {margin: 0 0 .5em 0;}
+dl dd { margin: 0 0 .5em 1.5em;}
+ol { margin: .5em 0 1em 1.5em; padding: 0; line-height: 1.5em;}
+ol li {margin: 0px 0px 0.5em 0.5em; padding: 0px;}
+ul { margin: .5em 0 1em 1.5em; padding: 0; line-height: 1.5em;}
+ul li {margin: 0px 0px 0.5em 0.5em; padding: 0px;}
+table { margin: 1em 0; width: 100%; border: 0px;}
+thead th { color: #494949; font-weight: 700; border: 0px;}
+tbody { border: 0px;}
+th a:link, th a:visited { color: #7f7f7f; }
+td, th { padding: .3em .5em;}
+quote, code { margin: .5em 0;}
+input { color: #494949;}
+textarea, select { color: #494949;}
+fieldset { background: #fff; border: 1px solid #eee3c1; margin: 1em 0; padding: 0 1em;}
+fieldset legend a {border: 0px;}
+fieldset legend {color: #333;}
+iframe {border: 0px;}
+#main h1 {color: #820000; font-size: 2.2em; letter-spacing: 0.08em;}
+#main #onthispage h1 {font-size: 0.85em; padding: 0px 0px 5px 0px; margin: 0px; color: #565245;}
+#skipnav {position: absolute; left: -1000em; width: 20em; text-align: left;}
+
+/* Base Formatting --------------------------------- */
+pre {font-size: 1.2em; font-weight: bold;}
+code {font-size: 1.2em; font-weight: bold;}
+
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html pre {font-size: 1em; font-weight: bold;}
+*:first-child+html pre {font-size: 1em; font-weight: bold;}
+* html code {font-size: 1em; font-weight: bold;}
+*:first-child+html code {font-size: 1em; font-weight: bold;}
+
+/* End hide from IE5-mac */
+form {margin: 0px;}
+map {margin: 0px;}
+.inline {display: inline;}
+.inline-end {margin-top: 15px;}
+
+/* Horizontal Rule --------------------------------- */
+hr {background: #eae9e6; color: #eae9e6; border: none; height: 1px; margin: 0; padding: 0;}
+hr.brown {background: #D0A760; color: #D0A760; border: none; height: 1px; margin: 0; padding: 0;}
+hr.gold {background: #E7D19A; color: #E7D19A; border: none; height: 1px; margin: 0; padding: 0;}
+hr.red {background: #820000; color: #820000; border: none; height: 1px; margin: 0; padding: 0;}
+
+/* Default Link --------------------------------- */
+sup a {text-decoration: none;}
+sub a {text-decoration: none;}
+
+/* Unordered List --------------------------------- */
+ul {list-style: square; margin-top:0px;}
+ul li {margin-bottom: 0px;}
+ul.linebreak {list-style: square;}
+ul.linebreak li {margin-bottom: 0.5em;}
+ul.linebreak ol li {margin-bottom: 0px;}
+ul.square {list-style: square;}
+ul.square li {margin-bottom: 0px;}
+ul.square-linebreak {list-style: square;}
+ul.square-linebreak li {margin-bottom: 0.5em;}
+ul.square-linebreak ol li {margin-bottom: 0px;}
+ul.disc {list-style: disc;}
+ul.disc li {margin-bottom: 0px;}
+ul.disc-linebreak {list-style: disc;}
+ul.disc-linebreak li {margin-bottom: 0.5em;}
+ul.disc-linebreak ol li {margin-bottom: 0px;}
+ul.circle {list-style: circle;}
+ul.circle li {margin-bottom: 0px;}
+ul.circle-linebreak {list-style: circle;}
+ul.circle-linebreak li {margin-bottom: 0.5em;}
+ul.circle-linebreak ol li {margin-bottom: 0px;}
+ul.uncheck, ul li.uncheck {list-style-image: url("../images/unchecked-box-bullet.gif");}
+ul.uncheck li {margin-bottom: 0px;}
+ul.uncheck-linebreak {list-style-image: url("../images/unchecked-box-bullet.gif");}
+ul.uncheck-linebreak li {margin-bottom: 0.5em;}
+ul.uncheck-linebreak ol li {margin-bottom: 0px;}
+ul.check, ul li.check {list-style-image: url("../images/checked-box-bullet.gif");}
+ul.check li {margin-bottom: 0px;}
+ul.check-linebreak {list-style-image: url("../images/checked-box-bullet.gif");}
+ul.check-linebreak li {margin-bottom: 0.5em;}
+ul.check-linebreak ol li {margin-bottom: 0px;}
+ul.none {list-style: none;}
+ul.none li {margin-bottom: 0px;}
+ul.none-linebreak {list-style: none;}
+ul.none-linebreak li {margin-bottom: 0.5em;}
+ul.none-linebreak ol li {margin-bottom: 0px;}
+
+/* Ordered List --------------------------------- */
+ol {list-style: decimal; margin-top: 0px;}
+ol li {margin-bottom: 0px;}
+ol.linebreak {list-style: decimal;}
+ol.linebreak li {margin-bottom: 0.5em;}
+ol.linebreak ul li {margin-bottom: 0px;}
+ol.decimal {list-style: decimal;}
+ol.decimal li {margin-bottom: 0px;}
+ol.decimal-linebreak {list-style: decimal;}
+ol.decimal-linebreak li {margin-bottom: 0.5em;}
+ol.decimal-linebreak ul li {margin-bottom: 0px;}
+ol.lroman {list-style: lower-roman;}
+ol.lroman li {margin-bottom: 0px;}
+ol.lroman-linebreak {list-style: lower-roman;}
+ol.lroman-linebreak li {margin-bottom: 0.5em;}
+ol.lroman-linebreak ul li {margin-bottom: 0px;}
+ol.uroman {list-style: upper-roman;}
+ol.uroman li {margin-bottom: 0px;}
+ol.uroman-linebreak {list-style: upper-roman;}
+ol.uroman-linebreak li {margin-bottom: 0.5em;}
+ol.uroman-linebreak ul li {margin-bottom: 0px;}
+ol.lalpha {list-style: lower-alpha;}
+ol.lalpha li {margin-bottom: 0px;}
+ol.lalpha-linebreak {list-style: lower-alpha;}
+ol.lalpha-linebreak li {margin-bottom: 0.5em;}
+ol.lalpha-linebreak ul li {margin-bottom: 0px;}
+ol.ualpha {list-style: upper-alpha;}
+ol.ualpha li {margin-bottom: 0px;}
+ol.ualpha-linebreak {list-style: upper-alpha;}
+ol.ualpha-linebreak li {margin-bottom: 0.5em;}
+ol.ualpha-linebreak ul li {margin-bottom: 0px;}
+
+/* Definition Lists --------------------------------- */
+dl dt {margin-top: 0px; margin-bottom: 0px;}
+dl dd {margin-top: 0px; margin-bottom: 0.5em;}
+dl.linebreak dd {margin-top: 0px; margin-bottom: 1em;}
+dl.nobreak dd {margin-top: 0px; margin-bottom: 0px;}
+
+/* Table --------------------------------- */
+table.sitemap {background: transparent; width: 100%; border: none; padding: 3px; line-height: 1.5em; margin-top: 0px;}
+table.sitemap th {text-align: left; padding-bottom: 0.3em; padding-top: 1em; color: #820000;}
+table.sitemap td {padding-left: 1em; vertical-align: top;}
+table.noborder {background: transparent; margin: 0px 0px 15px 0px; border: none;}
+table.noborder th {text-align: center; background: transparent; color: #333; padding: 0px 10px 0px 0px; border: none;}
+table.noborder td {background: transparent; color: #333; padding: 0px 10px 0px 0px; vertical-align: top; border: none;}
+table.noborder td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
+table.noborder td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
+table.red-header {width: 100%; background: #bbb; margin: 0px 0px 15px 0px; border: 1px solid #bbb; border-collapse:collapse;}
+table.red-header th {text-align: center; background: #820000; color: #fff; padding: 2px; border: 1px solid #bbb;}
+table.red-header th a {color: #fff; text-decoration:underline;}
+table.red-header th a:link {color: #fff;}
+table.red-header th a:visited {color: #fff;}
+table.red-header th a:hover {color: #fff;}
+table.red-header th a:active {color: #fff;}
+table.red-header td {background: #fff; color: #333; padding: 2px; vertical-align: top; border: 1px solid #bbb;}
+table.red-header td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
+table.red-header td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
+table.gray-header {width: 100%; background: #bbb; margin: 0px 0px 15px 0px; border: 1px solid #bbb; border-collapse:collapse;}
+table.gray-header th {text-align: center; background: #ccc; color: #666; padding: 2px; border: 1px solid #bbb;}
+table.gray-header th a {color: #666; text-decoration:underline;}
+table.gray-header th a:link {color: #666;}
+table.gray-header th a:visited {color: #666;}
+table.gray-header th a:hover {color: #666;}
+table.gray-header th a:active {color: #666;}
+table.gray-header td {background: #fff; color: #333; padding: 2px; vertical-align: top; border: 1px solid #bbb;}
+table.gray-header td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
+table.gray-header td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
+table.gold-header {width: 100%; background: #bbb; margin: 0px 0px 15px 0px; border: 1px solid #bbb; border-collapse:collapse;}
+table.gold-header th {text-align: center; background: #eee3c1; color: #666; padding: 2px; border: 1px solid #bbb;}
+table.gold-header th a {color: #666; text-decoration:underline;}
+table.gold-header th a:link {color: #666;}
+table.gold-header th a:visited {color: #666;}
+table.gold-header th a:hover {color: #666;}
+table.gold-header th a:active {color: #666;}
+table.gold-header td {background: #fff; color: #333; padding: 2px; vertical-align: top; border: 1px solid #bbb;}
+table.gold-header td ul {padding: 0px 0px 0px 0.8em; margin: 0px 0px 0px 0.8em;}
+table.gold-header td ol {padding: 0px 0px 0px 1em; margin: 0px 0px 0px 1em;}
+table th.side-header, table th.side-header-vertical {background: #F7F6EC; color: #5a5a5a;}
+table th.alternate {background: #eee;}
+table tr.alternate td {background: #eee;}
+table td.alternate {background: #eee;}
+
+/* Images--------------------------------- */
+img {border: 0px;}
+.right-noborder {float: right; margin: 0px 0px 5px 10px;}
+.right-border {float: right; margin: 0px 0px 5px 10px; border: 1px solid #bbb;}
+.left-noborder {float: left; margin: 0px 10px 5px 0px;}
+.left-border {float: left; margin: 0px 10px 5px 0px; border: 1px solid #bbb;}
+
+/* Text--------------------------------- */
+.last {margin: 0px; padding: 0px;}
+.box h1, .box h2, .box h3, .box h4, .box h5 {margin-top: 0px;}
+.color-box h1, .color-box h2, .color-box h3, .color-box h4, .color-box h5 {margin-top: 0px;}
+.center-box h1, .center-box h2, .center-box h3, .center-box h4, .center-box h5 {margin-top: 0px;}
+.left-box h1, .left-box h2, .left-box h3, .left-box h4, .left-box h5 {margin-top: 0px;}
+.right-box h1, .right-box h2, .right-box h3, .right-box h4, .right-box h5 {margin-top: 0px;}
+
+/* Font Settings--------------------------------- */
+.largest {font-size: 1.3em;}
+.larger {font-size: 1.2em;}
+.large {font-size: 1.1em;}
+.medium {font-size: 1em;}
+.small {font-size: 0.9em;}
+.smaller {font-size: 0.8em;}
+.smallest {font-size: 0.7em;}
+.important {color: #820000; font-weight: bold;}
+.highlight {background: #ffc; padding: 0px 2px 0px 2px;}
+.select {color: #820000;}
+.downloadable {font-size: 0.85em; font-weight: bold; text-transform: capitalize;}
+
+/* Box--------------------------------- */
+.box {border:1px solid #eee3c1; padding: 5px; width: auto; margin: 0px 0px 15px 0px; background: #fff;}
+.color-box {border:1px solid #eee3c1; padding: 5px; width: auto; margin: 0px 0px 15px 0px; background: #f6f3e5;}
+.center-box {border:1px solid #eee3c1; padding: 5px; width: 80%; margin: 0px auto 15px auto; background: #fff;}
+.left-box {border:1px solid #eee3c1; padding: 5px; width: 200px; float: left; margin: 0px 10px 15px 0px; background: #fff;}
+.right-box {border:1px solid #eee3c1; padding: 5px; width: 200px; float: right; margin: 0px 0px 15px 10px; background: #fff;}
+
 /* Stanford Bootstrap Customizations */
 body {color: #2e2d29; font: 0.78em Arial, Helvetica, sans-serif; margin: 0px; padding: 0px;}
 a {color: #565347;}
