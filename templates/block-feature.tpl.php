@@ -3,7 +3,13 @@ $edit_links = l(t('edit block'), 'admin/build/block/configure/'. $block->module 
 ?>
 
 <div id="block-<?php print $block->module .'-'. $block->delta; ?>" class="<?php
-if ($block_count == 4) : print 'span3 clear-block';
+if ($block_count == 6) : print 'span2 clear-block';
+elseif (($block_count == 5) && ($block_id == 1)) : print 'span3 clear-block';
+elseif (($block_count == 5) && ($block_id == 2)) : print 'span2 clear-block';
+elseif (($block_count == 5) && ($block_id == 3)) : print 'span2 clear-block';
+elseif (($block_count == 5) && ($block_id == 4)) : print 'span2 clear-block';
+elseif (($block_count == 5) && ($block_id == 5)) : print 'span3 clear-block';
+elseif ($block_count == 4) : print 'span3 clear-block';
 elseif ($block_count == 3) : print 'span4 clear-block';
 elseif ($block_count == 2) : print 'span6 clear-block';
 else: print 'span12 clear-block'; 

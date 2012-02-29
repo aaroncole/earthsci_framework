@@ -12,8 +12,8 @@ elseif (((region_has_block('left')) && (region_has_block('right'))) && ($block_c
 elseif (((region_has_block('left')) || (region_has_block('right'))) && (($block_count == 4) && ($block_id == 1))): print 'span3 clear-block';
 elseif (((region_has_block('left')) || (region_has_block('right'))) && ($block_count == 4)) : print 'span2 clear-block'; 
 elseif (((region_has_block('left')) || (region_has_block('right'))) && ($block_count == 3)) : print 'span3 clear-block'; 
-elseif (((region_has_block('left')) || (region_has_block('right'))) && (($block_count == 2) && ($block_id == 1))): print 'span3 clear-block';
-elseif (((region_has_block('left')) || (region_has_block('right'))) && (($block_count == 2) && ($block_id == 2))): print 'span6 clear-block'; 
+elseif (((region_has_block('left')) || (region_has_block('right'))) && (($block_count == 2) && ($block_id == 1))): print 'span6 clear-block';
+elseif (((region_has_block('left')) || (region_has_block('right'))) && (($block_count == 2) && ($block_id == 2))): print 'span3 clear-block'; 
 elseif (((region_has_block('left')) || (region_has_block('right'))) && ($block_count == 1)) : print 'span9 clear-block'; 
 elseif ($block_count == 4) : print 'span3 clear-block';
 elseif ($block_count == 3) : print 'span4 clear-block';
