@@ -3,7 +3,6 @@ $(document).ready(function(){
 	if (document.documentElement.clientWidth <= 640) {
 	// Mobile Header Drupal Search Box
 	$('#header [name=search_theme_form]').val('Search...');
-	$('#header input[name=op]').val('');
 	$('#header [name=search_theme_form]').focus(function () {
 	$('#header [name=search_theme_form]').val('');
 	});
@@ -12,7 +11,6 @@ $(document).ready(function(){
 	if (document.documentElement.clientWidth > 640) {
 	// Header Drupal Search Box
 	$('#header [name=search_theme_form]').val('Search this site...');
-	$('#header input[name=op]').val('');
 	$('#header [name=search_theme_form]').focus(function () {
 	$('#header [name=search_theme_form]').val('');
 	});
