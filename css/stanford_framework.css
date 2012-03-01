@@ -237,13 +237,14 @@ h1.title {margin: 0 0 0.5em 0; padding: 0px;}
 #site-content {position: relative;}
 
 #header {padding: 1em 0px;}
-#header #logo {float: left; margin-right: 10px;}
-#header #site {float: left; margin: 1em 0;}
-#header #site h1 a {color: #3f3c30; text-decoration: none;}
-#header #site h1 a:hover {text-decoration: none;}
+#header #logo {float: left; max-width: 20%; margin: 0 1em 0 0;}
+body.searchbox #header #site {float: left; max-width: 65%;}
+#header #site h1 {margin: 0.25em 0;}
+#header #site a {color: #3f3c30; text-decoration: none;}
+#header #site a:hover {text-decoration: none;}
 #header #slogan {margin: 0.25em 0; font-size: 1.5em;}
-#header #search {float: right; margin: 1em 0;}
-#header #search .form-text {height: 1em; margin: 0; padding: 5px;}
+#header #search {float: right; margin: 1em 0 0 0;}
+#header #search .form-text {height: 1em; margin: 0; padding: 5px; width: 180px;}
 #header #search label {position: absolute; left: -1000em; width: 20em; text-align: left;}
 #header #search .form-item, #header #search .form-submit {display: inline-block; margin: 0px;}
 
@@ -321,13 +322,14 @@ body.photobg {background-attachment: fixed !important; background-size: cover !i
 
 /* Mobile Styles */
 @media (max-width: 980px) {
-/* Search */
-#header #search {position:absolute; bottom: 0; padding: 0; float: none; clear: both; width: auto;}
+body.searchbox #header #site {float: left; max-width: 55%;}
+#header #search .form-text {width: 150px;}
 }
 
 @media (max-width: 768px) {
-/* Header */
-#header #logo {display: none;}
+body.searchbox #header #site {float: left; max-width: 75%;}
+#header #search {position: absolute; left: 0; bottom: 0; float:none; clear: both; margin: 20px;}
+#header #search .form-text {width: 180px;}
 }
 
 @media (max-width: 640px) {
@@ -338,6 +340,12 @@ body.photobg {background-attachment: fixed !important; background-size: cover !i
 #top-logo {clear: both;}
 #top-menu ul {float: none; display: block; margin: 1em 0 0 0;}
 #top-menu ul li {display: inline-blocks; margin: 0 1em 0 0; padding: 0 1em 0 0;}
+
+/* Header */
+#header {padding: 0px;}
+#header #logo {display: none;}
+#header #site h1 {font-size: 2em;}
+body.searchbox #header #site {float: left; max-width: 100%;}
 
 /* Secondary Navigation */
 #navigation-secondary ul li {clear: both; padding-bottom: 0.25em;}
