@@ -207,6 +207,7 @@ a:hover {color: #565347;}
 /* Stanford Drupal Customizations */
 .block ul, .block ol {margin: 0; padding: 0 0 1em 1em;}
 
+#user-login-form ul {padding: 0;}
 #user-login-form li {list-style: none;}
 #sidebar-first .form-text, #sidebar-second .form-text {width: auto;}
 #sidebar-first .form-submit, #sidebar-second .form-submit {margin: 0 0 1em 0;}
