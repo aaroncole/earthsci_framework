@@ -231,6 +231,7 @@ img {max-width: 100%;}
 #global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #fff; padding: 10px 0; width: 100%;}
 #top-menu a {color: #fff;}
 #top-menu ul {float: right; display: block; margin: 0; padding: 0; line-height: 1em;}
+#top-menu ul ul {display: none;}
 #top-menu ul li {display: inline; list-style: none; margin: 0; padding: 0 0 0 1em;}
 #top-menu ul li.last {border: none;}
 #top-menu h2, #top-menu h3 {display: none;}
@@ -346,10 +347,9 @@ body.searchbox #header #site {float: left; max-width: 75%;}
 /* Top Menu */
 #top-logo {clear: both;}
 #top-menu {margin: 1em 0 0 0;}
-#top-menu ul {float: none; display: inline; margin: 0; padding: 0 1em 0 0;}
+#top-menu ul {float: left; display: inline; margin: 0; padding: 0 1em 0 0;}
 #top-menu ul li {margin: 0; padding: 0 1em 0 0;}
-#top-menu ul li ul {padding: 0 0 0 1em;}
-#top-menu ul li ul li:last-child {padding: 0;}
+#top-menu ul ul {display: none;}
 
 /* Header */
 #header {padding: 0px;}
