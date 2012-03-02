@@ -1,3 +1,8 @@
+Version 6.x-1.2 2012-03-02
+------------------------------
+by hyperboy: Added bootstrap layout logic to CCK content fields
+by hyperboy: Added jQuery script to convert sidebar menus to drop-down menus in mobile view
+
 Version 6.x-1.1 2012-02-27
 ------------------------------
 by hyperboy: Updated theme name from stanford_bootstrap to stanford_framework
