@@ -230,14 +230,15 @@ img {max-width: 100%;}
 
 #global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #fff; padding: 10px 0; width: 100%;}
 #top-menu a {color: #fff;}
-#top-menu ul {float: right; margin: 0; padding: 0; line-height: 1em;}
-#top-menu ul li {display: inline; list-style: none; margin: 0 0 0 1em; padding: 0 0 0 1em;}
+#top-menu ul {float: right; display: block; margin: 0; padding: 0; line-height: 1em;}
+#top-menu ul li {display: inline; list-style: none; margin: 0; padding: 0 0 0 1em;}
 #top-menu ul li.last {border: none;}
 #top-menu h2, #top-menu h3 {display: none;}
 #top-menu form {margin: 0;}
 #top-menu #user-login-form {text-align: right;}
 
 #site-content {position: relative;}
+#page-content .block {margin-bottom: 1em;}
 
 #header {padding: 1em 0px;}
 #header #logo {float: left; max-width: 20%; margin: 0 1em 0 0;}
@@ -308,11 +309,6 @@ img {max-width: 100%;}
 #bottom-menu ul {margin: 0; padding: 0; line-height: 1em;}
 #bottom-menu ul li {float: left; list-style: none; margin: 0 1em 0 0; padding: 0 1em 0 0;}
 
-/* Theme Options */
-
-/* Body Background Type */
-body.photobg {background-attachment: fixed !important; background-size: cover !important;}
-
 /* Stanford Events Importer */
 .view-stanford-events-list label {display: inline-block; width: 15%; margin: 0 2% 0 0; vertical-align: top; text-align: right; font-weight: bold; color: #666;}
 .view-stanford-events-list .field-content {display: inline-block; width: 80%; vertical-align: top;}
@@ -349,8 +345,11 @@ body.searchbox #header #site {float: left; max-width: 75%;}
 
 /* Top Menu */
 #top-logo {clear: both;}
-#top-menu ul {float: none; display: block; margin: 1em 0 0 0;}
-#top-menu ul li {display: inline-blocks; margin: 0 1em 0 0; padding: 0 1em 0 0;}
+#top-menu {margin: 1em 0 0 0;}
+#top-menu ul {float: none; display: inline; margin: 0; padding: 0 1em 0 0;}
+#top-menu ul li {margin: 0; padding: 0 1em 0 0;}
+#top-menu ul li ul {padding: 0 0 0 1em;}
+#top-menu ul li ul li:last-child {padding: 0;}
 
 /* Header */
 #header {padding: 0px;}

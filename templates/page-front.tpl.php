@@ -67,8 +67,8 @@
       <div id="main-content">
         <div id="content-header" class="row">
           <div class="span12">
-            <?php if ($mission): print '<div id="mission">'. $mission .'</div>'; endif; ?>
             <?php if ($show_messages && $messages): print $messages; endif; ?>
+			<?php if ($mission): print '<div id="mission">'. $mission .'</div>'; endif; ?> 
             <?php if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif; ?>
             <?php if ($tabs): print $tabs; endif; ?>
             <?php if ($tabs2): print $tabs2; endif; ?>
