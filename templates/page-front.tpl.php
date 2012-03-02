@@ -1,8 +1,3 @@
-<?php
-$body_bg_type = theme_get_setting('body_bg_type'); 
-$body_bg_classes = theme_get_setting('body_bg_classes'); 
-$body_bg_image_path = theme_get_setting('body_bg_image_path'); 
-?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language ?>" lang="<?php print $language->language ?>" dir="<?php print $language->dir ?>">
 <head>
@@ -15,7 +10,7 @@ $body_bg_image_path = theme_get_setting('body_bg_image_path');
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 </head>
-<body class="<?php print $body_classes; ?> <?php print $body_bg_type; ?> <?php print $body_bg_classes; ?> <?php if($search_box): ?>searchbox<?php endif; ?>" <?php if ($body_bg_classes): ?>style="background: url('<?php print check_url($front_page) . $body_bg_image_path; ?>') repeat top left;" <?php endif; ?>>
+<body class="<?php print $body_classes; ?> <?php if($search_box): ?>searchbox<?php endif; ?>">
 <div id="site-content">
   <div id="skipnav">
     <p>Skip to:</p>
