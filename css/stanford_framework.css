@@ -241,7 +241,7 @@ img {max-width: 100%;}
 #site-content {position: relative;}
 #page-content .block {margin-bottom: 1em;}
 
-#header {padding: 1em 0px;}
+#header {margin: 15px 0px;}
 #header #logo {float: left; max-width: 20%; margin: 0 1em 0 0;}
 #header #site h1 {margin: 0.25em 0;}
 #header #site a {color: #3f3c30; text-decoration: none;}
