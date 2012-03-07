@@ -1,42 +1,9 @@
 name = Stanford Framework
+base theme = open_framework
 description = Base theme provided by <a href="http://webservices.stanford.edu">Stanford Web Services</a>.
 core = 6.x
-version = 6.x-1.2
+version = 6.x-1.3
 engine = phptemplate
 
-stylesheets[all][] = css/bootstrap.min.css
-stylesheets[all][] = css/bootstrap-responsive.min.css
-stylesheets[all][] = css/prettify.css
 stylesheets[all][] = css/stanford_framework.css
-
 scripts[] = js/stanford_framework.js
-scripts[] = js/prettify.js
-scripts[] = js/bootstrap.min.js
-
-regions[header] = Site: Header
-regions[nav] = Site: Navigation
-regions[left] = Site: First sidebar
-regions[right] = Site: Second sidebar
-regions[footer] = Site: Footer
-
-regions[top] = Page: Top section
-regions[upper] = Page: Upper section
-regions[feature] = Page: Feature section
-regions[lower] = Page: Lower section
-regions[bottom] = Page: Bottom section
-
-regions[content_top] = Content: Top section
-regions[content_upper] = Content: Upper section
-regions[content] = Content: Body
-regions[content_lower] = Content: Lower section
-regions[content_bottom] = Content: Bottom section
-
-features[] = logo
-features[] = name
-features[] = slogan
-features[] = node_user_picture
-features[] = comment_user_picture
-features[] = search
-features[] = favicon
-features[] = primary_links
-features[] = secondary_links
