@@ -1,6 +1,6 @@
 name = Stanford Framework
 base theme = open_framework
-description = Base theme provided by <a href="http://webservices.stanford.edu">Stanford Web Services</a>.
+description = Sub-theme provided by <a href="http://webservices.stanford.edu">Stanford Web Services</a>.
 core = 6.x
 version = 6.x-1.1
 engine = phptemplate
