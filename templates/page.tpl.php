@@ -37,13 +37,11 @@
       <?php endif; ?>
       <div id="header" role="banner" class="clear-block">
         <?php if ($logo): ?>
-        <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /></a> </div>
+        <div id="logo"><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /></a></div>
         <?php endif; ?>
         <div id="site">
           <?php if ($site_name): ?>
-          <div id="name">
-            <h1><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><?php print $site_name; ?></a></h1>
-          </div>
+          <div id="name"><a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><?php print $site_name; ?></a></div>
           <?php endif; ?>
           <?php if ($site_slogan): ?>
           <div id="slogan"><?php print $site_slogan; ?></div>
@@ -67,10 +65,10 @@
       <div id="main-content">
         <div id="content-header" class="row">
           <div class="span12">
-		    <?php if ($show_messages && $messages): print $messages; endif; ?>
+            <?php if ($show_messages && $messages): print $messages; endif; ?>
             <?php if ($title): print '<h1 class="title'. ($tabs ? ' with-tabs' : '') .'">'. $title .'</h1>'; endif; ?>
             <?php if ($mission): print '<div id="mission">'. $mission .'</div>'; endif; ?>
-			<?php if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif; ?>
+            <?php if ($tabs): print '<div id="tabs-wrapper" class="clear-block">'; endif; ?>
             <?php if ($tabs): print $tabs; endif; ?>
             <?php if ($tabs2): print $tabs2; endif; ?>
             <?php if ($tabs): print '</div>'; endif; ?>
