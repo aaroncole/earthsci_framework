@@ -132,9 +132,6 @@
   <!--/#page-content-->
   <div id="global-footer">
     <div class="container">
-      <?php if ($footer): ?>
-      <div class="row"><?php print $footer ?></div>
-      <?php endif; ?>
       <div class="row">
         <div id="bottom-logo" class="span2"><img src="<?php print base_path() . path_to_theme(); ?>/images/footer-stanford-logo.png" alt="Stanford University" /></div>
         <div id="bottom-text" class="span10">
