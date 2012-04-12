@@ -113,20 +113,22 @@
         <?php endif; ?>
       </div>
       <!--/#main-content-->
-      <div id="footer" role="contentinfo" class="clear-block">
-        <?php if (!empty($footer_message)): ?>
-        <?php print $footer_message; ?>
+      <div id="sticky-footer">
+        <div id="footer" role="contentinfo" class="clear-block">
+          <?php if (!empty($footer_message)): ?>
+          <?php print $footer_message; ?>
+          <?php endif; ?>
+          <?php if ($secondary_links && (isset($secondary_links))): ?>
+          <?php $linknum_secondary = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="clear-block across-' . $linknum_secondary . '">'; $menu_secondary = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_secondary); print '</div>'; ?>
+          <?php endif; ?>
+          <!-- /#navigation-secondary --> 
+        </div>
+        <!--/#footer-->
+        <?php if ($bottom): ?>
+        <div id="bottom" class="row"><?php print $bottom ?></div>
+        <!-- /#bottom -->
         <?php endif; ?>
-        <?php if ($secondary_links && (isset($secondary_links))): ?>
-        <?php $linknum_secondary = count($secondary_links); print '<div id="navigation-secondary" role="navigation" class="clear-block across-' . $linknum_secondary . '">'; $menu_secondary = variable_get('menu_secondary_links_source', 'secondary-links'); print menu_tree($menu_secondary); print '</div>'; ?>
-        <?php endif; ?>
-        <!-- /#navigation-secondary --> 
       </div>
-      <!--/#footer-->
-      <?php if ($bottom): ?>
-      <div id="bottom" class="row"><?php print $bottom ?></div>
-      <?php endif; ?>
-      <!-- /#bottom --> 
     </div>
   </div>
   <!--/#page-content-->
