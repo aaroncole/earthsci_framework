@@ -26,6 +26,23 @@
 .view-stanford-events-list .views-row .views-field-title a {font-size: 1.5em; font-weight: bold;}
 .view-stanford-events-list .views-row-odd {border-top: 1px solid #bbb; border-bottom: 1px solid #bbb; background: #eee;}
 
+/* Desktop Styles */
+@media (min-width: 640px) {
+#footer {width: 95%}
+}
+
+@media (min-width: 768px) {
+#footer {width: 724px}
+}
+
+@media (min-width: 980px) {
+#footer {width: 940px;}
+}
+
+@media (min-width: 1200px) {
+#footer {width: 1170px;}
+}
+
 /* Mobile Styles */
 @media (max-width: 640px) {
 /* Top Menu */
