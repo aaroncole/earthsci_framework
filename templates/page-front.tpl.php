@@ -134,7 +134,7 @@
   <div id="global-footer">
     <div class="container">
       <div class="row">
-        <div id="bottom-logo" class="span2"><img src="<?php print base_path() . path_to_theme(); ?>/images/footer-stanford-logo.png" alt="Stanford University" /></div>
+        <div id="bottom-logo" class="span2"><a href="http://www.stanford.edu"><img src="<?php print base_path() . path_to_theme(); ?>/images/footer-stanford-logo.png" alt="Stanford University" /></a></div>
         <div id="bottom-text" class="span10">
           <div id="bottom-menu" class="clear-block">
             <ul>
