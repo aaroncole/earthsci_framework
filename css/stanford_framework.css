@@ -10,7 +10,7 @@
 
 #global-footer {background-color: #8c1515; background-image: url(../images/footer-bg.png); background-position: top center; background-repeat: no-repeat; color: #e3dfd5; font-size: 0.9em; line-height: 1em; padding: 30px 0 60px 0; width: 100%;}
 #global-footer .vcard {font-size: 1em}
-#bottom-logo {padding: 0 0 1em 0;}
+#bottom-logo {padding: 0.5em 0 1em 0;}
 #bottom-text a, #bottom-text .tel {color: #e3dfd5;}
 #bottom-menu {margin: 0 0 0.4em 0;}
 #bottom-menu a {color: #e3dfd5;}
