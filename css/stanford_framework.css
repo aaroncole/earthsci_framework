@@ -26,6 +26,22 @@
 .view-stanford-events-list .views-row .views-field-title a {font-size: 1.5em; font-weight: bold;}
 .view-stanford-events-list .views-row-odd {border-top: 1px solid #bbb; border-bottom: 1px solid #bbb; background: #eee;}
 
+/* Stanford Courses */
+.field-field-stanford-course-code .field-label {display: inline-block; width: 30%; padding: 0 0 1em 0;}
+.field-field-stanford-course-code .field-items {display: inline-block;}
+.field-field-stanford-course-subject .field-label {display: inline-block; width: 30%; padding: 0 0 1em 0;}
+.field-field-stanford-course-subject .field-items {display: inline-block;}
+.field-field-stanford-course-year .field-label {display: inline-block; width: 30%; padding: 0 0 1em 0;}
+.field-field-stanford-course-year .field-items {display: inline-block;}
+.field-field-stanford-course-course-id .field-label {display: inline-block; width: 30%; padding: 0 0 1em 0;}
+.field-field-stanford-course-course-id .field-items {display: inline-block;}
+.field-field-stanford-course-tag-org .field-label {display: inline-block; width: 30%; padding: 0 0 1em 0;}
+.field-field-stanford-course-tag-org .field-items {display: inline-block;}
+.field-field-stanford-course-tag-org .field-item {display: inline-block; margin: 0 1em 0 0;}
+.field-field-stanford-course-tag-name .field-label {display: inline-block; width: 30%; padding: 0 0 1em 0;}
+.field-field-stanford-course-tag-name .field-items {display: inline-block;}
+.field-field-stanford-course-tag-name .field-item {display: inline-block; margin: 0 1em 0 0;}
+
 /* Desktop Styles */
 @media (min-width: 640px) {
 #footer {width: 95%}
