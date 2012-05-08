@@ -7,7 +7,6 @@
 <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
 <!--[if lt IE 9]>
 <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<script src="https://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
 <![endif]-->
 </head>
 <body class="<?php print $body_classes; ?> <?php if($search_box): ?>searchbox<?php endif; ?>">
