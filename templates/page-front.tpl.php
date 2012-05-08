@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php print $head; ?><?php print $styles; ?><?php print $scripts; ?>
 <script type="text/javascript"><?php /* Needed to avoid Flash of Unstyled Content in IE */ ?> </script>
-<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+<![endif]-->
 </head>
 <body class="<?php print $body_classes; ?> <?php if($search_box): ?>searchbox<?php endif; ?>">
 <div id="site-content">
@@ -145,7 +145,7 @@
               <li><a href="http://www.stanford.edu/site/copyright.html">Copyright Complaints</a></li>
             </ul>
           </div>
-          <p class="vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span>. <span class="tel">(650) 723-2300</span></span></p>
+          <p class="vcard">&copy; <span class="fn org">Stanford University</span>, <span class="adr"><span class="locality">Stanford</span>, <span class="region">California</span> <span class="postal-code">94305</span></span></p>
         </div>
       </div>
     </div>
