@@ -76,6 +76,6 @@
 /* Print Styles */
 @media print {
 body {background-color: transparent !important; background: none !important;}
-body.searchbox #header #site, #header #site {max-width: 80% !important;}
+body.searchbox #header #site, #header #site {max-width: 78% !important;}
 #top-menu, #search, #navigation-primary, #navigation-secondary, #tabs-wrapper, #global-footer {display: none !important;}
 }
