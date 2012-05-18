@@ -72,3 +72,10 @@
 .view-stanford-events-list label {width: 30%;}
 .view-stanford-events-list .field-content {width: 65%;}
 }
+
+/* Print Styles */
+@media print {
+body {background-color: transparent !important; background: none !important;}
+body.searchbox #header #site, #header #site {max-width: 80% !important;}
+#top-menu, #search, #navigation-primary, #navigation-secondary, #tabs-wrapper, #global-footer {display: none !important;}
+}
