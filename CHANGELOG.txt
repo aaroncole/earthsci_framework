@@ -1,20 +1,3 @@
-Version 6.x-1.3 2012-03-07
-------------------------------
-by hyperboy: Converted to sub-theme of Open Framework
-
-Version 6.x-1.2 2012-03-02
-------------------------------
-by hyperboy: Added bootstrap layout logic to CCK content fields
-by hyperboy: Added jQuery script to convert sidebar menus to drop-down menus in mobile view
-
-Version 6.x-1.1 2012-02-27
-------------------------------
-by hyperboy: Updated theme name from stanford_bootstrap to stanford_framework
-
-Version 6.x-1.01 2012-02-24
-------------------------------
-by hyperboy: Reverted to Drupal default theme region names
-
-Version 6.x-1.0
+Version 7.x-1.0
 ------------------------------
 by hyperboy: Initial Release

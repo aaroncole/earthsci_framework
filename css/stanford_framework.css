@@ -1,4 +1,6 @@
-#global-header {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; color: #fff; padding: 10px 0; width: 100%;}
+#global-header {font-family: Arial, Helvetica, sans-serif; background-color: #8c1515; color: #fff; padding: 0; width: 100%;}
+#global-header .container {background-color: #8c1515; background-image: url(../images/header-bg.png); background-position: bottom center; background-repeat: no-repeat; padding: 10px 2%;}
+
 #top-menu a {color: #fff;}
 #top-menu ul {float: right; display: block; margin: 0; padding: 0; line-height: 1em;}
 #top-menu ul ul {display: none;}
@@ -8,14 +10,18 @@
 #top-menu form {margin: 0;}
 #top-menu #user-login-form {text-align: right;}
 
-#global-footer {background-color: #8c1515; background-image: url(../images/footer-bg.png); background-position: top center; background-repeat: no-repeat; color: #e3dfd5; font-size: 1em; line-height: 1em; padding: 30px 0 60px 0; width: 100%;}
-#global-footer .vcard {font-size: 0.9em}
+#global-footer {font-family: Arial, Helvetica, sans-serif; background-color: #8c1515; color: #fff; padding: 0; width: 100%;}
+#global-footer .container {background-color: #8c1515; background-image: url(../images/footer-bg.png); background-position: top center; background-repeat: no-repeat; color: #e3dfd5; font-size: 1em; line-height: 1em; padding: 30px 2% 60px 2%;}
+#global-footer p.vcard {font-family: Arial, Helvetica, sans-serif; font-size: 0.9em}
 #bottom-logo {padding: 0.35em 0 1em 0;}
 #bottom-text a, #bottom-text .tel {color: #e3dfd5;}
 #bottom-menu {margin: 0 0 0.4em 0;}
 #bottom-menu a {color: #e3dfd5;}
 #bottom-menu ul {margin: 0; padding: 0; line-height: 1em;}
 #bottom-menu ul li {float: left; list-style: none; margin: 0 1em 0 0; padding: 0 1em 0 0;}
+
+/* Breadcrumb */
+.breadcrumb {font-size: 11px; background-color: transparent; background-image: -moz-linear-gradient(center top , transparent, transparent); background-repeat: repeat-none; border: 0px solid transparent; border-radius: 0px; box-shadow: 0 0 0 transparent inset; list-style: none outside none; margin: 0px; padding: 0px;}
 
 /* Stanford Events Importer */
 .view-stanford-events-list label {display: inline-block; width: 15%; margin: 0 2% 0 0; vertical-align: top; text-align: right; font-weight: bold; color: #666;}
@@ -67,6 +73,12 @@
 #top-menu ul {float: left; display: inline; margin: 0; padding: 0 1em 0 0;}
 #top-menu ul li {margin: 0; padding: 0 1em 0 0;}
 #top-menu ul ul {display: none;}
+
+/* Tables */
+th, th.views-field {display: inline-block; padding: 5px 10px;}
+td, td.views-field {display: inline-block; padding: 5px 10px;}
+td.views-field.active {display: block;}
+td p {margin: 0px;}
 
 /* Stanford Events Importer */
 .view-stanford-events-list label {width: 30%;}
