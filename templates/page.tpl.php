@@ -188,4 +188,3 @@
 <!-- /#global-footer -->
 </div>
 <!-- /#site-content -->
-</body></html>
