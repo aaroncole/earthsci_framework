@@ -89,7 +89,7 @@
           </ul>
           <?php endif; ?>
           <?php if ($page['feature']): ?>
-          <div id="feature"><?php print render($page['feature']); ?></div>
+          <div id="feature" class="row"><?php print render($page['feature']); ?></div>
           <?php endif; ?>
         </div>
       </div>
@@ -108,7 +108,7 @@
           <?php endif; ?>
           <?php if ($breadcrumb): print $breadcrumb; endif;?>
           <?php if ($page['highlighted']): ?>
-          <div id="highlighted"><?php print render($page['highlighted']); ?></div>
+          <div id="highlighted" class="row"><?php print render($page['highlighted']); ?></div>
           <?php endif; ?>
           <?php print render($page['content']); ?>
           <?php if ($page['content_lower']): ?>
