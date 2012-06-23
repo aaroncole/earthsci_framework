@@ -1,6 +1,6 @@
 // Sticky Footer
 function positionFooter() {
-  var Footer = $("#sticky-footer");
+  var Footer = $("#footer");
   if ((($(document.body).height() + Footer.height()) < $(window).height() && Footer.css("position") == "fixed") || ($(document.body).height() < $(window).height() && Footer.css("position") != "fixed")) {
 	Footer.css({ position: "fixed", bottom: "120px" });
   }
