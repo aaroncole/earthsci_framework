@@ -21,14 +21,10 @@
   </div>
   <!-- /#global-header -->
   <div id="page-content">
-    <div class="container">
-      <?php if ($page['top']): ?>
-      <div id="top" class="row"><?php print render($page['top']); ?></div>
-      <?php endif; ?>
       <div id="header" role="banner" class="clearfix">
-        <?php if ($page['header']): ?>
-        <?php print render($page['header']); ?>
-        <?php endif; ?>
+      <div class="container">
+	<div class="row">
+	<div class="span6">
         <?php if ($logo): ?>
         <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /></a> </div>
         <?php endif; ?>
@@ -40,15 +36,36 @@
           <div id="slogan"><?php print $site_slogan; ?></div>
           <?php endif; ?>
         </div>
+        <?php if ($page['header']): ?>
+        <?php print render($page['header']); ?>
+        <?php endif; ?>
+      </div>
+      <div class="span5 offset1">
+      <?php if ($page['header_nav']): ?>
+      <?php print render($page['header_nav']); ?>
+      <?php endif; ?>
+      </div>
+      </div>
+      </div>
       </div>
       <!-- /#header -->
+    <div class="container">
+      <?php if ($page['top']): ?>
+      <div id="top" class="row"><?php print render($page['top']); ?></div>
+      <?php endif; ?>
       <?php if ($main_menu || !empty($page['nav'])): ?>
-      <div id="navigation-primary" role="navigation" class="clearfix">
+      <div id="navigation-primary" role="navigation" class="clearfix navbar">
+	<div class="navbar-inner row">
         <?php if ($page['nav']): ?>
         <?php print render($page['nav']); ?>
         <?php endif; ?>
         <?php if (empty($page['nav'])): ?>
         <?php if ($main_menu): ?>
+	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
         <div id="main-menu"> <?php print theme('links__system_main_menu', array(
           'links' => $main_menu,
           'attributes' => array(
@@ -64,7 +81,7 @@
         <!-- /#main-menu -->
         <?php endif; ?>
         <?php endif; ?>
-      </div>
+      </div></div>
       <?php endif; ?>
       <!-- /#navigation-primary -->
       
