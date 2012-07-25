@@ -1,0 +1,196 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+@mixin menu-inline {
+  margin-bottom: 1em;
+  padding: 0;
+  li {
+    display: inline;
+    list-style: none;
+  }
+  a {
+    margin-bottom: 5px;
+  }
+}
+
+/* --- Typography --- */
+/* http://www.stanford.edu/group/webdev/color/ */
+
+$black: #3F3C30;
+$beige: #e6e4db;
+$blue: #28558c;
+$cardinal: #8c1515;
+$grey: #e9e6df;
+$sandstone: #f8f6ea;
+$translucent: rgba(0, 0, 0, 0.1);
+$white: #fbfbf9;
+
+a {
+  color: $cardinal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $black;
+  font-family: Arial Narrow, Arial, Helvetica,sans-serif;
+  text-transform: uppercase;
+}
+
+.field-name-field-page-image {
+  float: left;
+  width: 250px;
+  margin: 0 1em 1em 0;
+  figure {
+    margin: 0;
+  }
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  background-color: $beige;
+  padding: 5px;
+}
+
+#name {
+  font-family: Arial Narrow,Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
+}
+
+.breadcrumb {
+  display: none;
+}
+
+// Front page styles
+.front { 
+
+  #header {
+    xbackground: transparent url(/drupal7/sites/default/files/vista3.png) no-repeat center 0;
+    xbackground: transparent url(/drupal7/sites/default/files/meadow.png) no-repeat center 0;
+    background: transparent url(/drupal7/sites/default/files/lake.png) no-repeat center 0;
+    @include box-shadow();
+    margin: 0;
+    padding: 50px 0;
+
+    .container {  
+      background-color: $translucent;
+      @include border-radius();
+      @include box-shadow ();
+    }
+
+    #site {
+     #name a {
+      color: $white;
+      text-shadow: 0 0 3px #000;
+      }
+    .menu a {
+      color: $black;
+      width: 110px;
+    }
+  }
+  }
+  
+  .menu {
+    @include menu-inline;
+  }
+} // End .front
+
+#block-search-form {
+  margin: 0;
+  .form-actions {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+/* --- Buttons -- */
+
+.btn-primary {
+  background-color: rgba($beige,.7);
+  @include background-image(linear-gradient(rgba($beige,.5),rgba($beige,.7)));
+}
+
+.btn-primary:hover {
+  background-color: rgba($beige,.7);
+}
+
+
+/* --- Menus -- */
+
+#navigation-primary {
+  border: 1px solid $grey;
+}
+
+.sidebar .menu {
+  padding-left: 0;
+  li.leaf {
+    list-style-type: none;
+    list-style-image: url();
+  }
+  a {
+    border-bottom: 1px dotted $grey;
+    display: block;
+    padding: 5px;
+    position: relative;
+  }
+  a:hover {
+    background-color: $beige;
+    border-bottom-color: $black;
+    @include transition-duration(.25s);
+  }
+  a:after {
+   content: '←'; 
+   text-align: right;
+   position: absolute;
+   right: 5px;
+   visibility: hidden;
+  }
+  a:hover:after,
+  a.active:after {
+    visibility: visible;
+  } 
+  a.active {
+    cursor: default;
+    border-bottom-color: $black;
+  }
+  a.active:after {
+    content: '→';
+  }
+  a.active:hover {
+    background-color: inherit;
+  }
+}
+
+/* --- Forms --- */
+
+legend {
+  line-height: inherit;
+  border: none;
+}
+
+/* --- People --- */
+
+.node-profile {
+  fieldset {
+    margin: 0 0 1em 0;
+    padding: 1em;
+  }
+}
+
+.navbar {
+  .btn-navbar,
+  .btn-navbar:active,
+  .btn-navbar:hover {
+    background: $cardinal url();
+  }
+  .navbar-inner {
+    background-color: $white;
+    background-image: none;
+  }
+  .form-text {
+    width: 100px;
+  }
+}

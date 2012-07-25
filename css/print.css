@@ -1,0 +1,16 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 9, ../sass/print.scss */
+#global-header,
+#site,
+#search-block-form,
+.breadcrumb,
+.field-name-field-photo {
+  display: none;
+}
+
+/* line 13, ../sass/print.scss */
+.node-profile fieldset {
+  margin: 0;
+}
