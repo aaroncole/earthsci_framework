@@ -1,0 +1,115 @@
+@import "compass/typography";
+
+/* -----  Articles  ----- */
+
+.article {
+  border-top: 1px dotted $grey;
+  padding: 10px 0;
+  .views-field-title {
+    font-size: 140%; 
+  }
+}
+
+/* -----  Media Block  ----- */
+// http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+.media {margin:10px;}
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media .img {float:left; margin-right: 10px;}
+.media .img img {display:block; border: 1px solid $grey; padding: 5px;}
+.media .imgExt {float:right; margin-left: 10px;}
+
+/* ------ Photos ------ */
+
+.img img,
+.node-profile img {
+  border: 1px solid $grey;
+  padding: 5px;
+}
+
+/* ----- Slideshows  ----- */
+.skin-default {
+  position: relative;
+  &:hover {
+    .views-slideshow-controls-bottom {
+      @include opacity(1);
+    }
+  }
+}
+
+// Slideshow controls
+
+.views-slideshow-controls-bottom {
+  @include opacity(.6);
+  text-align: center;
+  z-index: 20;
+}
+
+.views-slideshow-controls-text {
+  a {
+    @include squish-text();
+  }
+
+  span {
+    display: block;
+    background-color: $grey;
+    border: 1px solid $black;
+    @include border-radius(20px);
+    @include box-shadow();
+    color: $black;
+    font-size: 20px;
+    @include opacity(.3);
+    padding: 3px;
+    width: 20px;
+    &:hover {
+     cursor: pointer;
+     text-decoration: none;
+    }
+    &.views-slideshow-controls-text-previous {
+      &:after {
+        content: '<';
+      }
+      float: left;
+    }
+    &.views-slideshow-controls-text-pause {
+      display: none;
+    }
+    &.views-slideshow-controls-text-next {
+      &:after {
+        content: '>';
+      }
+      float: right;
+    }
+  }
+}
+
+// Slideshow pager
+.views-slideshow-pager-fields {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+}
+
+.views-slideshow-pager-field-item {
+    background-color: $grey;
+    border: 1px solid $black;
+    @include border-radius();
+    @include box-shadow();
+    float: left;
+    margin: 3px;
+    @include opacity(.5);
+    @include squish-text();
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    &.active {
+      background-color: $cardinal;
+    }
+}
+
+/* -----  Sidebar Blocks  ----- */
+#sidebar-second .block {
+  background-color: $sandstone;
+  border: 1px solid $grey;
+  padding: 5px;
+}

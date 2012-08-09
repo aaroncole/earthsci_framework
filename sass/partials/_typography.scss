@@ -1,0 +1,66 @@
+/* --- Typography --- */
+
+a {
+  color: $cardinal;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#footer a {
+  color: $black;
+}
+
+.group a {
+  background-color: $beige;
+  border: 1px solid $grey;
+  display: block;
+  margin: 5px;
+  padding: 12px;
+  text-align: center;
+}
+
+#navigation-primary ul li a {
+  &.active {
+    background-color: $beige;
+  }
+  &.active-trail {
+    background-color: $grey;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  xborder-bottom: 2px solid $cardinal;
+  color: $black;
+  font-family: Arial Narrow, Arial, Helvetica,sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h1, .h1 {
+  font-size: 1.8em;
+}
+
+h2, .h2 {
+  font-size: 1.6em;
+}
+
+h3, .h3 {
+  border: none;
+  font-size: 1.5em;
+}
+
+h4, .h4 {
+  border: none;
+  font-size: 1.4em;
+}
+
+h5, .h5 {
+  border: none;
+  font-size: 1.3em;
+}
+
+h6, .h6, #footer h2 {
+  border: none;
+  font-size: 1.2em;
+}
