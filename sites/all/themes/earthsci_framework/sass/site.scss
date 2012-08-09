@@ -1,0 +1,170 @@
+@import "compass/css3";
+@import "compass/utilities";
+@import "compass/typography";
+@import "partials/colors";
+@import "partials/mixins";
+@import "partials/objects";
+@import "partials/typography";
+@import "partials/forms";
+
+.field-name-field-page-image {
+  float: left;
+  width: 250px;
+  margin: 0 1em 1em 0;
+  figure {
+    margin: 0;
+  }
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  background-color: $beige;
+  padding: 5px;
+}
+
+#name {
+  font-family: Arial Narrow,Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
+}
+
+#footer {
+  background-color: $beige;
+  @include box-shadow();
+  margin: 0;
+  width: auto;
+}
+
+// Front page styles
+.front { 
+
+  #header {
+    background: transparent url(/drupal7/sites/default/files/vista3.png) no-repeat center 0;
+    xbackground: transparent url(/drupal7/sites/default/files/meadow.png) no-repeat center 0;
+    xbackground: transparent url(/drupal7/sites/default/files/lake.png) no-repeat center 0;
+    @include box-shadow();
+    margin: 0;
+    padding: 50px 0;
+
+    .banner {
+      padding: 5px;
+    }
+
+    #site {
+     #name a {
+      text-shadow: 0 0 3px #000;
+      }
+    }
+  }
+  
+  .menu {
+    @include menu-inline;
+  }
+  
+} // End .front
+
+#block-search-form {
+  margin: 0;
+  .form-actions {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+/* --- Buttons -- */
+
+.btn-primary {
+  //background-color: rgba($beige,.7);
+ // @include background-image(linear-gradient(rgba($beige,.5),rgba($beige,.7)));
+}
+
+.btn-primary:hover {
+  //background-color: rgba($beige,.7);
+}
+
+
+/* --- Menus -- */
+
+.sidebar .menu {
+  padding-left: 0;
+  li.leaf {
+    list-style-type: none;
+    list-style-image: url();
+    padding: 0;
+  }
+  a {
+    border-bottom: 1px dotted $grey;
+    display: block;
+    padding: 5px;
+    position: relative;
+  }
+  a:hover {
+    background-color: $beige;
+    border-bottom-color: $black;
+    @include transition-duration(.25s);
+  }
+  a.active {
+    cursor: default;
+    border-bottom-color: $black;
+  }
+  a.active:hover {
+    background-color: inherit;
+  }
+}
+
+/* --- Forms --- */
+
+legend {
+  line-height: inherit;
+  border: none;
+}
+
+/* --- People --- */
+
+.node-profile {
+  fieldset {
+    margin: 0 0 1em 0;
+    padding: 1em;
+  }
+}
+
+#navigation-primary {
+  position: inherit;
+}
+
+.navbar {
+  background-color: transparent;
+  border: 1px dotted $grey;
+  .block {
+    margin-bottom: 0!important;
+  }
+  .btn-navbar,
+  .btn-navbar:active,
+  .btn-navbar:hover {
+    background: $cardinal url();
+    position: absolute;
+    top: 0;
+    right: 5px;
+  }
+  .navbar-inner {
+    background-color: transparent;
+    background-image: none;
+    @include box-shadow(none);
+    min-height: 0;
+    padding: 0;
+  }
+  li {
+    line-height: 25px;
+  }
+  
+  .navbar-form {
+    border: 0;
+    float: right;
+  }
+  .form-type-textfield {
+    display: block;
+    float: left;
+    margin: 0;
+  }
+}
+

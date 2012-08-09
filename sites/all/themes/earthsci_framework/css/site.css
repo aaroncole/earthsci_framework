@@ -1,0 +1,430 @@
+/* http://www.stanford.edu/group/webdev/color/ */
+/* -----  Articles  ----- */
+/* line 5, ../sass/partials/_objects.scss */
+.article {
+  border-top: 1px dotted #e9e6df;
+  padding: 10px 0;
+}
+/* line 8, ../sass/partials/_objects.scss */
+.article .views-field-title {
+  font-size: 140%;
+}
+
+/* -----  Media Block  ----- */
+/* line 15, ../sass/partials/_objects.scss */
+.media {
+  margin: 10px;
+}
+
+/* line 16, ../sass/partials/_objects.scss */
+.media, .bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+
+/* line 17, ../sass/partials/_objects.scss */
+.media .img {
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 18, ../sass/partials/_objects.scss */
+.media .img img {
+  display: block;
+  border: 1px solid #e9e6df;
+  padding: 5px;
+}
+
+/* line 19, ../sass/partials/_objects.scss */
+.media .imgExt {
+  float: right;
+  margin-left: 10px;
+}
+
+/* ------ Photos ------ */
+/* line 24, ../sass/partials/_objects.scss */
+.img img,
+.node-profile img {
+  border: 1px solid #e9e6df;
+  padding: 5px;
+}
+
+/* ----- Slideshows  ----- */
+/* line 30, ../sass/partials/_objects.scss */
+.skin-default {
+  position: relative;
+}
+/* line 33, ../sass/partials/_objects.scss */
+.skin-default:hover .views-slideshow-controls-bottom {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* line 41, ../sass/partials/_objects.scss */
+.views-slideshow-controls-bottom {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  text-align: center;
+  z-index: 20;
+}
+
+/* line 48, ../sass/partials/_objects.scss */
+.views-slideshow-controls-text a {
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+}
+/* line 52, ../sass/partials/_objects.scss */
+.views-slideshow-controls-text span {
+  display: block;
+  background-color: #e9e6df;
+  border: 1px solid #3f3c30;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  color: #3f3c30;
+  font-size: 20px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  padding: 3px;
+  width: 20px;
+}
+/* line 63, ../sass/partials/_objects.scss */
+.views-slideshow-controls-text span:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 67, ../sass/partials/_objects.scss */
+.views-slideshow-controls-text span.views-slideshow-controls-text-previous {
+  float: left;
+}
+/* line 68, ../sass/partials/_objects.scss */
+.views-slideshow-controls-text span.views-slideshow-controls-text-previous:after {
+  content: '<';
+}
+/* line 73, ../sass/partials/_objects.scss */
+.views-slideshow-controls-text span.views-slideshow-controls-text-pause {
+  display: none;
+}
+/* line 76, ../sass/partials/_objects.scss */
+.views-slideshow-controls-text span.views-slideshow-controls-text-next {
+  float: right;
+}
+/* line 77, ../sass/partials/_objects.scss */
+.views-slideshow-controls-text span.views-slideshow-controls-text-next:after {
+  content: '>';
+}
+
+/* line 86, ../sass/partials/_objects.scss */
+.views-slideshow-pager-fields {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+}
+
+/* line 93, ../sass/partials/_objects.scss */
+.views-slideshow-pager-field-item {
+  background-color: #e9e6df;
+  border: 1px solid #3f3c30;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  float: left;
+  margin: 3px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  font: 0/0 serif;
+  text-shadow: none;
+  color: transparent;
+  width: 8px;
+  height: 8px;
+  text-align: center;
+}
+/* line 105, ../sass/partials/_objects.scss */
+.views-slideshow-pager-field-item.active {
+  background-color: #8c1515;
+}
+
+/* -----  Sidebar Blocks  ----- */
+/* line 111, ../sass/partials/_objects.scss */
+#sidebar-second .block {
+  background-color: #f2f1eb;
+  border: 1px solid #e9e6df;
+  padding: 5px;
+}
+
+/* --- Typography --- */
+/* line 3, ../sass/partials/_typography.scss */
+a {
+  color: #8c1515;
+}
+
+/* line 7, ../sass/partials/_typography.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 11, ../sass/partials/_typography.scss */
+#footer a {
+  color: #3f3c30;
+}
+
+/* line 15, ../sass/partials/_typography.scss */
+.group a {
+  background-color: #f2f1eb;
+  border: 1px solid #e9e6df;
+  display: block;
+  margin: 5px;
+  padding: 12px;
+  text-align: center;
+}
+
+/* line 25, ../sass/partials/_typography.scss */
+#navigation-primary ul li a.active {
+  background-color: #f2f1eb;
+}
+/* line 28, ../sass/partials/_typography.scss */
+#navigation-primary ul li a.active-trail {
+  background-color: #e9e6df;
+}
+
+/* line 32, ../sass/partials/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  xborder-bottom: 2px solid #8c1515;
+  color: #3f3c30;
+  font-family: Arial Narrow, Arial, Helvetica,sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 40, ../sass/partials/_typography.scss */
+h1, .h1 {
+  font-size: 1.8em;
+}
+
+/* line 44, ../sass/partials/_typography.scss */
+h2, .h2 {
+  font-size: 1.6em;
+}
+
+/* line 48, ../sass/partials/_typography.scss */
+h3, .h3 {
+  border: none;
+  font-size: 1.5em;
+}
+
+/* line 53, ../sass/partials/_typography.scss */
+h4, .h4 {
+  border: none;
+  font-size: 1.4em;
+}
+
+/* line 58, ../sass/partials/_typography.scss */
+h5, .h5 {
+  border: none;
+  font-size: 1.3em;
+}
+
+/* line 63, ../sass/partials/_typography.scss */
+h6, .h6, #footer h2 {
+  border: none;
+  font-size: 1.2em;
+}
+
+/* line 1, ../sass/partials/_forms.scss */
+legend {
+  margin-bottom: 0;
+}
+
+/* line 10, ../sass/site.scss */
+.field-name-field-page-image {
+  float: left;
+  width: 250px;
+  margin: 0 1em 1em 0;
+}
+/* line 14, ../sass/site.scss */
+.field-name-field-page-image figure {
+  margin: 0;
+}
+
+/* line 19, ../sass/site.scss */
+figcaption {
+  text-align: center;
+  font-style: italic;
+  background-color: #f2f1eb;
+  padding: 5px;
+}
+
+/* line 26, ../sass/site.scss */
+#name {
+  font-family: Arial Narrow,Arial,Helvetica,sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 31, ../sass/site.scss */
+#footer {
+  background-color: #f2f1eb;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  margin: 0;
+  width: auto;
+}
+
+/* line 41, ../sass/site.scss */
+.front #header {
+  background: transparent url(/drupal7/sites/default/files/vista3.png) no-repeat center 0;
+  xbackground: transparent url(/drupal7/sites/default/files/meadow.png) no-repeat center 0;
+  xbackground: transparent url(/drupal7/sites/default/files/lake.png) no-repeat center 0;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  margin: 0;
+  padding: 50px 0;
+}
+/* line 49, ../sass/site.scss */
+.front #header .banner {
+  padding: 5px;
+}
+/* line 54, ../sass/site.scss */
+.front #header #site #name a {
+  text-shadow: 0 0 3px #000;
+}
+/* line 60, ../sass/site.scss */
+.front .menu {
+  margin-bottom: 1em;
+  padding: 0;
+}
+/* line 4, ../sass/partials/_mixins.scss */
+.front .menu li {
+  display: inline;
+  list-style: none;
+}
+/* line 8, ../sass/partials/_mixins.scss */
+.front .menu a {
+  margin-bottom: 5px;
+}
+
+/* line 66, ../sass/site.scss */
+#block-search-form {
+  margin: 0;
+}
+/* line 68, ../sass/site.scss */
+#block-search-form .form-actions {
+  background-color: transparent;
+  border: none;
+}
+
+/* --- Buttons -- */
+/* --- Menus -- */
+/* line 88, ../sass/site.scss */
+.sidebar .menu {
+  padding-left: 0;
+}
+/* line 90, ../sass/site.scss */
+.sidebar .menu li.leaf {
+  list-style-type: none;
+  list-style-image: url();
+  padding: 0;
+}
+/* line 95, ../sass/site.scss */
+.sidebar .menu a {
+  border-bottom: 1px dotted #e9e6df;
+  display: block;
+  padding: 5px;
+  position: relative;
+}
+/* line 101, ../sass/site.scss */
+.sidebar .menu a:hover {
+  background-color: #f2f1eb;
+  border-bottom-color: #3f3c30;
+  -webkit-transition-duration: 0.25s;
+  -moz-transition-duration: 0.25s;
+  -ms-transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+}
+/* line 106, ../sass/site.scss */
+.sidebar .menu a.active {
+  cursor: default;
+  border-bottom-color: #3f3c30;
+}
+/* line 110, ../sass/site.scss */
+.sidebar .menu a.active:hover {
+  background-color: inherit;
+}
+
+/* --- Forms --- */
+/* line 117, ../sass/site.scss */
+legend {
+  line-height: inherit;
+  border: none;
+}
+
+/* --- People --- */
+/* line 125, ../sass/site.scss */
+.node-profile fieldset {
+  margin: 0 0 1em 0;
+  padding: 1em;
+}
+
+/* line 131, ../sass/site.scss */
+#navigation-primary {
+  position: inherit;
+}
+
+/* line 135, ../sass/site.scss */
+.navbar {
+  background-color: transparent;
+  border: 1px dotted #e9e6df;
+}
+/* line 138, ../sass/site.scss */
+.navbar .block {
+  margin-bottom: 0!important;
+}
+/* line 143, ../sass/site.scss */
+.navbar .btn-navbar,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar:hover {
+  background: #8c1515 url();
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+/* line 149, ../sass/site.scss */
+.navbar .navbar-inner {
+  background-color: transparent;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  min-height: 0;
+  padding: 0;
+}
+/* line 156, ../sass/site.scss */
+.navbar li {
+  line-height: 25px;
+}
+/* line 160, ../sass/site.scss */
+.navbar .navbar-form {
+  border: 0;
+  float: right;
+}
+/* line 164, ../sass/site.scss */
+.navbar .form-type-textfield {
+  display: block;
+  float: left;
+  margin: 0;
+}
