@@ -1,0 +1,25 @@
+/**
+ * @file
+ * RTL companion for the tabs.css file.
+ */
+/* line 90, ../sass/_base.scss */
+a {
+  color: #990000;
+}
+
+/* line 97, ../sass/_base.scss */
+#main .title, #main .block-title {
+  color: #266a8c;
+  font-family: Georgia, "Times New Roman", "DejaVu Serif", serif;
+}
+
+/* line 11, ../sass/tabs-rtl.scss */
+ul.primary li,
+ul.secondary li {
+  float: right;
+}
+
+/* line 17, ../sass/tabs-rtl.scss */
+ul.primary li {
+  margin: 0.5em 3px 0 0;
+}

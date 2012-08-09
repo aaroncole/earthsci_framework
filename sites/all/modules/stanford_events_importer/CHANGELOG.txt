@@ -1,0 +1,5 @@
+Stanford Events Importer 7.x-1.0-alpha2, 2012-01-23
+------------------------------------------------
+-Initial release of Stanford Events Importer for 
+  Drupal 7
+

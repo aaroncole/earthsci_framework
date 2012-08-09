@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Stanford Events Importer feature.
+ */
+
+include_once('stanford_events_importer.features.inc');
