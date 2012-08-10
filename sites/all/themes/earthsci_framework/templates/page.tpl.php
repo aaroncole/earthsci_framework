@@ -24,7 +24,7 @@
       <div id="header" role="banner" class="clearfix">
       <div class="container">
         <div class="row">
-	<div class="span5">
+	<div class="span7">
         <?php if ($logo): ?>
         <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /></a> </div>
         <?php endif; ?>
@@ -40,7 +40,7 @@
         <?php print render($page['header']); ?>
         <?php endif; ?>
       </div>
-      <div class="span7">
+      <div class="span5">
       <?php if ($page['header_nav']): ?>
       <?php print render($page['header_nav']); ?>
       <?php endif; ?>
