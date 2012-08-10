@@ -285,7 +285,7 @@ figcaption {
 
 /* line 41, ../sass/site.scss */
 .front #header {
-  background: transparent url(/drupal7/sites/default/files/vista3.png) no-repeat center 0;
+  background: transparent url(../../../../default/files/vista3.png) no-repeat center 0;
   xbackground: transparent url(/drupal7/sites/default/files/meadow.png) no-repeat center 0;
   xbackground: transparent url(/drupal7/sites/default/files/lake.png) no-repeat center 0;
   -webkit-box-shadow: 0px 0px 5px #333333;
