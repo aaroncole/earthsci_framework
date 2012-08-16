@@ -401,12 +401,13 @@ legend {
   background: #8c1515 url();
   color: #fbfbf9;
   display: block;
+  float: left;
   xposition: absolute;
   xtop: 0;
   xright: 5px;
   left: 0;
 }
-/* line 152, ../sass/site.scss */
+/* line 153, ../sass/site.scss */
 .navbar .navbar-inner {
   background-color: transparent;
   background-image: none;
@@ -416,16 +417,16 @@ legend {
   min-height: 0;
   padding: 0;
 }
-/* line 159, ../sass/site.scss */
+/* line 160, ../sass/site.scss */
 .navbar li {
   line-height: 25px;
 }
-/* line 163, ../sass/site.scss */
+/* line 164, ../sass/site.scss */
 .navbar .navbar-form {
   border: 0;
   float: right;
 }
-/* line 167, ../sass/site.scss */
+/* line 168, ../sass/site.scss */
 .navbar .form-type-textfield {
   display: block;
   float: left;

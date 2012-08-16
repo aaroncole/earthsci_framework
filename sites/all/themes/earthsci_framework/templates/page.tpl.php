@@ -24,7 +24,6 @@
       <div id="header" role="banner" class="clearfix">
       <div class="container">
         <div class="row">
-	<div class="span7">
         <?php if ($logo): ?>
         <div id="logo"> <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>"><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /></a> </div>
         <?php endif; ?>
@@ -39,12 +38,9 @@
         <?php if ($page['header']): ?>
         <?php print render($page['header']); ?>
         <?php endif; ?>
-      </div>
-      <div class="span5">
       <?php if ($page['header_nav']): ?>
       <?php print render($page['header_nav']); ?>
       <?php endif; ?>
-      </div>
       </div>
       </div>
       </div>
@@ -52,14 +48,6 @@
     <div class="container">
       <?php if ($page['top']): ?>
       <div id="top" class="row">
-	 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-	   Menu 
-	   <!--
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-	   -->
-        </a>
       <?php print render($page['top']); ?></div>
       <?php endif; ?>
       <?php if ($main_menu || !empty($page['nav'])): ?>
