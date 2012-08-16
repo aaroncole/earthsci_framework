@@ -51,13 +51,7 @@
       <!-- /#header -->
     <div class="container">
       <?php if ($page['top']): ?>
-      <div id="top" class="row"><?php print render($page['top']); ?></div>
-      <?php endif; ?>
-      <?php if ($main_menu || !empty($page['nav'])): ?>
-      <div id="navigation-primary" role="navigation" class="clearfix">
-        <div class="navbar row">
-	<div class="navbar-inner">
-	<div class="">
+      <div id="top" class="row">
 	 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 	   Menu 
 	   <!--
@@ -66,6 +60,13 @@
            <span class="icon-bar"></span>
 	   -->
         </a>
+      <?php print render($page['top']); ?></div>
+      <?php endif; ?>
+      <?php if ($main_menu || !empty($page['nav'])): ?>
+      <div id="navigation-primary" role="navigation" class="clearfix">
+        <div class="navbar row">
+	<div class="navbar-inner">
+	<div class="">
 	<!--<div class="nav-collapse collapse">-->
         <div class="nav-collapse collapse">
         <?php if ($page['nav']): ?>
