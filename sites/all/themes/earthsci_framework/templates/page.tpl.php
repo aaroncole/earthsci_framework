@@ -58,11 +58,14 @@
         <div class="navbar row">
 	<div class="navbar-inner">
 	<div class="">
-	 <!--<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	   Menu 
+	   <!--
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
-        </a>-->
+	   -->
+        </a>
 	<!--<div class="nav-collapse collapse">-->
         <div class="nav-collapse collapse">
         <?php if ($page['nav']): ?>

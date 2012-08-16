@@ -399,11 +399,14 @@ legend {
 .navbar .btn-navbar:active,
 .navbar .btn-navbar:hover {
   background: #8c1515 url();
-  position: absolute;
-  top: 0;
-  right: 5px;
+  color: #fbfbf9;
+  display: block;
+  xposition: absolute;
+  xtop: 0;
+  xright: 5px;
+  left: 0;
 }
-/* line 149, ../sass/site.scss */
+/* line 152, ../sass/site.scss */
 .navbar .navbar-inner {
   background-color: transparent;
   background-image: none;
@@ -413,16 +416,16 @@ legend {
   min-height: 0;
   padding: 0;
 }
-/* line 156, ../sass/site.scss */
+/* line 159, ../sass/site.scss */
 .navbar li {
   line-height: 25px;
 }
-/* line 160, ../sass/site.scss */
+/* line 163, ../sass/site.scss */
 .navbar .navbar-form {
   border: 0;
   float: right;
 }
-/* line 164, ../sass/site.scss */
+/* line 167, ../sass/site.scss */
 .navbar .form-type-textfield {
   display: block;
   float: left;

@@ -142,9 +142,12 @@ legend {
   .btn-navbar:active,
   .btn-navbar:hover {
     background: $cardinal url();
-    position: absolute;
-    top: 0;
-    right: 5px;
+    color: $white;
+    display: block;
+    xposition: absolute;
+    xtop: 0;
+    xright: 5px;
+    left: 0;
   }
   .navbar-inner {
     background-color: transparent;
