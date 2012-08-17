@@ -161,8 +161,8 @@ legend {
     width: 200px;
   }
   .in {
-    #block-menu-block-11 li {
-      float: none;
+    li {
+      float: none !important;
     }
     form {
       float: none;

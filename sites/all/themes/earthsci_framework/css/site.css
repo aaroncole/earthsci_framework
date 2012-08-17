@@ -428,8 +428,8 @@ legend {
   width: 200px;
 }
 /* line 164, ../sass/site.scss */
-.navbar .in #block-menu-block-11 li {
-  float: none;
+.navbar .in li {
+  float: none !important;
 }
 /* line 167, ../sass/site.scss */
 .navbar .in form {
