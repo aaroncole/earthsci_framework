@@ -37,7 +37,6 @@ figcaption {
 
 // Front page styles
 .front { 
-
   #header {
     background: transparent url(../../../../default/files/vista3.png) no-repeat center 0;
     xbackground: transparent url(/drupal7/sites/default/files/meadow.png) no-repeat center 0;
@@ -147,10 +146,6 @@ legend {
     border: 1px solid $grey;
     border: none;
     float: none;
-    width: 50%;
-  }
-  input {
-    width: auto;
   }
   .navbar-inner {
     background-color: transparent;
@@ -159,6 +154,21 @@ legend {
     min-height: 0;
     padding: 0;
   }
+  form {
+    padding: 5px 5px 0 0;
+  }
+  .serchf {
+    width: 200px;
+  }
+  .in {
+    #block-menu-block-11 li {
+      float: none;
+    }
+    form {
+      float: none;
+    }
+  }
+
   li {
     line-height: 25px;
   }
@@ -167,15 +177,4 @@ legend {
     border: 0;
     float: right;
   }
-  .form-type-textfield {
-    display: block;
-    float: left;
-    margin: 0;
-  }
-}
-
-
-.region-upper .block {
-  background-color: $beige;
-  border: 1px solid $grey;
 }

@@ -287,7 +287,7 @@ figcaption {
   width: auto;
 }
 
-/* line 41, ../sass/site.scss */
+/* line 40, ../sass/site.scss */
 .front #header {
   background: transparent url(../../../../default/files/vista3.png) no-repeat center 0;
   xbackground: transparent url(/drupal7/sites/default/files/meadow.png) no-repeat center 0;
@@ -298,15 +298,15 @@ figcaption {
   margin: 0;
   padding: 50px 0;
 }
-/* line 49, ../sass/site.scss */
+/* line 48, ../sass/site.scss */
 .front #header .banner {
   padding: 5px;
 }
-/* line 54, ../sass/site.scss */
+/* line 53, ../sass/site.scss */
 .front #header #site #name a {
   text-shadow: 0 0 3px #000;
 }
-/* line 60, ../sass/site.scss */
+/* line 59, ../sass/site.scss */
 .front .menu {
   margin-bottom: 1em;
   padding: 0;
@@ -321,11 +321,11 @@ figcaption {
   margin-bottom: 5px;
 }
 
-/* line 66, ../sass/site.scss */
+/* line 65, ../sass/site.scss */
 #block-search-form {
   margin: 0;
 }
-/* line 68, ../sass/site.scss */
+/* line 67, ../sass/site.scss */
 #block-search-form .form-actions {
   background-color: transparent;
   border: none;
@@ -333,24 +333,24 @@ figcaption {
 
 /* --- Buttons -- */
 /* --- Menus -- */
-/* line 88, ../sass/site.scss */
+/* line 87, ../sass/site.scss */
 .sidebar .menu {
   padding-left: 0;
 }
-/* line 90, ../sass/site.scss */
+/* line 89, ../sass/site.scss */
 .sidebar .menu li.leaf {
   list-style-type: none;
   list-style-image: url();
   padding: 0;
 }
-/* line 95, ../sass/site.scss */
+/* line 94, ../sass/site.scss */
 .sidebar .menu a {
   border-bottom: 1px dotted #e9e6df;
   display: block;
   padding: 5px;
   position: relative;
 }
-/* line 101, ../sass/site.scss */
+/* line 100, ../sass/site.scss */
 .sidebar .menu a:hover {
   background-color: #f2f1eb;
   border-bottom-color: #3f3c30;
@@ -360,46 +360,46 @@ figcaption {
   -o-transition-duration: 0.25s;
   transition-duration: 0.25s;
 }
-/* line 106, ../sass/site.scss */
+/* line 105, ../sass/site.scss */
 .sidebar .menu a.active {
   cursor: default;
   border-bottom-color: #3f3c30;
 }
-/* line 110, ../sass/site.scss */
+/* line 109, ../sass/site.scss */
 .sidebar .menu a.active:hover {
   background-color: inherit;
 }
 
 /* --- Forms --- */
-/* line 117, ../sass/site.scss */
+/* line 116, ../sass/site.scss */
 legend {
   line-height: inherit;
   border: none;
 }
 
 /* --- People --- */
-/* line 125, ../sass/site.scss */
+/* line 124, ../sass/site.scss */
 .node-profile fieldset {
   margin: 0 0 1em 0;
   padding: 1em;
 }
 
-/* line 131, ../sass/site.scss */
+/* line 130, ../sass/site.scss */
 #navigation-primary {
   position: inherit;
 }
 
-/* line 135, ../sass/site.scss */
+/* line 134, ../sass/site.scss */
 .navbar {
   background-color: transparent;
   border: 1px dotted #e9e6df;
   position: relative;
 }
-/* line 139, ../sass/site.scss */
+/* line 138, ../sass/site.scss */
 .navbar .block {
   margin-bottom: 0!important;
 }
-/* line 144, ../sass/site.scss */
+/* line 143, ../sass/site.scss */
 .navbar .btn-navbar,
 .navbar .btn-navbar:active,
 .navbar .btn-navbar:hover {
@@ -408,13 +408,8 @@ legend {
   border: 1px solid #e9e6df;
   border: none;
   float: none;
-  width: 50%;
 }
-/* line 152, ../sass/site.scss */
-.navbar input {
-  width: auto;
-}
-/* line 155, ../sass/site.scss */
+/* line 150, ../sass/site.scss */
 .navbar .navbar-inner {
   background-color: transparent;
   background-image: none;
@@ -424,24 +419,28 @@ legend {
   min-height: 0;
   padding: 0;
 }
-/* line 162, ../sass/site.scss */
+/* line 157, ../sass/site.scss */
+.navbar form {
+  padding: 5px 5px 0 0;
+}
+/* line 160, ../sass/site.scss */
+.navbar .serchf {
+  width: 200px;
+}
+/* line 164, ../sass/site.scss */
+.navbar .in #block-menu-block-11 li {
+  float: none;
+}
+/* line 167, ../sass/site.scss */
+.navbar .in form {
+  float: none;
+}
+/* line 172, ../sass/site.scss */
 .navbar li {
   line-height: 25px;
 }
-/* line 166, ../sass/site.scss */
+/* line 176, ../sass/site.scss */
 .navbar .navbar-form {
   border: 0;
   float: right;
-}
-/* line 170, ../sass/site.scss */
-.navbar .form-type-textfield {
-  display: block;
-  float: left;
-  margin: 0;
-}
-
-/* line 178, ../sass/site.scss */
-.region-upper .block {
-  background-color: #f2f1eb;
-  border: 1px solid #e9e6df;
 }
