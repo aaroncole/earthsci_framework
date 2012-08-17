@@ -54,8 +54,14 @@
       <div id="navigation-primary" role="navigation" class="clearfix">
         <div class="navbar row">
 	<div class="navbar-inner">
-	<div class="">
-	<!--<div class="nav-collapse collapse">-->
+	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">Site Navigation <em class="icon-th-list">&nbsp;</em></a>
+        <form id="searchbx" class="form-inline pull-right" name="searchbx" accept-charset="UTF-8" method="post" action="<?php print base_path() ?>search">
+      <input type="search" class="serchf" id="keys" name="keys" size="16" maxlength="66" placeholder="Search the site" />
+      <input name="button" type="submit" id="button" value="Search" />
+        <input type="hidden" value="<?php print drupal_get_token('search_form'); ?>" name="form_token" />
+<input type="hidden" value="search_form" id="edit-search-form" name="form_id" />
+<input type="hidden" name="form_id" id="edit-search-form" value="search_form" />
+    </form>
         <div class="nav-collapse collapse">
         <?php if ($page['nav']): ?>
           <?php print render($page['nav']); ?>
@@ -78,7 +84,7 @@
         <?php endif; ?>
         <?php endif; ?>
         </div>
-      </div></div></div></div>
+      </div></div></div>
       <?php endif; ?>
       <!-- /#navigation-primary -->
       

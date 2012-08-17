@@ -135,20 +135,22 @@ legend {
 .navbar {
   background-color: transparent;
   border: 1px dotted $grey;
+  position: relative;
   .block {
     margin-bottom: 0!important;
   }
   .btn-navbar,
   .btn-navbar:active,
   .btn-navbar:hover {
-    background: $cardinal url();
-    color: $white;
-    display: block;
-    float: left;
-    xposition: absolute;
-    xtop: 0;
-    xright: 5px;
-    left: 0;
+    color: $cardinal;
+    background: $beige;
+    border: 1px solid $grey;
+    border: none;
+    float: none;
+    width: 50%;
+  }
+  input {
+    width: auto;
   }
   .navbar-inner {
     background-color: transparent;
@@ -172,3 +174,8 @@ legend {
   }
 }
 
+
+.region-upper .block {
+  background-color: $beige;
+  border: 1px solid $grey;
+}
