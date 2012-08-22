@@ -473,7 +473,7 @@ legend {
   }
   /* line 204, ../sass/site.scss */
   .nav-collapse.collapse .block-block {
-    z-index: 3;
+    z-index: 1;
   }
   /* line 206, ../sass/site.scss */
   .nav-collapse.collapse .block-block form {
@@ -486,7 +486,7 @@ legend {
     z-index: -1;
   }
 
-  /* line 224, ../sass/site.scss */
+  /* line 222, ../sass/site.scss */
   .navsearch,
   .navedit {
     float: right !important;

@@ -22,7 +22,7 @@
 
     // Show/hide search box
     //search.hide();
-    //search.css('top','-35px');
+    search.css('top','-35px');
     $('.navsearch').toggle( 
       function() {
         //search.show('slow');
