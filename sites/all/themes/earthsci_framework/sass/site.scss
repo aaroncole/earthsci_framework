@@ -206,8 +206,10 @@ legend {
       form {
         background-color: #fff;
         border: 1px dotted $grey;
+        //display: none;
+        height: 0;
+        overflow: hidden;
         float: none;
-        margin: 3px;
         position: relative;
         text-align: center;
         z-index: -100;

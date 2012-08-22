@@ -479,14 +479,15 @@ legend {
   .nav-collapse.collapse .block-block form {
     background-color: #fff;
     border: 1px dotted #e9e6df;
+    height: 0;
+    overflow: hidden;
     float: none;
-    margin: 3px;
     position: relative;
     text-align: center;
     z-index: -100;
   }
 
-  /* line 222, ../sass/site.scss */
+  /* line 224, ../sass/site.scss */
   .navsearch,
   .navedit {
     float: right !important;

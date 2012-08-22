@@ -13,24 +13,21 @@
     // Slide the page to reveal the navigation
     $('.navbtn').toggle( 
       function() {
-        page.animate({ left: '260px' }, '100');
+        page.animate({ left: '260px' }, 'fast');
       }, 
       function() {
-        page.animate({ left: '0' }, '100');
+        page.animate({ left: '0' }, 'fast');
       }
     );
 
-    // Show/hide search box
-    //search.hide();
-    search.css('top','-35px');
+    // Show/hide search box and set focus on show
     $('.navsearch').toggle( 
       function() {
-        //search.show('slow');
-	search.animate({ top : '0' }, 'slow');
+	$('#keys').focus(); 
+	search.animate({ height : '35px' }, 'fast');
       }, 
       function() {
-        //search.hide('slow');
-	search.animate({ top : '-35px' }, 'slow');
+	search.animate({ height : '0' }, 'fast');
       }  
     );
   });
