@@ -460,6 +460,11 @@ legend {
   }
 
   /* line 194, ../sass/site.scss */
+  .navsearch {
+    float: right !important;
+  }
+
+  /* line 198, ../sass/site.scss */
   form #button {
     display: none;
     float: left;

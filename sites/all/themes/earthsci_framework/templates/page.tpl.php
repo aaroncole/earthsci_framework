@@ -54,7 +54,8 @@
       <div id="navigation-primary" role="navigation" class="clearfix">
         <div class="navbar row">
 	<div class="navbar-inner">
-	<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><em class="icon-th"></em></a>
+	<a class="btn btn-navbar navbtn" data-toggle="collapse" data-target=".nav-collapse"><em class="icon-th"></em></a>
+        <a class="btn btn-navbar navsearch pull-right"><em class="icon-search"></em></a>
         <div class="nav-collapse collapse">
         <?php if ($page['nav']): ?>
           <?php print render($page['nav']); ?>
