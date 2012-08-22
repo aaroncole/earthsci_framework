@@ -54,9 +54,11 @@
       <div id="navigation-primary" role="navigation" class="clearfix">
         <div class="navbar row">
 	<div class="navbar-inner">
-	<a class="btn btn-navbar navbtn" data-toggle="collapse" data-target=".nav-collapse"><em class="icon-th"></em></a>
+	<a href="#block-menu-block-11" class="btn btn-navbar navbtn" data-toggle="collapse" data-target=".nav-collapse"><em class="icon-th"></em></a>
         <a class="btn btn-navbar navsearch"><em class="icon-search"></em></a>
-        <a href="<?php print base_path(); ?>/node/add/" class="btn btn-navbar navedit"><em class="icon-pencil"></em></a>
+        <?php if (user_access('administer content')): ?>
+        <a href="<?php print base_path(); ?>node/add/" class="btn btn-navbar navedit"><em class="icon-pencil"></em></a>
+        <?php endif; ?>
         <div class="nav-collapse collapse">
         <?php if ($page['nav']): ?>
           <?php print render($page['nav']); ?>

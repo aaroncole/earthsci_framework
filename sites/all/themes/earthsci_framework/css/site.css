@@ -452,22 +452,27 @@ legend {
   /* line 185, ../sass/site.scss */
   .nav-collapse.collapse {
     overflow: visible;
+    position: relative;
+  }
+  /* line 189, ../sass/site.scss */
+  .nav-collapse.collapse .block-menu-block {
     position: absolute;
-    top: 45px;
-    left: -260px;
-    width: 240px;
+    top: 0;
+    left: -240px;
+    width: 220px;
     height: 300px;
   }
+  /* line 198, ../sass/site.scss */
+  .nav-collapse.collapse .block-block form {
+    border: 1px dotted #e9e6df;
+    float: none;
+    height: auto;
+    text-align: center;
+  }
 
-  /* line 195, ../sass/site.scss */
+  /* line 211, ../sass/site.scss */
   .navsearch,
   .navedit {
     float: right !important;
-  }
-
-  /* line 199, ../sass/site.scss */
-  form #button {
-    display: none;
-    float: left;
   }
 }

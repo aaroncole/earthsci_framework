@@ -184,20 +184,31 @@ legend {
 
   .nav-collapse.collapse {
     overflow: visible;
-    position: absolute;
-    top: 45px;
-    left: -260px;
-    width: 240px;
-    height: 300px;
+    position: relative;
+
+    .block-menu-block {
+      position: absolute;
+      top: 0;
+      left: -240px;
+      width: 220px;
+      height: 300px;
+    }
+
+    .block-block {
+      form {
+        border: 1px dotted $grey;
+        float: none;
+        //height: 0;
+        height: auto;
+	//position: relative;
+	//top: -35px;
+        text-align: center;
+      }
+    }
   }
   
   .navsearch,
   .navedit {
     float: right !important;
-  }
-
-  form #button {
-    display: none;
-    float: left;
   }
 }
