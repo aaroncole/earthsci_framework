@@ -202,7 +202,7 @@ legend {
     }
 
     .block-block {
-      z-index: 1;
+      z-index: 100;
       form {
         background-color: #fff;
         border: 1px dotted $grey;
@@ -210,7 +210,7 @@ legend {
         margin: 3px;
         position: relative;
         text-align: center;
-        z-index: -1;
+        z-index: -100;
         #button {
          // display: none;
         }

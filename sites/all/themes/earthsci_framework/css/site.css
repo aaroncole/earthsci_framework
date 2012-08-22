@@ -473,7 +473,7 @@ legend {
   }
   /* line 204, ../sass/site.scss */
   .nav-collapse.collapse .block-block {
-    z-index: 1;
+    z-index: 100;
   }
   /* line 206, ../sass/site.scss */
   .nav-collapse.collapse .block-block form {
@@ -483,7 +483,7 @@ legend {
     margin: 3px;
     position: relative;
     text-align: center;
-    z-index: -1;
+    z-index: -100;
   }
 
   /* line 222, ../sass/site.scss */
