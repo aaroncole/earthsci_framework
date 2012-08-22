@@ -2,24 +2,35 @@
   $(window).load(function(){
 
     // Override Twitter Bootstrap positioning for navbar
-    // Showing mobile navigation when icon selected
+
+    var header = $('#header').css('height'),
+	search = $('#searchbx'),
+	page = $('#site-content');
+
+    // Move the navigation up to the top of the screen
+    $('.region-nav .block-menu-block').css('top', '-' + header);
+
+    // Slide the page to reveal the navigation
     $('.navbtn').toggle( 
       function() {
-        $('#site-content').animate({ left: '260px' }, '100');
+        page.animate({ left: '260px' }, '100');
       }, 
       function() {
-        $('#site-content').animate({ left: '0' }, '100');
+        page.animate({ left: '0' }, '100');
       }
     );
 
-    $('#searchbx').hide();
+    // Show/hide search box
+    //search.hide();
+    //search.css('top','-35px');
     $('.navsearch').toggle( 
       function() {
-        $('#searchbx').show('slow');
-        $('#searchbx').focus();
+        //search.show('slow');
+	search.animate({ top : '0' }, 'slow');
       }, 
       function() {
-        $('#searchbx').hide('slow');
+        //search.hide('slow');
+	search.animate({ top : '-35px' }, 'slow');
       }  
     );
   });

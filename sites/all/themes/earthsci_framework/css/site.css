@@ -444,17 +444,26 @@ legend {
 
 @media (max-width: 970px) {
   /* line 180, ../sass/site.scss */
+  #navigation-primary {
+    background-color: #fff;
+  }
+  /* line 182, ../sass/site.scss */
   #navigation-primary ul li {
     display: block;
     float: none;
   }
 
-  /* line 185, ../sass/site.scss */
+  /* line 188, ../sass/site.scss */
+  .navbar {
+    margin-bottom: 0;
+  }
+
+  /* line 192, ../sass/site.scss */
   .nav-collapse.collapse {
     overflow: visible;
     position: relative;
   }
-  /* line 189, ../sass/site.scss */
+  /* line 196, ../sass/site.scss */
   .nav-collapse.collapse .block-menu-block {
     position: absolute;
     top: 0;
@@ -462,15 +471,22 @@ legend {
     width: 220px;
     height: 300px;
   }
-  /* line 198, ../sass/site.scss */
+  /* line 204, ../sass/site.scss */
+  .nav-collapse.collapse .block-block {
+    z-index: 3;
+  }
+  /* line 206, ../sass/site.scss */
   .nav-collapse.collapse .block-block form {
+    background-color: #fff;
     border: 1px dotted #e9e6df;
     float: none;
-    height: auto;
+    margin: 3px;
+    position: relative;
     text-align: center;
+    z-index: -1;
   }
 
-  /* line 211, ../sass/site.scss */
+  /* line 224, ../sass/site.scss */
   .navsearch,
   .navedit {
     float: right !important;

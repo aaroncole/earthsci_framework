@@ -177,9 +177,16 @@ legend {
 
 @media (max-width: 970px) {
 
-  #navigation-primary ul li {
-    display: block;
-    float: none;
+  #navigation-primary {
+    background-color: #fff;
+    ul li {
+      display: block;
+      float: none;
+    }
+  }
+
+  .navbar {
+    margin-bottom: 0;
   }
 
   .nav-collapse.collapse {
@@ -195,14 +202,20 @@ legend {
     }
 
     .block-block {
+      z-index: 3;
       form {
+        background-color: #fff;
         border: 1px dotted $grey;
+        //display: none;
         float: none;
-        //height: 0;
-        height: auto;
-	//position: relative;
-	//top: -35px;
+        margin: 3px;
+        position: relative;
         text-align: center;
+        //top: -35px;
+        z-index: -1;
+        #button {
+         // display: none;
+        }
       }
     }
   }
