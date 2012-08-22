@@ -1,3 +1,5 @@
+(function($)
+{
 // Add text to search box
 $(document).ready(function(){
 	// Header Drupal Search Box
@@ -37,5 +39,4 @@ addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		window.scrollTo(0, 1);
 	}
 }
-
-
+}(jQuery));

@@ -145,7 +145,7 @@ legend {
     background: $beige;
     border: 1px solid $grey;
     border: none;
-    float: none;
+    float: left;
   }
   .navbar-inner {
     background-color: transparent;
@@ -160,15 +160,6 @@ legend {
   .serchf {
     width: 200px;
   }
-  .in {
-    li {
-      float: none !important;
-    }
-    form {
-      float: none;
-    }
-  }
-
   li {
     line-height: 25px;
   }
@@ -176,5 +167,32 @@ legend {
   .navbar-form {
     border: 0;
     float: right;
+  }
+}
+
+.visible-tablet .navbar li {
+  float: none;
+}
+
+
+@media (max-width: 970px) {
+
+  #navigation-primary ul li {
+    display: block;
+    float: none;
+  }
+
+  .nav-collapse.collapse {
+    overflow: visible;
+    position: absolute;
+    top: 45px;
+    left: -260px;
+    width: 240px;
+    height: 300px;
+  }
+  
+  form #button {
+    display: none;
+    float: left;
   }
 }

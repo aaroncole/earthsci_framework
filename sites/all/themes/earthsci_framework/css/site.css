@@ -407,7 +407,7 @@ legend {
   background: #f2f1eb;
   border: 1px solid #e9e6df;
   border: none;
-  float: none;
+  float: left;
 }
 /* line 150, ../sass/site.scss */
 .navbar .navbar-inner {
@@ -427,20 +427,41 @@ legend {
 .navbar .serchf {
   width: 200px;
 }
-/* line 164, ../sass/site.scss */
-.navbar .in li {
-  float: none !important;
-}
-/* line 167, ../sass/site.scss */
-.navbar .in form {
-  float: none;
-}
-/* line 172, ../sass/site.scss */
+/* line 163, ../sass/site.scss */
 .navbar li {
   line-height: 25px;
 }
-/* line 176, ../sass/site.scss */
+/* line 167, ../sass/site.scss */
 .navbar .navbar-form {
   border: 0;
   float: right;
+}
+
+/* line 173, ../sass/site.scss */
+.visible-tablet .navbar li {
+  float: none;
+}
+
+@media (max-width: 970px) {
+  /* line 180, ../sass/site.scss */
+  #navigation-primary ul li {
+    display: block;
+    float: none;
+  }
+
+  /* line 185, ../sass/site.scss */
+  .nav-collapse.collapse {
+    overflow: visible;
+    position: absolute;
+    top: 45px;
+    left: -260px;
+    width: 240px;
+    height: 300px;
+  }
+
+  /* line 194, ../sass/site.scss */
+  form #button {
+    display: none;
+    float: left;
+  }
 }

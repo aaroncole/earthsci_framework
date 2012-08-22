@@ -1,3 +1,5 @@
+(function($)
+{
 // Sticky Footer
 function positionFooter() {
   var Footer = $("#footer");
@@ -30,3 +32,4 @@ $(document).ready(function () {
   $(window).resize(positionGlobalfooter);
   $(window).load(positionGlobalfooter);
 });
+}(jQuery));
