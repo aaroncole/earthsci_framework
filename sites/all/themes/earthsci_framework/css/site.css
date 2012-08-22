@@ -459,12 +459,13 @@ legend {
     height: 300px;
   }
 
-  /* line 194, ../sass/site.scss */
-  .navsearch {
+  /* line 195, ../sass/site.scss */
+  .navsearch,
+  .navedit {
     float: right !important;
   }
 
-  /* line 198, ../sass/site.scss */
+  /* line 199, ../sass/site.scss */
   form #button {
     display: none;
     float: left;
