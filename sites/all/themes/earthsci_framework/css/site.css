@@ -479,6 +479,7 @@ legend {
   .nav-collapse.collapse .block-block form {
     background-color: #fff;
     border: 1px dotted #e9e6df;
+    display: none;
     height: 0;
     overflow: hidden;
     float: none;

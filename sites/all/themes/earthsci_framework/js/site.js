@@ -23,11 +23,13 @@
     // Show/hide search box and set focus on show
     $('.navsearch').toggle( 
       function() {
+	search.css('display', 'block');
 	$('#keys').focus(); 
 	search.animate({ height : '35px' }, 'fast');
       }, 
       function() {
-	search.animate({ height : '0' }, 'fast');
+	search.animate({ height : '0' }, 'fast', function() { search.css('display','none') });
+	//search.css('display', 'none');
       }  
     );
   });
