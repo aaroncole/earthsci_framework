@@ -117,7 +117,7 @@
           <div id="sidebar-first" class="sidebar span2"><?php print render($page['sidebar_first']); ?></div>
           <?php endif; ?>
           <!-- /#sidebar-first -->
-          <div id="main" role="main" class="<?php if (($page['sidebar_first']) && ($page['sidebar_second'])): print 'span7'; elseif (($page['sidebar_first']) || ($page['sidebar_second'])): print 'span10'; else: print 'span12';	endif; ?>">
+          <div id="main" role="main" class="<?php if (($page['sidebar_first']) && ($page['sidebar_second'])): print 'span7'; elseif (($page['sidebar_first']) || ($page['sidebar_second'])): print 'span9'; else: print 'span12';	endif; ?>">
             <?php if ($page['content_top']): ?>
             <div id="content-top" class="row"><?php print render($page['content_top']); ?></div>
             <?php endif; ?>
