@@ -44,13 +44,14 @@
       </div>
       </div>
       </div>
+       <?php if ($page['top']): ?>
+      <div id="top"><div class="container"><div class="row">
+      <?php print render($page['top']); ?>
+      </div></div></div>
+      <?php endif; ?>
       <!-- /#header -->
     <div class="container">
-      <?php if ($page['top']): ?>
-      <div id="top" class="row">
-      <?php print render($page['top']); ?></div>
-      <?php endif; ?>
-      <?php if ($main_menu || !empty($page['nav'])): ?>
+     <?php if ($main_menu || !empty($page['nav'])): ?>
       <div id="navigation-primary" role="navigation" class="clearfix">
         <div class="navbar row">
 	<div class="navbar-inner">

@@ -206,11 +206,12 @@ a:hover {
 
 /* line 32, ../sass/partials/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  xborder-bottom: 2px solid #8c1515;
-  color: #3f3c30;
   font-family: Arial Narrow, Arial, Helvetica,sans-serif;
   font-weight: normal;
-  text-transform: uppercase;
+}
+/* line 35, ../sass/partials/_typography.scss */
+h1.icon, h2.icon, h3.icon, h4.icon, h5.icon, h6.icon {
+  padding-left: 20px;
 }
 
 /* line 40, ../sass/partials/_typography.scss */
@@ -280,45 +281,41 @@ figcaption {
 /* line 31, ../sass/site.scss */
 #footer {
   background-color: #f2f1eb;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
-  margin: 0;
-  width: auto;
+  border: 1px solid #e9e6df;
 }
 
-/* line 40, ../sass/site.scss */
-.front #header {
-  background: transparent url(../../../../default/files/vista3.png) no-repeat center 0;
-  xbackground: transparent url(/drupal7/sites/default/files/meadow.png) no-repeat center 0;
-  xbackground: transparent url(/drupal7/sites/default/files/lake.png) no-repeat center 0;
-  -webkit-box-shadow: 0px 0px 5px #333333;
-  -moz-box-shadow: 0px 0px 5px #333333;
-  box-shadow: 0px 0px 5px #333333;
-  margin: 0;
-  padding: 50px 0;
-}
-/* line 48, ../sass/site.scss */
-.front #header .banner {
-  padding: 5px;
-}
-/* line 53, ../sass/site.scss */
-.front #header #site #name a {
-  text-shadow: 0 0 3px #000;
-}
-/* line 59, ../sass/site.scss */
-.front .menu {
+/* line 36, ../sass/site.scss */
+.menu-name-menu-audiences .menu {
   margin-bottom: 1em;
   padding: 0;
 }
 /* line 4, ../sass/partials/_mixins.scss */
-.front .menu li {
+.menu-name-menu-audiences .menu li {
   display: inline;
   list-style: none;
 }
 /* line 8, ../sass/partials/_mixins.scss */
-.front .menu a {
+.menu-name-menu-audiences .menu a {
   margin-bottom: 5px;
+}
+
+/* line 41, ../sass/site.scss */
+#header {
+  background: transparent url(/drupal7/sites/default/files/lake.png) no-repeat right -120px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+  color: #fbfbf9;
+  margin: 0 auto;
+}
+/* line 49, ../sass/site.scss */
+#header .banner {
+  padding: 5px;
+}
+/* line 58, ../sass/site.scss */
+#header #site a {
+  color: #fbfbf9;
+  text-shadow: 0 0 3px #000;
 }
 
 /* line 65, ../sass/site.scss */
@@ -443,28 +440,24 @@ legend {
 }
 
 @media (max-width: 970px) {
-  /* line 180, ../sass/site.scss */
-  #navigation-primary {
-    background-color: #fff;
-  }
-  /* line 182, ../sass/site.scss */
+  /* line 181, ../sass/site.scss */
   #navigation-primary ul li {
     display: block;
     float: none;
   }
 
-  /* line 188, ../sass/site.scss */
+  /* line 187, ../sass/site.scss */
   .navbar {
     margin-bottom: 0;
   }
 
-  /* line 192, ../sass/site.scss */
+  /* line 191, ../sass/site.scss */
   .nav-collapse.collapse {
     overflow: visible;
     position: relative;
   }
-  /* line 196, ../sass/site.scss */
-  .nav-collapse.collapse .block-menu-block {
+  /* line 195, ../sass/site.scss */
+  .nav-collapse.collapse .menu {
     position: absolute;
     top: 0;
     left: -240px;
@@ -472,12 +465,9 @@ legend {
     height: 300px;
   }
   /* line 204, ../sass/site.scss */
-  .nav-collapse.collapse .block-block {
-    z-index: 100;
-  }
-  /* line 206, ../sass/site.scss */
   .nav-collapse.collapse .block-block form {
-    background-color: #fff;
+    z-index: 100;
+    background-color: #f2f1eb;
     border: 1px dotted #e9e6df;
     display: none;
     height: 0;
@@ -485,10 +475,9 @@ legend {
     float: none;
     position: relative;
     text-align: center;
-    z-index: -100;
   }
 
-  /* line 224, ../sass/site.scss */
+  /* line 222, ../sass/site.scss */
   .navsearch,
   .navedit {
     float: right !important;

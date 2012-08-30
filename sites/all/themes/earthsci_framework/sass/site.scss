@@ -30,37 +30,37 @@ figcaption {
 
 #footer {
   background-color: $beige;
-  @include box-shadow();
-  margin: 0;
-  width: auto;
+  border: 1px solid $grey;
 }
 
-// Front page styles
-.front { 
-  #header {
-    background: transparent url(../../../../default/files/vista3.png) no-repeat center 0;
-    xbackground: transparent url(/drupal7/sites/default/files/meadow.png) no-repeat center 0;
-    xbackground: transparent url(/drupal7/sites/default/files/lake.png) no-repeat center 0;
-    @include box-shadow();
-    margin: 0;
-    padding: 50px 0;
+.menu-name-menu-audiences .menu {
+  @include menu-inline;
+}
 
-    .banner {
-      padding: 5px;
-    }
 
-    #site {
-     #name a {
-      text-shadow: 0 0 3px #000;
-      }
-    }
+#header {
+  //background: transparent url(../../../../default/files/vista3.png) no-repeat center 0;
+  //background: transparent url(/drupal7/sites/default/files/meadow.png) no-repeat top right;
+  background: transparent url(/drupal7/sites/default/files/lake.png) no-repeat right -120px;
+  @include box-shadow();
+  color: $white;
+  margin: 0 auto;
+
+  .banner {
+    padding: 5px;
   }
   
-  .menu {
-    @include menu-inline;
+  .block {
+    //background-color: $translucent;
   }
-  
-} // End .front
+
+  #site {
+   a {
+    color: $white;
+    text-shadow: 0 0 3px #000;
+    }
+  }
+}
 
 #block-search-form {
   margin: 0;
@@ -178,7 +178,6 @@ legend {
 @media (max-width: 970px) {
 
   #navigation-primary {
-    background-color: #fff;
     ul li {
       display: block;
       float: none;
@@ -193,7 +192,7 @@ legend {
     overflow: visible;
     position: relative;
 
-    .block-menu-block {
+    .menu {
       position: absolute;
       top: 0;
       left: -240px;
@@ -202,9 +201,9 @@ legend {
     }
 
     .block-block {
-      z-index: 100;
       form {
-        background-color: #fff;
+        z-index: 100;
+        background-color: $beige;
         border: 1px dotted $grey;
         display: none;
         height: 0;
@@ -212,7 +211,6 @@ legend {
         float: none;
         position: relative;
         text-align: center;
-        z-index: -100;
         #button {
          // display: none;
         }

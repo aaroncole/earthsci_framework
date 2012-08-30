@@ -30,11 +30,11 @@ a:hover {
   }
 }
 h1, h2, h3, h4, h5, h6 {
-  xborder-bottom: 2px solid $cardinal;
-  color: $black;
   font-family: Arial Narrow, Arial, Helvetica,sans-serif;
   font-weight: normal;
-  text-transform: uppercase;
+  &.icon {
+    padding-left: 20px; 
+  }
 }
 
 h1, .h1 {
